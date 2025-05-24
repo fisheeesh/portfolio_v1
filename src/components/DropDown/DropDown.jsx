@@ -13,7 +13,7 @@ function Dropdown({ isOpen, toggle }) {
                 onClick={toggle}
             />
 
-            <div className="flex flex-col items-center justify-center mt-[2rem] space-y-8">
+            <div className="flex flex-col items-center justify-center space-y-8">
                 <ScrollLink
                     to="projects"
                     className="text-white text-[1.7rem] cursor-pointer hover:text-gray-400"
