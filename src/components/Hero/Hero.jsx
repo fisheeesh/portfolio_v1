@@ -19,7 +19,7 @@ export default function Hero() {
             <DropDown isOpen={isOpen} toggle={toggle} />
             <Header toggle={toggle} />
             <div className='hero-container pb-8 pt-16 pr-4 pl-4 mx-auto flex flex-col'>
-                <div className='flex flex-row hero-wrapper'>
+                <div className='hero-wrapper flex flex-col lg:flex-row '>
                     <div className='hero-left'>
                         <ScrollAnimation animateIn="fadeIn" >
                             <TypeAnimation
