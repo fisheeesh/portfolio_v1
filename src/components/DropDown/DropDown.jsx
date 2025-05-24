@@ -1,0 +1,54 @@
+import { FaTimes } from "react-icons/fa";
+import { Link as ScrollLink } from "react-scroll";
+
+function Dropdown({ isOpen, toggle }) {
+    return (
+        <div
+            className={`fixed left-0 w-full h-full bg-[#151418] z-[999] flex flex-col items-center justify-center transition ease-in-out duration-300 ${isOpen ? "opacity-100 top-0" : "opacity-0 -top-full"
+                }`}
+            onClick={toggle}
+        >
+            <FaTimes
+                className="text-white text-[2rem] absolute top-8 right-8 cursor-pointer"
+                onClick={toggle}
+            />
+
+            <div className="flex flex-col items-center justify-center mt-[2rem] space-y-8">
+                <ScrollLink
+                    to="projects"
+                    className="text-white text-[1.7rem] cursor-pointer hover:text-gray-400"
+                    onClick={toggle}
+                >
+                    Projects
+                </ScrollLink>
+                <ScrollLink
+                    to="about"
+                    className="text-white text-[1.7rem] cursor-pointer hover:text-gray-400"
+                    onClick={toggle}
+                >
+                    About
+                </ScrollLink>
+                <ScrollLink
+                    to="contact"
+                    className="text-white text-[1.7rem] cursor-pointer hover:text-gray-400"
+                    onClick={toggle}
+                >
+                    Contact
+                </ScrollLink>
+            </div>
+
+            <div className="mt-20 flex justify-center text-[1.7rem]">
+                <a
+                    className="btn PrimaryBtn"
+                    href="https://www.linkedin.com/in/syp-dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Resume
+                </a>
+            </div>
+        </div>
+    );
+}
+
+export default Dropdown;
