@@ -5,6 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 import DropDown from '../DropDown/DropDown';
 import Header from '../Header/Header';
 import { Link as LinkScroll } from "react-scroll";
+import { fadeIn, flipInX } from '../../data/motion';
 
 export default function Hero() {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,29 +13,6 @@ export default function Hero() {
     const [showScrollDown, setShowScrollDown] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
-
-    const fadeIn = {
-        hidden: { opacity: 0 },
-        visible: { opacity: 1, transition: { duration: 0.8, ease: 'easeOut' } },
-    };
-
-    const flipInX = {
-        hidden: {
-            opacity: 0,
-            rotateX: -90,
-            transformPerspective: 600,
-        },
-        visible: {
-            opacity: 1,
-            rotateX: 0,
-            transformPerspective: 600,
-            transition: {
-                duration: 0.8,
-                ease: 'easeOut',
-            },
-        },
-    };
-
     return (
         <main>
             <DropDown isOpen={isOpen} toggle={toggle} />
