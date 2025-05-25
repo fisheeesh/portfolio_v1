@@ -3,7 +3,7 @@ import { FaBars } from "react-icons/fa";
 
 export default function Header({ toggle }) {
     return (
-        <div className='Container p-0'>
+        <div className='max-w-[1000px] px-4 mx-auto w-[90%]' style={{padding: 0}}>
             <nav className='bg-transparent h-[100px] flex items-center justify-between z-[10]'>
                 <div>
                     {/* <h1 className="text-white font-extrabold text-3xl">syp.</h1> */}

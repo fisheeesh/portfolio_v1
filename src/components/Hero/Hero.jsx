@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import { useState } from 'react';
-import ScrollAnimation from 'react-animate-on-scroll';
+import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import DropDown from '../DropDown/DropDown';
 import Header from '../Header/Header';
@@ -10,22 +11,48 @@ export default function Hero() {
     const [showSubtitle, setShowSubtitle] = useState(false);
     const [showScrollDown, setShowScrollDown] = useState(false);
 
-    const toggle = () => {
-        setIsOpen(!isOpen);
+    const toggle = () => setIsOpen(!isOpen);
+
+    const fadeIn = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition: { duration: 0.8, ease: 'easeOut' } },
+    };
+
+    const flipInX = {
+        hidden: {
+            opacity: 0,
+            rotateX: -90,
+            transformPerspective: 600,
+        },
+        visible: {
+            opacity: 1,
+            rotateX: 0,
+            transformPerspective: 600,
+            transition: {
+                duration: 0.8,
+                ease: 'easeOut',
+            },
+        },
     };
 
     return (
         <main>
             <DropDown isOpen={isOpen} toggle={toggle} />
             <Header toggle={toggle} />
+
             <div className='hero-container pb-8 pt-16 pr-4 pl-4 mx-auto flex flex-col'>
                 <div className='hero-wrapper flex flex-col lg:flex-row '>
                     <div className='hero-left'>
-                        <ScrollAnimation animateIn="fadeIn" >
+                        <motion.div
+                            variants={fadeIn}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                        >
                             <TypeAnimation
                                 cursor={false}
                                 sequence={[
-                                    'Hi, I\'m Swam Yi Phyo.',
+                                    "Hi, I'm Swam Yi Phyo.",
                                     () => setShowSubtitle(true)
                                 ]}
                                 speed={{ type: "keyStrokeDelayInMs", value: 150 }}
@@ -39,7 +66,6 @@ export default function Hero() {
                                         500,
                                         'A Full-Stack Developer.',
                                         1000,
-                                        // 'A BCIT graduate.',
                                         'I design and code beautifully simple things, and I love what I do.',
                                         1000,
                                         'A problem solver.',
@@ -67,10 +93,6 @@ export default function Hero() {
                                         "You're uh... still here?",
                                         1000,
                                         "Ok, this has been fun, but I'm gonna restart the loop now...",
-                                        // 1000,
-                                        // "Or...",
-                                        // 1000,
-                                        // "Or... I could scroll you by force! Muahaha!",
                                         1000,
                                         "See ya! :)",
                                         500,
@@ -81,31 +103,46 @@ export default function Hero() {
                                     repeat={Infinity}
                                 />
                             }
-                        </ScrollAnimation>
+                        </motion.div>
                     </div>
+
                     <div className='flex-1 flex justify-center'>
-                        <ScrollAnimation animateIn="fadeIn">
+                        <motion.div
+                            variants={fadeIn}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                        >
                             <img
                                 className='w-auto h-[300px]'
                                 src="/man-svgrepo-com.svg"
                                 alt="man-svgrepo"
                             />
-                        </ScrollAnimation>
+                        </motion.div>
                     </div>
                 </div>
-                {showScrollDown && <ScrollAnimation animateIn="flipInX" offset={0}>
-                    <LinkScroll className='scroll-down' to="projects" id="scrollDown">
-                        <div className='flex items-center text-[1.3rem] text-[#f6f6f6]'>
-                            Scroll down
-                            <img
-                                className='h-[35px] w-[35px] ml-1.5'
-                                src="/scroll-down.svg"
-                                alt="scroll-down"
-                            />
-                        </div>
-                    </LinkScroll>
-                </ScrollAnimation>}
+
+                {showScrollDown &&
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0 }}
+                        variants={flipInX}
+                        style={{ transformStyle: 'preserve-3d', perspective: 600 }}
+                    >
+                        <LinkScroll className='scroll-down' to="projects" id="scrollDown">
+                            <div className='flex items-center text-[1.3rem] text-[#f6f6f6]'>
+                                Scroll down
+                                <img
+                                    className='h-[35px] w-[35px] ml-1.5'
+                                    src="/scroll-down.svg"
+                                    alt="scroll-down"
+                                />
+                            </div>
+                        </LinkScroll>
+                    </motion.div>
+                }
             </div>
         </main>
-    )
+    );
 }
