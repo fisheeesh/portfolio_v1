@@ -4,8 +4,7 @@ import { Link as ScrollLink } from "react-scroll";
 function Dropdown({ isOpen, toggle }) {
     return (
         <div
-            className={`fixed left-0 w-full h-full bg-[#151418] z-[999] flex flex-col items-center justify-center transition ease-in-out duration-300 ${isOpen ? "opacity-100 top-0" : "opacity-0 -top-full"
-                }`}
+            className={`fixed left-0 w-full h-full bg-[#151418] z-[999] flex flex-col items-center justify-center transition ease-in-out duration-300 ${isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}`}
             onClick={toggle}
         >
             <FaTimes
