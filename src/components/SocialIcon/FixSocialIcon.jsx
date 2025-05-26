@@ -13,7 +13,7 @@ export default function FixSocialIcon() {
                 viewport={{ once: true }}
             >
                 <ul className='block max-[1000px]:flex gap-5 max-[1000px]:justify-center max-[1000px]:items-center list-none'>
-                    <li>
+                    <li className='mb-5 max-[1000px]:mb-0'>
                         <a
                             className='text-[2.3rem] text-[#777779] hover:text-[#3986FA] max-[1000px]:text-[2.5rem] max-[1000px]:text-[#151418] max-[1000px]:hover:text-[#3986FA]'
                             href="https://www.linkedin.com/in/pedro-sales-muniz"
@@ -23,7 +23,7 @@ export default function FixSocialIcon() {
                             <FaLinkedin />
                         </a>
                     </li>
-                    <li className="">
+                    <li>
                         <a
                             className='text-[2.3rem] text-[#777779] hover:text-[#3986FA] max-[1000px]:text-[2.5rem] max-[1000px]:text-[#151418] max-[1000px]:hover:text-[#3986FA]'
                             href="https://github.com/salesp07"
