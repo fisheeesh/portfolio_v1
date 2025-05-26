@@ -18,7 +18,7 @@ export default function Projects() {
                     transform="rotate(-180 720 200)"
                 ></path>
             </svg>
-            <div className="ProjectWrapper" id="projects">
+            <div className="-mt-4" id="projects">
                 <div className="Container">
                     <div className="SectionTitle">Projects</div>
                     <ProjectCard />

@@ -18,8 +18,8 @@ export default function Hero() {
             <DropDown isOpen={isOpen} toggle={toggle} />
             <Header toggle={toggle} />
 
-            <div className='hero-container pb-8 pt-16 pr-4 pl-4 mx-auto flex flex-col'>
-                <div className='hero-wrapper flex flex-col lg:flex-row '>
+            <div className='hero-container'>
+                <div className='hero-wrapper'>
                     <div className='hero-left'>
                         <motion.div
                             variants={fadeIn}
@@ -108,7 +108,7 @@ export default function Hero() {
                         variants={flipInX}
                         style={{ transformStyle: 'preserve-3d', perspective: 600 }}
                     >
-                        <LinkScroll className='scroll-down' to="projects" id="scrollDown">
+                        <LinkScroll className='flex justify-start cursor-pointer absolute animate-scroll max-[992px]:relative max-[992px]:justify-center max-[992px]:mt-8' to="projects" id="scrollDown">
                             <div className='flex items-center text-[1.3rem] text-[#f6f6f6]'>
                                 Scroll down
                                 <img

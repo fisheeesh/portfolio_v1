@@ -12,7 +12,7 @@ export default function FixSocialIcon() {
                 whileInView="visible"
                 viewport={{ once: true }}
             >
-                <ul className='block max-[1000px]:flex max-[1000px]:justify-center max-[1000px]:items-center list-none'>
+                <ul className='block max-[1000px]:flex gap-5 max-[1000px]:justify-center max-[1000px]:items-center list-none'>
                     <li>
                         <a
                             className='text-[2.3rem] text-[#777779] hover:text-[#3986FA] max-[1000px]:text-[2.5rem] max-[1000px]:text-[#151418] max-[1000px]:hover:text-[#3986FA]'
@@ -25,7 +25,7 @@ export default function FixSocialIcon() {
                     </li>
                     <li className="">
                         <a
-                            className='text-[2.3rem] text-[#777779] hover:text-[#3986FA]'
+                            className='text-[2.3rem] text-[#777779] hover:text-[#3986FA] max-[1000px]:text-[2.5rem] max-[1000px]:text-[#151418] max-[1000px]:hover:text-[#3986FA]'
                             href="https://github.com/salesp07"
                             target="_blank"
                             rel="noopener noreferrer"
