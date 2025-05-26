@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import DropDown from '../DropDown/DropDown';
 import Header from '../Header/Header';
