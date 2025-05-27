@@ -127,7 +127,7 @@ export const stackList = [
         name: "Figma",
     },
     {
-        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
         name: "TailwindCSS",
     },
     {

@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function FixSocialIcon() {
     return (
-        <div className='fixed top-[48%] left-[1.5rem] -translate-y-1/2 max-[1000px]:mt-8 max-[1000px]:relative max-[1000px]:top-0 max-[1000px]:left-0'>
+        <aside className='fixed top-[48%] left-[1.5rem] -translate-y-1/2 max-[1000px]:mt-8 max-[1000px]:relative max-[1000px]:top-0 max-[1000px]:left-0'>
             <motion.div
                 variants={fadeIn}
                 initial="hidden"
@@ -35,6 +35,6 @@ export default function FixSocialIcon() {
                     </li>
                 </ul>
             </motion.div>
-        </div>
+        </aside>
     )
 }

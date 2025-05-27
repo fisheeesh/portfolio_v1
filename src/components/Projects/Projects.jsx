@@ -2,7 +2,7 @@ import ProjectCard from './ProjectCard/ProjectCard'
 
 export default function Projects() {
     return (
-        <>
+        <section>
             <svg
                 height="100%"
                 width="100%"
@@ -24,6 +24,6 @@ export default function Projects() {
                     <ProjectCard />
                 </div>
             </div>
-        </>
+        </section>
     )
 }

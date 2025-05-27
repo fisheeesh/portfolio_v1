@@ -5,7 +5,7 @@ export default function ProjectCard() {
     return (
         <>
             {ProjectList.map((list, index) => (
-                <ScrollAnimation animateIn="animate__fadeIn" key={index}>
+                <ScrollAnimation animateIn="fadeInLeft" key={index}>
                     <div className="grid gap-8 mb-16 grid-cols-1 pb-8 overflow-hidden rounded-[10px] shadow-custom min-[992px]:grid-cols-2 min-[992px]:border-b-0 min-[992px]:pb-0">
                         <div className="justify-self-center h-full">
                             <img className="object-cover" src={list.img} alt={list.name} />

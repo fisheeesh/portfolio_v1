@@ -16,7 +16,7 @@ export default function Contact() {
         }, 700);
     };
     return (
-        <div className='my-20 mx-0' id='contact'>
+        <section className='my-20 mx-0' id='contact'>
             <div className='Container'>
                 <div className="SectionTitle">Get In Touch</div>
                 <motion.div
@@ -59,6 +59,6 @@ export default function Contact() {
                     </div>
                 </motion.div>
             </div>
-        </div>
+        </section>
     )
 }
