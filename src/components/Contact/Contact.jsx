@@ -1,10 +1,8 @@
-/* eslint-disable no-unused-vars */
-import { motion } from 'framer-motion';
-import React, { useState } from 'react'
-import { MdContentCopy } from "react-icons/md";
 import { IconButton, Tooltip } from "@mui/material";
 import Zoom from '@mui/material/Zoom';
-import { fadeIn } from '../../data/motion';
+import { useState } from 'react';
+import ScrollAnimation from "react-animate-on-scroll";
+import { MdContentCopy } from "react-icons/md";
 
 export default function Contact() {
     const [showTooltip, setShowTooltip] = useState(false);
@@ -19,12 +17,7 @@ export default function Contact() {
         <section className='my-20 mx-0' id='contact'>
             <div className='Container'>
                 <div className="SectionTitle">Get In Touch</div>
-                <motion.div
-                    variants={fadeIn}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                >
+                <ScrollAnimation animateIn="fadeIn" >
                     <div className="BigCard">
                         <div className='flex items-center flex-row justify-around flex-wrap gap-y-4'>
                             <div className='flex items-center justify-center flex-wrap gap-x-5 gap-y-2.5'>
@@ -57,7 +50,7 @@ export default function Contact() {
                             </a>
                         </div>
                     </div>
-                </motion.div>
+                </ScrollAnimation>
             </div>
         </section>
     )

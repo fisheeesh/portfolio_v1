@@ -16,14 +16,14 @@ export default function About() {
                     </ScrollAnimation>
                     <div className="AboutBio">
                         <ScrollAnimation animateIn="fadeInLeft">
-                            Hello! My name is <strong>Swam Yi Phyo</strong>. I'm originally from Brazil and have been living in Canada for the past three years. During my time here, I gained valuable experience through various entry-level positions, which greatly enhanced my work ethic, communication skills, and adaptability.
+                            Hello! My name is <strong>Swam Yi Phyo</strong>. I'm originally from Myanmar and have been living in Thailand for the past three years. During my time here, I gained valuable experience through various entry-level positions, which greatly enhanced my work ethic, communication skills, and adaptability.
                         </ScrollAnimation>
 
                         <br /><br />
 
                         <ScrollAnimation animateIn="fadeInLeft">
-                            My journey into the world of technology began with a strong passion for problem-solving, which led me to pursue the Computer Systems Technology program. Despite its challenges, I remained determined and forged lasting friendships that supported me throughout this demanding program.
-                            Throughout my studies at BCIT, I had the opportunity to engage in fascinating projects. Notably, I contributed to the development of the RENR Safety App and MyMind, projects that garnered recognition from my colleagues, instructors, and clients alike.
+                            My journey into the world of technology began with a strong passion for problem-solving, which led me to pursue the Software Engineering program. Despite its challenges, I remained determined and forged lasting friendships that supported me throughout this demanding program.
+                            Throughout my studies at MFU, I had the opportunity to engage in fascinating projects. Notably, I contributed to the development of the RENR Safety App and MyMind, projects that garnered recognition from my colleagues, instructors, and clients alike.
                         </ScrollAnimation>
 
                         <br /><br />
