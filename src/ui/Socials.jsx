@@ -16,7 +16,7 @@ export const Socials = () => {
                 transition={{ duration: 0.5, delay: 0.1 }}>
                 <a
                     className="z-[29] opacity-50 transition duration-200 hover:opacity-100 hover:text-brand max-[360px]:gap-[1.2rem]"
-                    href="https://www.linkedin.com/in/fvukelic"
+                    href="https://www.linkedin.com/in/syp-dev"
                     target="_blank"
                     rel="nofollow"
                     title="LinkedIn"
@@ -32,7 +32,7 @@ export const Socials = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}>
                 <a
                     className="z-[29] opacity-50 transition duration-200 hover:opacity-100 hover:text-brand max-[360px]:gap-[1.2rem]"
-                    href="https://github.com/basedhound"
+                    href="https://github.com/fisheeesh"
                     target="_blank"
                     rel="nofollow"
                     title="GitHub"
@@ -47,7 +47,7 @@ export const Socials = () => {
                 transition={{ duration: 0.5, delay: 0.4 }}>
                 <a
                     className="z-[29] opacity-50 transition duration-200 hover:opacity-100 hover:text-brand max-[360px]:gap-[1.2rem]"
-                    href="mailto:fvukelic@proton.me"
+                    href="mailto:swanphyo444@gmail.com"
                     target="_blank"
                     rel="nofollow"
                     title="Email"

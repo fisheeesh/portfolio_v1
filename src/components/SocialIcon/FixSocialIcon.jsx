@@ -5,7 +5,8 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function FixSocialIcon() {
     return (
-        <aside className='fixed top-[48%] left-[1.5rem] -translate-y-1/2 max-[1000px]:mt-8 max-[1000px]:relative max-[1000px]:top-0 max-[1000px]:left-0'>
+        <aside
+         className='fixed top-[48%] left-[1.5rem] -translate-y-1/2 max-[1000px]:mt-8 max-[1000px]:relative max-[1000px]:top-0 max-[1000px]:left-0'>
             <motion.div
                 variants={fadeIn}
                 initial="hidden"
@@ -16,7 +17,7 @@ export default function FixSocialIcon() {
                     <li className='mb-8 max-[1000px]:mb-0'>
                         <a
                             className='text-[2.3rem] text-[#777779] hover:text-[#3986FA] max-[1000px]:text-[2.5rem] max-[1000px]:text-[#151418] max-[1000px]:hover:text-[#3986FA]'
-                            href="https://www.linkedin.com/in/pedro-sales-muniz"
+                            href="https://www.linkedin.com/in/syp-dev"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -26,7 +27,7 @@ export default function FixSocialIcon() {
                     <li>
                         <a
                             className='text-[2.3rem] text-[#777779] hover:text-[#3986FA] max-[1000px]:text-[2.5rem] max-[1000px]:text-[#151418] max-[1000px]:hover:text-[#3986FA]'
-                            href="https://github.com/salesp07"
+                            href="https://github.com/fisheeesh"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
