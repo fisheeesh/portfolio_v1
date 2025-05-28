@@ -15,7 +15,7 @@ export default function ProjectCard() {
                             <p className="font-normal max-w-[95%] mt-2.5 mb-4 text-[#000000D0] text-center min-[992px]:text-start">{list.description}</p>
                             <div className="flex flex-wrap justify-center min-[992px]:justify-start">
                                 {list.tech_stack.map((tech, index) => (
-                                    <div className="rounded-[10px] text-[#000000D0] cursor-default shadow-[0px_2px_5px_rgba(160,170,180,0.6)] bg-[#f5f5f5] py-[5px] px-2.5 m-[5px] flex items-center justify-center text-[15px] font-normal " key={index}>{tech}</div>
+                                    <div className="rounded-[10px] text-[#000000D0] cursor-default shadow-[0px_2px_5px_rgba(160,170,180,0.6)] bg-[#f5f5f5] py-[5px] px-2.5 m-[5px] flex items-center justify-center text-[15px] font-normal" key={index}>{tech}</div>
                                 ))}
                             </div>
                             <div className="h-[70px] flex items-center">

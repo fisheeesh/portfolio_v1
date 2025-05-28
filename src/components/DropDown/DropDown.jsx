@@ -14,6 +14,13 @@ function Dropdown({ isOpen, toggle }) {
 
             <div className="flex flex-col items-center justify-center space-y-8">
                 <ScrollLink
+                    to="about"
+                    className="text-white text-[1.7rem] cursor-pointer hover:text-gray-400"
+                    onClick={toggle}
+                >
+                    About
+                </ScrollLink>
+                <ScrollLink
                     to="projects"
                     className="text-white text-[1.7rem] cursor-pointer hover:text-gray-400"
                     onClick={toggle}
@@ -21,11 +28,11 @@ function Dropdown({ isOpen, toggle }) {
                     Projects
                 </ScrollLink>
                 <ScrollLink
-                    to="about"
+                    to="certificate"
                     className="text-white text-[1.7rem] cursor-pointer hover:text-gray-400"
                     onClick={toggle}
                 >
-                    About
+                    Certif.
                 </ScrollLink>
                 <ScrollLink
                     to="contact"
