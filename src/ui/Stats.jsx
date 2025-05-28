@@ -8,7 +8,7 @@ export const Stats = () => {
                 <div>
                     <h4 className="flex items-center mb-1">
                         <AiFillCode size="2.4rem" color="#3986FA" />
-                        <span className="font-bold relative ml-1.5 text-[2.2rem]">Stack</span>
+                        <span className="font-bold relative ml-1.5 text-[1.6rem]">Stack</span>
                     </h4>
                     <div className="flex flex-wrap mb-4">
                         <span className="rounded-[10px] text-[#000000D0] cursor-default shadow-[0px_2px_5px_rgba(160,170,180,0.6)] bg-[#f5f5f5] py-[5px] px-2.5 m-[5px] flex items-center justify-center text-[15px] font-normal ">Vue</span>
@@ -31,7 +31,7 @@ export const Stats = () => {
                 <div>
                     <h4 className="flex items-center mb-1">
                         <AiFillCode size="2.4rem" color="#3986FA" />
-                        <span className="font-bold relative ml-1.5 text-[2.2rem]">+</span>
+                        <span className="font-bold relative ml-1.5 text-[1.6rem]">+</span>
                     </h4>
                     <div className="flex flex-wrap">
                         <span className="rounded-[10px] text-[#000000D0] cursor-default shadow-[0px_2px_5px_rgba(160,170,180,0.6)] bg-[#f5f5f5] py-[5px] px-2.5 m-[5px] flex items-center justify-center text-[15px] font-normal ">Arc</span>
