@@ -1,13 +1,11 @@
 import { useState } from "react";
 import { AiOutlineArrowLeft } from "react-icons/ai";
-import { ShowCaseItem } from "../components/ShowCase/ShowCaseItem";
 import Filter from "../ui/Filter";
+import { GalleryItem } from "../ui/GalleryItem";
 import { TransitionLink } from "../utils/TransitionLink";
 
 const Gallery = () => {
     const [activeFilter, setActiveFilter] = useState("🩵");
-    // eslint-disable-next-line no-unused-vars
-    const [goUpBtn, setGoUpBtn] = useState(false);
 
     const [filteredProjects, setFilteredProjects] = useState(
         projects.filter((project) => project.cat.includes("🩵"))
@@ -20,11 +18,6 @@ const Gallery = () => {
         );
     };
 
-    const handleScroll = () => {
-        setGoUpBtn(window.scrollY >= 350);
-    };
-    window.addEventListener("scroll", handleScroll);
-
     return (
         <>
             <section className="Container" id="gallery">
@@ -34,7 +27,7 @@ const Gallery = () => {
                         className="absolute left-0 max-[860px]:static mt-2"
                         to="/#projects"
                         aria-label="Back to Homepage">
-                        <AiOutlineArrowLeft className="transition duration-200 opacity-50 hover:opacity-100" size="2rem" />
+                        <AiOutlineArrowLeft className="transition duration-200 opacity-50 hover:opacity-100 text-3xl max-[860px]:text-2xl" />
                     </TransitionLink>
 
                     {/* Filter */}
@@ -44,7 +37,7 @@ const Gallery = () => {
                 {/* Gallery */}
                 <section className="grid grid-cols-2 gap-[3.2rem] my-6 max-[860px]:grid-cols-1 max-[860px]:py-0 max-[860px]:px-8 max-[480px]:py-0 max-[480px]:px-4">
                     {filteredProjects.map((project) => (
-                        <ShowCaseItem
+                        <GalleryItem
                             key={`${project.title}-${activeFilter}`}
                             {...project}
                         />
