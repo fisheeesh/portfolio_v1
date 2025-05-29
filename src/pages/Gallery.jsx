@@ -100,7 +100,7 @@ const projects = [
         modal: <>Evently is an event management platform, built on Next.js. It serves as a hub for showcasing events, features payment through Stripe, the capability to purchase tickets and manage your own events.</>,
     },
     {
-        cat: "App, Vue",
+        cat: "🩵, App, Vue",
         title: "Chatty",
         img: "/gallery/chatty.webp",
         code: "https://github.com/fisheeesh/chatty",
@@ -109,7 +109,7 @@ const projects = [
         modal: <>CarHub presents various car types, showcasing comprehensive information with advanced filtering and pagination support. Built with Next.js and leveraging its server-side rendering capabilities.</>,
     },
     {
-        cat: "App, Vue",
+        cat: "🩵, App, Vue",
         title: "Audionix",
         img: "/gallery/audionix.webp",
         code: "https://github.com/fisheeesh/audionix",
@@ -118,7 +118,7 @@ const projects = [
         modal: <>This 3D website, built with React and powered by Three.js, features engaging interactive elements. Navigate aboard a small plane to explore a floating island and discover various information. On the contact page, a fox will dynamically react as you fill out the fields!</>,
     },
     {
-        cat: "Design",
+        cat: "🩵, Design",
         title: "Blog Mastery",
         img: "/gallery/blog-mastery.webp",
         code: "https://github.com/basedhound/bank-platform_app_next",
@@ -141,7 +141,7 @@ const projects = [
         ),
     },
     {
-        cat: "Design",
+        cat: "🩵, Design",
         title: "Bookmark",
         img: "/gallery/bookmark.webp",
         code: "https://demo-sf.vercel.app/",
@@ -172,7 +172,7 @@ const projects = [
         ),
     },
     {
-        cat: "Design",
+        cat: "🩵, Design",
         title: "Carso Training",
         img: "/gallery/carso.webp",
         code: "https://github.com/basedhound/pricewise-scraper_app_next",
@@ -197,7 +197,7 @@ const projects = [
         ),
     },
     {
-        cat: "Design",
+        cat: "🩵, Design",
         title: "Clipboard",
         img: "/gallery/clipboard.webp",
         code: "https://github.com/basedhound/prompt-share_app_next",
@@ -220,7 +220,7 @@ const projects = [
         ),
     },
     {
-        cat: "Design",
+        cat: "🩵, Design",
         title: "Fylo",
         img: "/gallery/fylo.webp",
         code: "https://github.com/basedhound/figma-clone_app_next",
@@ -242,7 +242,7 @@ const projects = [
         ),
     },
     {
-        cat: "Design",
+        cat: "🩵, Design",
         title: "LoopStudios",
         img: "/gallery/loop-studio.webp",
         code: "https://github.com/basedhound/anime-db_app_next",
@@ -265,7 +265,7 @@ const projects = [
     },
     //! P2 -> NEXT.JS -> UI/X ONLY
     {
-        cat: "Design",
+        cat: "🩵, Design",
         title: "Portfolio v1",
         img: "/gallery/portfolio-v1.webp",
         code: "https://github.com/basedhound/portfolio-v3_next",
@@ -291,9 +291,9 @@ const projects = [
         ),
     },
     {
-        cat: "React",
+        cat: "🩵, React",
         title: "Fast React Pizza",
-        img: "/gallery/react-pizza.webp",
+        img: "/gallery/fast-react-pizza.webp",
         code: "https://github.com/basedhound/spotlight_portfolio_next",
         link: "https://spotlight-fv.netlify.app",
         tech: ["Next", "Threejs", "Framer", "TS"],
@@ -313,7 +313,29 @@ const projects = [
         ),
     },
     {
-        cat: "React",
+        cat: "🩵, React",
+        title: "WorldWise",
+        img: "/gallery/theworldwise.webp",
+        code: "https://github.com/basedhound/spotlight_portfolio_next",
+        link: "https://spotlight-fv.netlify.app",
+        tech: ["Next", "Threejs", "Framer", "TS"],
+        modal: (
+            <>
+                🍵 Built with Next.js for handling the user interface, Three.js for
+                rendering 3D elements, Framer motion for beautiful animations, and
+                styled with TailwindCSS, this portfolio demonstrates the developer's
+                skills in a unique manner that creates a lasting impact.
+                <br />
+                <br />
+                🥐 Conçu avec Next.js pour l'interface utilisateur, Three.js pour le
+                rendu 3D, Framer Motion pour des animations élégantes, et stylisé avec
+                TailwindCSS, ce portfolio illustre les compétences du développeur de
+                manière moderne et marquante.
+            </>
+        ),
+    },
+    {
+        cat: "🩵, React",
         title: "React Quiz",
         img: "/gallery/react-quiz.webp",
         code: "https://github.com/basedhound/hilink-travel_ui_next",
@@ -347,10 +369,8 @@ const projects = [
             </>
         ),
     },
-
-    //! P3 -> REACT -> APPLICATION(S)
     {
-        cat: "Design, React, App",
+        cat: "🩵, Design, React, App",
         title: "RentMate",
         img: "/gallery/rentmate.webp",
         code: "https://github.com/basedhound/dashboard_app_react-refine",
@@ -374,7 +394,7 @@ const projects = [
         ),
     },
     {
-        cat: "Design",
+        cat: "🩵, Design",
         title: "Shortly",
         img: "/gallery/shortly.webp",
         code: "https://github.com/basedhound/3d-tshirts_app_react",
@@ -395,7 +415,7 @@ const projects = [
         ),
     },
     {
-        cat: "Design",
+        cat: "🩵, Design",
         title: "Skywings",
         img: "/gallery/skywings.webp",
         code: "https://github.com/basedhound/summarizer-ai_react",
@@ -422,7 +442,7 @@ const projects = [
         ),
     },
     {
-        cat: "Design",
+        cat: "🩵, Design",
         title: "Vera",
         img: "/gallery/vera.webp",
         code: "https://github.com/basedhound/instagram-clone_app_react",
