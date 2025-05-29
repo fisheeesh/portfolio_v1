@@ -1,5 +1,5 @@
-import { IconButton, Tooltip, styled } from '@mui/material'
-import React, { useState, useEffect } from 'react'
+import { IconButton, Tooltip, styled } from '@mui/material';
+import { useEffect, useState } from 'react';
 import { MdKeyboardArrowUp } from 'react-icons/md';
 import { animateScroll as scroll } from 'react-scroll';
 
@@ -9,6 +9,7 @@ const StyledIconButton = styled(IconButton)`
     right: 20px;
     color: white;
     padding: 10px;
+    z-index: 999;
 `
 
 const StyledArrowIcon = styled(MdKeyboardArrowUp)`
@@ -19,7 +20,7 @@ const StyledArrowIcon = styled(MdKeyboardArrowUp)`
 `
 
 function ScrollToTop() {
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = useState(false);
     const [shouldRender, setShouldRender] = useState(false);
 
     const handleClick = () => {

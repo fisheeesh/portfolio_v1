@@ -4,7 +4,34 @@
     --font-sans: "Poppins", "sans-serif";
     --shadow-custom: 0 5px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     --animate-scroll: scrollAnimation 2s linear 0s infinite;
+    --animate-point: point 1.2s ease-in-out infinite;
     --color-brand: #3986FA;
+
+    @keyframes point {
+        0% {
+            transform: translateX(0);
+        }
+
+        20% {
+            transform: translateX(5px);
+        }
+
+        40% {
+            transform: translateX(0);
+        }
+
+        60% {
+            transform: translateX(5px);
+        }
+
+        80% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
 
     @keyframes scrollAnimation {
 
