@@ -1,9 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import AppLayout from "../pages/layout/AppLayout"
 import Home from "../pages/Home"
-import Projects from "../pages/Projects"
 import NotFound from "../pages/NotFound"
 import ErrorElement from "../pages/ErrorElement"
+import Gallery from "../pages/Gallery"
 
 export default function Router() {
 
@@ -18,8 +18,8 @@ export default function Router() {
                     element: <Home />
                 },
                 {
-                    path: 'projects',
-                    element: <Projects />
+                    path: 'gallery',
+                    element: <Gallery />
                 }
             ]
         },

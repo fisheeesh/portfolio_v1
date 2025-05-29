@@ -5,7 +5,6 @@ import Footer from '../components/Footer/Footer'
 import Hero from '../components/Hero/Hero'
 import ShowCase from '../components/ShowCase/ShowCase'
 import FixSocialIcon from '../components/SocialIcon/FixSocialIcon'
-import ScrollToTop from '../components/SocialIcon/ScrollToTop'
 
 export default function Home() {
     return (
@@ -17,7 +16,6 @@ export default function Home() {
             <Contact />
             <FixSocialIcon />
             <Footer />
-            <ScrollToTop />
         </>
     )
 }

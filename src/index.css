@@ -171,10 +171,6 @@
     .SectionTitle {
         @apply text-[28px] text-[#151418] font-bold mb-14;
     }
-
-    /* .chip{
-        @apply cursor-default text-[] bg-[] py-[0.2rem] px-[0.8rem] rounded-[999px] opacity-60 transition duration-200 hover:opacity-100
-    } */
 }
 
 .btn-shadow {
@@ -214,5 +210,38 @@
         a {
             text-decoration: underline;
         }
+    }
+}
+
+/* For "TransitionLink" animation */
+.page-transition {
+    opacity: 0;
+    background: #fafafa;
+    transform: translateY(40px);
+    filter: blur(12px);
+}
+
+.goBackBtn {
+    display: inline-flex;
+    position: absolute;
+    left: 3rem;
+    top: 3rem;
+
+    transition: 0.2s;
+
+    svg {
+        transition: 0.2s;
+        opacity: 0.5;
+    }
+
+    &:hover {
+        svg {
+            opacity: 1;
+        }
+    }
+
+    @media (max-width: 768px) {
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
