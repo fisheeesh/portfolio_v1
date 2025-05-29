@@ -1,57 +1,52 @@
-import { IconButton, Tooltip } from "@mui/material";
-import Zoom from '@mui/material/Zoom';
-import { useState } from 'react';
-import ScrollAnimation from "react-animate-on-scroll";
-import { MdContentCopy } from "react-icons/md";
+import { AiFillMail, AiFillCalendar } from "react-icons/ai";
+import { Reveal } from "../../utils/Reveal";
+import { Socials } from "../../ui/Socials";
 
-export default function Contact() {
-    const [showTooltip, setShowTooltip] = useState(false);
-    const copyToClipboard = () => {
-        navigator.clipboard.writeText("swanphyo444@gmail.com");
-        setShowTooltip(true);
-        setTimeout(() => {
-            setShowTooltip(false);
-        }, 700);
-    };
+export const Contact = () => {
     return (
-        <section className='my-20 mx-0' id='contact'>
-            <div className='Container'>
-                <div className="SectionTitle">Get In Touch</div>
-                <ScrollAnimation animateIn="fadeIn" >
-                    <div className="BigCard">
-                        <div className='flex items-center flex-row justify-around flex-wrap gap-y-4'>
-                            <div className='flex items-center justify-center flex-wrap gap-x-5 gap-y-2.5'>
-                                <span className='text-[1rem] font-normal min-[576px]:text-xl min-[992px]:text-2xl'>swanphyo444@gmail.com</span>
-                                <Tooltip
-                                    PopperProps={{
-                                        disablePortal: true,
-                                    }}
-                                    open={showTooltip}
-                                    onClose={() => setShowTooltip(false)}
-                                    title="Copied!"
-                                    TransitionComponent={Zoom}
-                                    disableFocusListener
-                                    disableHoverListener
-                                    disableTouchListener
-                                    placement="bottom"
-                                >
-                                    <IconButton onClick={copyToClipboard} >
-                                        <MdContentCopy size={25} className='cursor-pointer text-[#151418]' />
-                                    </IconButton>
-                                </Tooltip>
-                            </div>
-                            <a
-                                className="btn PrimaryBtn btn-shadow"
-                                href="mailto:swanphyo444@gmail.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Send Email
-                            </a>
-                        </div>
+        <section className="py-24 px-4" id="contact">
+            <div className="max-w-[700px] mx-auto space-y-4 rounded-[1.2rem]">
+                <Reveal width="100%">
+                    <h4 className="text-center font-black leading-none text-6xl md:text-[6rem]">
+                        Contact<span className="text-brand">.</span>
+                    </h4>
+                </Reveal>
+
+                <Reveal width="100%">
+                    <p className="text-center text-xl">
+                        Have an idea to discuss? Shoot me an email if you want to connect! You can also find me on{" "}
+                        <a
+                            href="https://www.linkedin.com/in/fvukelic/"
+                            target="_blank"
+                            rel="nofollow"
+                            aria-label="Contact me on LinkedIn"
+                            className="text-brand hover:border-b-[1.5px] font-medium transition duration-200"
+                        >
+                            LinkedIn
+                        </a>{" "}
+                        if that's more your speed.
+                    </p>
+                </Reveal>
+
+                <Reveal width="100%">
+                    <div className="flex flex-col items-center gap-2">
+                        <a
+                            href="mailto:swanphyo444@gmail.com"
+                            target="_blank"
+                            rel="nofollow"
+                            aria-label="Send me an email"
+                            className="flex items-center justify-center gap-2 text-base sm:text-sm mb-2 transition hover:text-brand"
+                        >
+                            <AiFillMail size="24" />
+                            <span className="text-lg font-medium">swanphyo444@gmail.com</span>
+                        </a>
                     </div>
-                </ScrollAnimation>
+                </Reveal>
+
+                <Reveal width="100%">
+                    <Socials />
+                </Reveal>
             </div>
         </section>
-    )
-}
+    );
+};

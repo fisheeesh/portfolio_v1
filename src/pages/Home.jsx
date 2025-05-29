@@ -1,6 +1,6 @@
 import About from '../components/About/About'
 import Certification from '../components/Certification/Certification'
-import Contact from '../components/Contact/Contact'
+import { Contact } from '../components/Contact/Contact'
 import Footer from '../components/Footer/Footer'
 import Hero from '../components/Hero/Hero'
 import ShowCase from '../components/ShowCase/ShowCase'
