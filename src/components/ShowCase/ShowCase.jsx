@@ -1,5 +1,5 @@
 import { SectionHeader } from '../../ui/SectionHeader'
-import { ShowCaseItem } from './ShowCaseItem/ShowCaseItem'
+import { ShowCaseItem } from './ShowCaseItem'
 import LinkToGalleryBtn from '../../ui/LinkToGalleryBtn';
 
 export default function ShowCase() {

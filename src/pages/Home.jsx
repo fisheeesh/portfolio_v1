@@ -1,4 +1,5 @@
 import About from '../components/About/About'
+import Certification from '../components/Certification/Certification'
 import Contact from '../components/Contact/Contact'
 import Footer from '../components/Footer/Footer'
 import Hero from '../components/Hero/Hero'
@@ -12,6 +13,7 @@ export default function Home() {
             <Hero />
             <About />
             <ShowCase />
+            <Certification />
             <Contact />
             <FixSocialIcon />
             <Footer />

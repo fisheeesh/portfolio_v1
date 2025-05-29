@@ -4,7 +4,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { BsGlobe } from "react-icons/bs";
-import { Reveal } from "../../../utils/Reveal";
+import { Reveal } from "../../utils/Reveal";
 
 export const ShowCaseItem = ({
     modal,
