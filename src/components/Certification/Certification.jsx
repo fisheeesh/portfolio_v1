@@ -64,7 +64,7 @@ export default function Certification() {
             link: "https://drive.google.com/file/d/13KTDLzkORPgfoRU2R0NzEGfZ9ZIlp0Jw/view?usp=drive_link",
             description:
                 "Focused on enhancing front-end skills with popular libraries and frameworks. Gained proficiency in quickly styling websites with TailwindCass. Emphasized integrating advanced styling techniques for dynamic and efficient web applications.",
-            tech: ["HTML", "CSS", "TailwindCSS", "Responsive"],
+            tech: ["HTML", "CSS", "Javascript", "TailwindCSS", "Responsive"],
         },
         {
             title: "Bootstrap Training",
@@ -73,7 +73,7 @@ export default function Certification() {
             link: "https://drive.google.com/file/d/1uzwRaurA42mj9DuaIiaL7eCepYql6gjf/view?usp=drive_link",
             description:
                 "Focused on enhancing front-end skills with popular libraries and frameworks. Gained proficiency in quickly styling websites with Bootstrap and extending CSS styles with Sass. Developed skills in responsive design, Flexbox, CSS Grid and accessibility through 5 projects. Emphasized modern techniques and best practices for crafting well-structured and accessible web pages.",
-            tech: ["HTML", "CSS", "Bootstrap", "Sass", "Responsive"],
+            tech: ["HTML", "CSS", "Javascript", "Bootstrap", "Sass", "Responsive"],
         },
     ];
 

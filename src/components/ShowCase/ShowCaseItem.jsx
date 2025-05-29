@@ -63,7 +63,7 @@ export const ShowCaseItem = ({
                     className="relative overflow-hidden cursor-pointer aspect-[17/9] rounded-[0.8rem] bg-[#232323] flex items-center justify-center"
                 >
                     <img
-                        className={`transition-all duration-300 absolute -bottom-[35px] rounded-[0.4rem] ${hovered ? "scale-[0.9] rotate-[2deg]" : "scale-[0.85] rotate-0"
+                        className={`transition-all duration-300 absolute -bottom-[60px] rounded-[0.4rem] ${hovered ? "scale-[0.9] rotate-[2deg]" : "scale-[0.85] rotate-0"
                             }`}
                         src={img}
                         alt={`An image of the ${title} project.`}

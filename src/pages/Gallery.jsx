@@ -3,16 +3,20 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 import Filter from "../ui/Filter";
 import { GalleryItem } from "../ui/GalleryItem";
 import { TransitionLink } from "../utils/TransitionLink";
+import { useSearchParams } from "react-router-dom";
 
 const Gallery = () => {
-    const [activeFilter, setActiveFilter] = useState("🩵");
+    const [searchParams, setSearchParams] = useSearchParams();
+
+    const activeFilter = searchParams.get('category') || "🩵";
 
     const [filteredProjects, setFilteredProjects] = useState(
         projects.filter((project) => project.cat.includes("🩵"))
     );
 
     const handleFilter = (filter) => {
-        setActiveFilter(filter);
+        searchParams.set('category', filter);
+        setSearchParams(searchParams);
         setFilteredProjects(
             projects.filter((project) => project.cat.includes(filter))
         );
@@ -60,158 +64,63 @@ const Gallery = () => {
 const projects = [
     //! P1 -> NEXT.JS -> APPLICATION(S)
     {
-        cat: "🩵, App, Next",
-        title: "Evently",
-        img: "/gallery/evently.webp",
-        code: "https://github.com/basedhound/event-platform_app_next",
-        link: "https://evently-fv.vercel.app",
-        tech: ["Next", "MongoDB", "Tailwind", "TS"],
-        modal: (
-            <>
-                🍵 Built on Next.js 14, the events application stands as a
-                comprehensive, full-stack platform for managing events. It serves as a
-                hub, spotlighting diverse events taking place globally. Featuring
-                seamless payment processing through Stripe, you have the capability to
-                purchase tickets for any event or even initiate and manage your own
-                events.
-                <br />
-                <br />
-                🥐 Construite avec Next.js 14, cette application se présente comme une
-                plateforme complète et évolutive pour la gestion des événements. Elle
-                agit comme un hub mettant en lumière une diversité d'événements à
-                travers le monde. Intégrant un traitement de paiement fluide via Stripe,
-                elle vous permet d'acheter des billets pour n'importe quel événement ou
-                même de créer et gérer vos propres événements.
-            </>
-        ),
+        cat: "🩵, App, React",
+        title: "LitLibrary",
+        img: "/gallery/lit-library.webp",
+        code: "https://github.com/fisheeesh/lit-library",
+        link: "https://www.litlibrary.blog/",
+        tech: ["React", "Firebase", "Tailwind", "Context API"],
+        modal: <>This is a vibrant blogging platform using React.js and TailwindCSS. It highlights the effective use of Firebase real-time database</>,
     },
     {
         cat: "🩵, App, Next",
-        title: "Canva clone",
-        img: "/gallery/canva.webp",
-        code: "https://github.com/basedhound/canva-clone_app_next",
-        link: "https://imaginify-fv.vercel.app",
-        tech: ["Next", "Rapid API", "Tailwind", "TS"],
-        modal: (
-            <>
-                🍵 An AI image SaaS platform that excels in image processing
-                capabilities, integrates a secure payment infrastructure, offers
-                advanced image search functionalities, and supports multiple AI
-                features—including image restoration, recoloring, object removal,
-                generative filling, and background removal.
-                <br />
-                <br />
-                🥐 Une plateforme SaaS d'images IA qui excelle dans les capacités de
-                traitement d'images, intègre une infrastructure de paiement sécurisée,
-                offre des fonctionnalités avancées de recherche d'images, et prend en
-                charge plusieurs fonctionnalités IA, notamment la restauration d'images,
-                la recoloration, la suppression d'objets, le remplissage génératif et la
-                suppression d'arrière-plan.
-            </>
-        ),
+        title: "TWO Website",
+        img: "/gallery/thewildoasis-web.webp",
+        code: "https://github.com/fisheeesh/the-wild-oasis-website",
+        link: "https://the-wild-oasis-website-eta-flame.vercel.app/",
+        tech: ["React", "Next.js", "Tailwind", "Supabase", "NextAuth"],
+        modal: <>Landing page design for a travel agency featuring a modern and minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced with smooth animations powered by ScrollReveal.js library.</>,
     },
     {
-        cat: "🩵, App, Next",
-        title: "Car Hub",
-        img: "/gallery/carhub.webp",
-        code: "https://github.com/basedhound/car-hub_app_next",
-        link: "https://carhub-fv.netlify.app/",
-        tech: ["Next", "Rapid API", "Tailwind", "TS"],
-        modal: (
-            <>
-                🍵 Developed with Next.js and leveraging its server-side rendering
-                capabilities, this Car Showcase website presents various car types,
-                showcasing comprehensive information in a well-designed format with
-                advanced filtering and pagination support for an enhanced user
-                experience.
-                <br />
-                <br />
-                🥐 Développé avec Next.js et exploitant ses capacités de rendu côté
-                serveur, ce site web de présentation de voitures propose différents
-                types de véhicules, offrant des informations détaillées dans un format
-                bien conçu avec un support avancé de filtrage et de pagination pour une
-                expérience utilisateur améliorée.
-            </>
-        ),
+        cat: "🩵, App, React",
+        title: "TWO Dashboard",
+        img: "/gallery/thewildoasis-d.webp",
+        code: "https://github.com/fisheeesh/the-wild-oasis-dashboard",
+        link: "https://the-wild-oasis-dashboard-amber.vercel.app/dashboard",
+        tech: ["React", "Supabase", "React Query", "Styled Components", "Recharts"],
+        modal: <>Landing page design for a sushi restaurant featuring a modern and minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced with smooth animations powered by ScrollReveal.js library.</>,
     },
     {
-        cat: "App, Next",
-        title: "Threads clone",
-        img: "/gallery/threads.webp",
-        code: "https://github.com/basedhound/threads-clone_app_next",
-        link: "https://threads-fv.vercel.app",
-        tech: ["Next", "MongoDB", "Tailwind", "TS"],
-        modal: (
-            <>
-                🍵 Full-stack Threads clone built on Next.js 14+. It includes
-                comprehensive user interaction, community management functionalities,
-                robust technical implementation, and a range of features like nested
-                deep comments, notifications, real-time search, and more.
-                <br />
-                <br />
-                🥐 Clone de Threads en full-stack réalisé avec Next.js 14+. Ce projet
-                comprend une interaction utilisateur approfondie, des fonctionnalités de
-                gestion communautaire, une implémentation technique robuste, ainsi
-                qu'une gamme de fonctionnalités telles que des commentaires imbriqués,
-                des notifications, une recherche en temps réel, et bien plus encore.
-            </>
-        ),
+        cat: "🩵, App, React",
+        title: "Filmpire",
+        img: "/gallery/filmpire.webp",
+        code: "https://github.com/fisheeesh/filmpire",
+        link: "https://filmpire-ashy.vercel.app/",
+        tech: ["React", "TMDB API", "Alan AI", "MUI"],
+        modal: <>Evently is an event management platform, built on Next.js. It serves as a hub for showcasing events, features payment through Stripe, the capability to purchase tickets and manage your own events.</>,
     },
     {
-        cat: "🩵, App, Next",
-        title: "Podcast AI",
-        img: "/gallery/podcast.webp",
-        code: "https://github.com/basedhound/podcastr-ai_app_next",
-        link: "https://podcastr-fv.vercel.app",
-        tech: ["Next", "Plaid", "Dwolla", "TS"],
-        modal: (
-            <>
-                🍵 AI SaaS platform that empowers users to create,
-                discover, and enjoy podcasts with advanced features such as
-                text-to-audio conversion using multi-voice AI powered by OpenAI API,
-                podcast thumbnail image generation, and seamless playback. The platform
-                includes secure authentication using Clerk, ensuring a safe and
-                personalized user experience.
-                <br />
-                <br />
-                🥐 Une plateforme SaaS d'IA qui permet aux utilisateurs de
-                créer, découvrir et écouter des podcasts avec des fonctionnalités
-                avancées telles que la conversion texte-en-audio utilisant une IA
-                multi-voix alimentée par l'API OpenAI, la génération d'images miniatures
-                de podcasts et une lecture fluide. La plateforme inclut une
-                authentification sécurisée utilisant Clerk, garantissant une expérience
-                utilisateur sûre et personnalisée.
-            </>
-        ),
+        cat: "App, Vue",
+        title: "Chatty",
+        img: "/gallery/chatty.webp",
+        code: "https://github.com/fisheeesh/chatty",
+        link: "https://chatty-1090b.web.app/",
+        tech: ["Vue", "Firebase", "Boostrap"],
+        modal: <>CarHub presents various car types, showcasing comprehensive information with advanced filtering and pagination support. Built with Next.js and leveraging its server-side rendering capabilities.</>,
     },
     {
-        cat: "App, Next",
-        title: "Zoom clone",
-        img: "/gallery/zoom.webp",
-        code: "https://github.com/basedhound/zoom-clone_app_next",
-        link: "https://yoom-fv.vercel.app",
-        tech: ["Next", "GetStream", "Tailwind", "TS"],
-        modal: (
-            <>
-                🍵 Built with the latest Next.js and TypeScript, this project replicates
-                Zoom, a widely used video conferencing tool. It enables users to
-                securely log in, create meetings and access various meeting
-                functionalities such as recording, screen sharing, and managing
-                participants.
-                <br />
-                <br />
-                🥐 Construit avec les dernières versions de Next.js et TypeScript, ce
-                projet réplique Zoom, un outil populaire de visioconférence. Il permet
-                aux utilisateurs de se connecter en toute sécurité, de créer des
-                réunions et d'accéder à diverses fonctionnalités de réunion telles que
-                l'enregistrement, le partage d'écran et la gestion des participants.
-            </>
-        ),
+        cat: "App, Vue",
+        title: "Audionix",
+        img: "/gallery/audionix.webp",
+        code: "https://github.com/fisheeesh/audionix",
+        link: "https://music-b055.web.app/",
+        tech: ["Vue", "Pinia", "Firebase", "i18n", "Tailwind", "Howler.js", "VeeValidate"],
+        modal: <>This 3D website, built with React and powered by Three.js, features engaging interactive elements. Navigate aboard a small plane to explore a floating island and discover various information. On the contact page, a fox will dynamically react as you fill out the fields!</>,
     },
     {
-        cat: "App, Next",
-        title: "Horizon Bank",
-        img: "/gallery/horizon.webp",
+        cat: "Design",
+        title: "Blog Mastery",
+        img: "/gallery/blog-mastery.webp",
         code: "https://github.com/basedhound/bank-platform_app_next",
         link: "https://horizon-bank-fv.vercel.app",
         tech: ["Next", "Plaid", "Dwolla", "TS"],
@@ -232,9 +141,9 @@ const projects = [
         ),
     },
     {
-        cat: "🩵, App, Next",
-        title: "Sales Page Model",
-        img: "/gallery/salespage.webp",
+        cat: "Design",
+        title: "Bookmark",
+        img: "/gallery/bookmark.webp",
         code: "https://demo-sf.vercel.app/",
         link: "https://demo-sf.vercel.app/",
         tech: ["Next", "React", "TS", "MongoDB", "Stripe"],
@@ -263,9 +172,9 @@ const projects = [
         ),
     },
     {
-        cat: "App, Next",
-        title: "Pricewise",
-        img: "/gallery/pricewise.webp",
+        cat: "Design",
+        title: "Carso Training",
+        img: "/gallery/carso.webp",
         code: "https://github.com/basedhound/pricewise-scraper_app_next",
         link: "https://pricewise-fv.vercel.app",
         tech: ["Next", "Bright Data", "MongoDB", "TS"],
@@ -288,9 +197,9 @@ const projects = [
         ),
     },
     {
-        cat: "App, Next",
-        title: "Prompt Share",
-        img: "/gallery/promptshare.webp",
+        cat: "Design",
+        title: "Clipboard",
+        img: "/gallery/clipboard.webp",
         code: "https://github.com/basedhound/prompt-share_app_next",
         link: "https://prompt-share-fv.vercel.app",
         tech: ["Next", "MongoDB", "Tailwind", "TS"],
@@ -311,9 +220,9 @@ const projects = [
         ),
     },
     {
-        cat: "App, Next",
-        title: "Figma clone",
-        img: "/gallery/figma.webp",
+        cat: "Design",
+        title: "Fylo",
+        img: "/gallery/fylo.webp",
         code: "https://github.com/basedhound/figma-clone_app_next",
         link: "https://figpro-fv.vercel.app",
         tech: ["Next", "LiveBlocks", "Fabric", "TS"],
@@ -333,9 +242,9 @@ const projects = [
         ),
     },
     {
-        cat: "App, Next",
-        title: "AnimeDB",
-        img: "/gallery/animedb.webp",
+        cat: "Design",
+        title: "LoopStudios",
+        img: "/gallery/loop-studio.webp",
         code: "https://github.com/basedhound/anime-db_app_next",
         link: "https://animedb-fv.netlify.app",
         tech: ["Next", "Rapid API", "Framer", "TS"],
@@ -356,9 +265,9 @@ const projects = [
     },
     //! P2 -> NEXT.JS -> UI/X ONLY
     {
-        cat: "Design, Next",
-        title: "Portfolio v3",
-        img: "/gallery/portfolio3.webp",
+        cat: "Design",
+        title: "Portfolio v1",
+        img: "/gallery/portfolio-v1.webp",
         code: "https://github.com/basedhound/portfolio-v3_next",
         link: "/",
         tech: ["Next", "Sass", "Framer", "TypeScript"],
@@ -382,9 +291,9 @@ const projects = [
         ),
     },
     {
-        cat: "Design, Next",
-        title: "Spotlight",
-        img: "/gallery/spotlight.webp",
+        cat: "React",
+        title: "Fast React Pizza",
+        img: "/gallery/react-pizza.webp",
         code: "https://github.com/basedhound/spotlight_portfolio_next",
         link: "https://spotlight-fv.netlify.app",
         tech: ["Next", "Threejs", "Framer", "TS"],
@@ -404,9 +313,9 @@ const projects = [
         ),
     },
     {
-        cat: "Design, Next",
-        title: "Hilink",
-        img: "/gallery/hilink.webp",
+        cat: "React",
+        title: "React Quiz",
+        img: "/gallery/react-quiz.webp",
         code: "https://github.com/basedhound/hilink-travel_ui_next",
         link: "https://hilink-travel-fv.netlify.app",
         tech: ["Next", "Tailwind", "TypeScript"],
@@ -441,9 +350,9 @@ const projects = [
 
     //! P3 -> REACT -> APPLICATION(S)
     {
-        cat: "App, React",
-        title: "Refine Dashboard",
-        img: "/gallery/refine.webp",
+        cat: "Design, React, App",
+        title: "RentMate",
+        img: "/gallery/rentmate.webp",
         code: "https://github.com/basedhound/dashboard_app_react-refine",
         link: "https://dashboard-refine-fv.netlify.app",
         tech: ["React", "Refine", "GraphQL"],
@@ -465,9 +374,9 @@ const projects = [
         ),
     },
     {
-        cat: "🩵, App, React",
-        title: "3D T-Shirts",
-        img: "/gallery/tshirts3d.webp",
+        cat: "Design",
+        title: "Shortly",
+        img: "/gallery/shortly.webp",
         code: "https://github.com/basedhound/3d-tshirts_app_react",
         link: "https://3d-tshirts-fv.netlify.app",
         tech: ["React", "Threejs", "Node", "MongoDB"],
@@ -486,9 +395,9 @@ const projects = [
         ),
     },
     {
-        cat: "App, React",
-        title: "Summarize AI",
-        img: "/gallery/summarize.webp",
+        cat: "Design",
+        title: "Skywings",
+        img: "/gallery/skywings.webp",
         code: "https://github.com/basedhound/summarizer-ai_react",
         link: "https://summarize-fv.netlify.app",
         tech: ["React", "OpenAI", "Rapid API"],
@@ -513,9 +422,9 @@ const projects = [
         ),
     },
     {
-        cat: "🩵, App, React",
-        title: "Instagram clone",
-        img: "/gallery/snapgram.webp",
+        cat: "Design",
+        title: "Vera",
+        img: "/gallery/vera.webp",
         code: "https://github.com/basedhound/instagram-clone_app_react",
         link: "https://snapgram-fv.vercel.app",
         tech: ["React", "Appwrite", "TanStack"],
@@ -535,1339 +444,6 @@ const projects = [
             </>
         ),
     },
-    {
-        cat: "App, React",
-        title: "GM Social",
-        img: "/gallery/gmsocial.webp",
-        code: "https://github.com/basedhound/gm-social_app_react",
-        link: "https://github.com/basedhound/gm-social_app_react",
-        tech: ["React", "Node", "Express", "MongoDB"],
-        modal: (
-            <>
-                🍵 A fullstack social media application built with the MERN stack
-                (React, Node.js, Express, MongoDB) as the final project for the Web
-                Developer course at OpenClassrooms. This project involves creating a
-                complete social media platform from scratch, featuring robust CRUD
-                operations for users, posts, and admin accounts. The backend includes
-                enhanced security measures using Helmet, Crypto-js, Bcrypt, and more. It
-                demonstrates comprehensive skills in both frontend and backend
-                development, including user authentication, database management, and
-                dynamic interactions.
-                <br />
-                <br />
-                🥐 Une application de réseau social fullstack construite avec le stack
-                MERN (React, Node.js, Express, MongoDB) dans le cadre du projet final du
-                cours de Développeur Web à OpenClassrooms. Ce projet consiste à créer
-                une plateforme de réseau social complète, avec des opérations CRUD
-                robustes pour les utilisateurs, les publications et les comptes
-                administrateurs. Le backend intègre des mesures de sécurité avancées
-                telles que Helmet, Crypto-js, Bcrypt, et plus encore. Il démontre des
-                compétences complètes en développement frontend et backend, incluant
-                l'authentification des utilisateurs, la gestion de la base de données,
-                et des interactions dynamiques.
-            </>
-        ),
-    },
-    {
-        cat: "App, React",
-        title: "Workout",
-        img: "/gallery/workout.webp",
-        code: "https://github.com/basedhound/workout_app_react",
-        link: "https://workout-app-fv.netlify.app",
-        tech: ["React", "Rapid API", "Material UI"],
-        modal: (
-            <>
-                🍵 Fitness application built on React.js that offers a comprehensive
-                suite of features to enhance your workout experience. With the
-                functionality to choose exercise categories and specific muscle groups,
-                users can browse through a library of over one thousand exercises, each
-                accompanied by practical examples. The application supports pagination
-                for easy navigation and provides detailed information for each exercise.
-                <br />
-                <br />
-                🥐 Application de fitness construite avec React.js qui offre une suite
-                complète de fonctionnalités pour améliorer votre expérience
-                d'entraînement. Grâce à la possibilité de choisir des catégories
-                d'exercices et des groupes musculaires spécifiques, les utilisateurs
-                peuvent parcourir une bibliothèque de plus de mille exercices, chacun
-                accompagné d'exemples pratiques. L'application prend en charge la
-                pagination pour une navigation facile et fournit des informations
-                détaillées pour chaque exercice.
-            </>
-        ),
-    },
-    {
-        cat: "App, React",
-        title: "CryptoDB",
-        img: "/gallery/cryptodb.webp",
-        code: "https://github.com/basedhound/cryptodb_app_react",
-        link: "https://cryptodb-fv.netlify.app",
-        tech: ["React", "Rapid API", "Redux"],
-        modal: (
-            <>
-                🍵 CryptoDB is a React application that integrates RapidAPI for features
-                such as Bing News Search and Crypto Ranking. It utilizes Redux Toolkit
-                for efficient state management, Ant Design for polished UI components,
-                and Chart.js for dynamic data visualization.
-                <br />
-                <br />
-                🥐 CryptoDB est une application React qui intègre RapidAPI pour des
-                fonctionnalités telles que la recherche d'actualités Bing et le
-                classement des cryptomonnaies. Elle utilise Redux Toolkit pour une
-                gestion efficace de l'état, Ant Design pour des composants d'interface
-                utilisateur élégants, et Chart.js pour la visualisation dynamique des
-                données.
-            </>
-        ),
-    },
-    {
-        cat: "App, React",
-        title: "Budget",
-        img: "/gallery/budget.webp",
-        code: "https://github.com/basedhound/budget-app_react",
-        link: "https://budget-fv.netlify.app",
-        tech: ["React", "Bootstrap"],
-        modal: (
-            <>
-                🍵 Budgeting application built using React, focusing on CRUD (Create,
-                Read, Update, Delete) operations. It covers intermediate and
-                beginner-level React concepts, demonstrating how to manage budget data
-                effectively.
-                <br />
-                <br />
-                🥐 Application de gestion de budget construite avec React, mettant
-                l'accent sur les opérations CRUD (Create, Read, Update, Delete). Elle
-                couvre des concepts intermédiaires et débutants de React, démontrant
-                comment gérer efficacement les données budgétaires.
-            </>
-        ),
-    },
-    {
-        cat: "App, React",
-        title: "Notes",
-        img: "/gallery/notes.webp",
-        code: "https://github.com/basedhound/summarizer-ai_react",
-        link: "https://notes-fv.netlify.app",
-        tech: ["React", "Bootstrap", "TypeScript"],
-        modal: (
-            <>
-                🍵 Summarize any article with one click using the powerful OpenAI model.
-                This web app features a modern interface, allowing users to input
-                article URLs for concise AI-generated summaries. It saves summaries
-                locally for easy history management and offers copy-to-clipboard
-                functionality for effortless sharing. Advanced RTK Query API requests
-                optimize data fetching and management.
-                <br />
-                <br />
-                🥐 Résumez n'importe quel article en un clic grâce au puissant modèle
-                OpenAI. Cette application web offre une interface moderne et conviviale,
-                permettant aux utilisateurs d'entrer des URL d'articles pour obtenir des
-                résumés concis générés par l'IA. Les résumés sont enregistrés localement
-                pour une gestion facile de l'historique, et une fonction de copie dans
-                le presse-papiers facilite le partage. Les requêtes API avancées de RTK
-                Query optimisent la récupération et la gestion des données.
-            </>
-        ),
-    },
+]
 
-    //! P4 -> REACT -> UI/X ONLY
-    {
-        cat: "🩵, Design, React",
-        title: "iPhone 15",
-        img: "/gallery/iphone.webp",
-        code: "https://github.com/basedhound/iPhone-15_ui_react",
-        link: "https://iphone15-fv.vercel.app",
-        tech: ["React", "GSAP", "Threejs", "Tailwind"],
-        modal: (
-            <>
-                🍵 This is a clone of Apple's iPhone 15 Pro website using React.js and
-                TailwindCSS. It highlights the effective use of GSAP (Greensock
-                Animations) and Three.js for displaying iPhone 15 Pro models in various
-                colors and shapes.
-                <br />
-                <br />
-                🥐 Ceci est un clone du site web de l'iPhone 15 Pro d'Apple utilisant
-                React.js et TailwindCSS. Il met en avant l'utilisation efficace de GSAP
-                (Greensock Animations) et de Three.js pour afficher les modèles d'iPhone
-                15 Pro dans diverses couleurs et formes.
-            </>
-        ),
-    },
-    {
-        cat: "🩵, Design, React",
-        title: "3D Island",
-        img: "/gallery/island3d.webp",
-        code: "https://github.com/basedhound/3d-island_portfolio_react",
-        link: "https://3d-island-fv.vercel.app/",
-        tech: ["React", "Threejs", "Tailwind"],
-        modal: (
-            <>
-                🍵 This 3D website, built with React and powered by Three.js, features
-                engaging interactive elements. Navigate aboard a small plane to explore
-                a floating island and discover various information. On the contact page,
-                a fox will dynamically react as you fill out the fields!
-                <br />
-                <br />
-                🥐 Ce site web 3D, construit avec React et propulsé par Three.js,
-                propose des éléments interactifs captivants. Naviguez à bord d'un petit
-                avion pour explorer une île flottante et découvrir diverses
-                informations. Sur la page de contact, un renard réagira dynamiquement à
-                mesure que vous remplirez les champs !
-            </>
-        ),
-    },
-    {
-        cat: "🩵, Design, React",
-        title: "Gericht",
-        img: "/gallery/gericht.webp",
-        code: "https://github.com/basedhound/gericht-restaurant_ui_react",
-        link: "https://gericht-restaurant-fv.netlify.app",
-        tech: ["React", "CSS", "JS"],
-        modal: (
-            <>
-                🍵 This restaurant landing page showcases a contemporary design
-                developed using React, emphasizing reusable functional components and a
-                well-organized file and folder structure. It emphasizes mastery of
-                fundamental CSS properties such as flex for flexible layout design.
-                Responsive design is ensured with meticulously implemented media
-                queries, optimizing display across all devices.
-                <br />
-                <br />
-                🥐 Cette page d'accueil présente un design contemporain développé avec
-                React, mettant l'accent sur l'utilisation de composants fonctionnels
-                réutilisables et une structure de fichiers bien organisée. Elle en avant
-                la maîtrise des propriétés CSS fondamentales telles que flex pour des
-                designs de mise en page flexibles. Le design responsive est assuré grâce
-                à des media queries soigneusement implémentées, optimisant l'affichage
-                sur tous les appareils.
-            </>
-        ),
-    },
-    {
-        cat: "Design, React",
-        title: "HooBank",
-        img: "/gallery/hoobank.webp",
-        code: "https://github.com/basedhound/hoo-bank_ui_react",
-        link: "https://hoobank-fv.netlify.app",
-        tech: ["React", "Tailwind", "Vite"],
-        modal: (
-            <>
-                🍵 This bank landing page showcases a contemporary design developed
-                using React, emphasizing reusable functional components and a
-                well-organized file and folder structure. It integrates Tailwind CSS for
-                streamlined styling, emphasizing mastery of fundamental CSS properties
-                such as flex for flexible layout design. Responsive design is ensured
-                with meticulously implemented media queries, optimizing display across
-                all devices.
-                <br />
-                <br />
-                🥐 Cette page d'accueil présente un design contemporain développé avec
-                React, mettant l'accent sur l'utilisation de composants fonctionnels
-                réutilisables et une structure de fichiers bien organisée. Elle intègre
-                Tailwind CSS pour un style simplifié, mettant en avant la maîtrise des
-                propriétés CSS fondamentales telles que flex pour des designs de mise en
-                page flexibles. Le design responsive est assuré grâce à des media
-                queries soigneusement implémentées, optimisant l'affichage sur tous les
-                appareils.
-            </>
-        ),
-    },
-    {
-        cat: "🩵, Design, React",
-        title: "Brainwave",
-        img: "/gallery/brainwave.webp",
-        code: "https://github.com/basedhound/brainwave_ui_react",
-        link: "https://brainwave-fv.netlify.app",
-        tech: ["React", "Tailwind", "Vite"],
-        modal: (
-            <>
-                🍵 Brainwave is a modern UI/UX website built using React.js and Tailwind
-                CSS, designed with contemporary principles in mind. It features smooth
-                parallax effects and bento box layouts, offering a stylish UI that
-                adapts well from desktop to mobile devices. With polished animations and
-                a user-friendly experience, Brainwave sets a high standard while
-                providing inspiration for modern applications and websites.
-                <br />
-                <br />
-                🥐 Brainwave est un site web UI/UX moderne créé avec React.js et
-                Tailwind CSS, qui incarne les principes actuels du design. Il présente
-                des effets de parallaxe fluides et des mises en page bento box, offrant
-                une interface élégante adaptée aussi bien aux ordinateurs de bureau
-                qu'aux appareils mobiles. Avec des animations soignées et une expérience
-                utilisateur exceptionnelle, Brainwave se distingue comme une source
-                d'inspiration pour les applications et sites web contemporains.
-            </>
-        ),
-    },
-    {
-        cat: "Design, React",
-        title: "GPT3",
-        img: "/gallery/gpt3.webp",
-        code: "https://github.com/basedhound/gpt3_ui_react",
-        link: "https://gpt3-fv.netlify.app",
-        tech: ["React", "CSS", "JS"],
-        modal: (
-            <>
-                🍵 This landing page features a modern design built with React,
-                utilizing functional components for reusability and a structured file
-                and folder system. It incorporates fundamental CSS properties for
-                mastering Flexbox and Grid, adheres to the CSS BEM Model, and includes
-                both soft animations and complex gradients. With perfectly placed media
-                queries, the page ensures responsiveness across all devices.
-                <br />
-                <br />
-                🥐 Cette page d'accueil arbore un design moderne réalisé avec React,
-                exploitant des composants fonctionnels pour leur réutilisabilité. Elle
-                intègre des propriétés CSS essentielles pour maîtriser Flexbox et Grid,
-                respecte le modèle BEM de CSS, et propose des animations subtiles ainsi
-                que des dégradés complexes. Grâce à des media queries judicieusement
-                placées, la page garantit une réactivité optimale sur tous les
-                appareils.
-            </>
-        ),
-    },
-    {
-        cat: "Design, React",
-        title: "Hua Astro",
-        img: "/gallery/hua.webp",
-        code: "https://github.com/basedhound/hua-astro_react",
-        link: "https://hua-astro-fv.netlify.app",
-        tech: ["React", "Astro", "Tailwind", "Framer", "TS"],
-        modal: (
-            <>
-                🍵 This project is a test and my first experience with the Astro
-                framework. It showcases a simple portfolio concept for a graphic artist.
-                I used React, TypeScript, Astro, Tailwind CSS, and Framer Motion to
-                create a visually engaging and interactive site.
-                <br />
-                <br />
-                🥐 Ce projet est un test et ma première expérience avec le framework
-                Astro. Il présente un concept simple de portfolio pour un artiste
-                graphique. J'ai utilisé React, TypeScript, Astro, Tailwind CSS et Framer
-                Motion pour créer un site visuellement attrayant et interactif.
-            </>
-        ),
-    },
-    {
-        cat: "🩵, Design, React",
-        title: "Nike",
-        img: "/gallery/nike.webp",
-        code: "https://github.com/basedhound/nike_ui_react",
-        link: "https://nike-fv.netlify.app",
-        tech: ["React", "Tailwind"],
-        modal: (
-            <>
-                🍵 Modern Nike landing page designed with React and Tailwind CSS,
-                featuring a visually appealing hero section, popular products showcase,
-                unique "About Us" section, special offers display, testimonials, and a
-                newsletter integration. This project maximizes Tailwind CSS with best
-                practices, theming techniques, and JavaScript-like tasks. The entire
-                site is mobile-responsive, highlighting Tailwind's flexibility and
-                design capabilities.
-                <br />
-                <br />
-                🥐 Page d'accueil moderne pour Nike, conçue avec React et Tailwind CSS.
-                Ce projet comprend une section héro captivante, une présentation des
-                produits populaires, une section "À propos" originale, des offres
-                spéciales, des témoignages, et une intégration de la newsletter. Il
-                optimise l'utilisation de Tailwind CSS avec des bonnes pratiques et des
-                effets interactifs habituellement réalisés avec JavaScript. Le site est
-                entièrement responsive, mettant en valeur la flexibilité et les
-                capacités de design de Tailwind.
-            </>
-        ),
-    },
-    {
-        cat: "Design, React",
-        title: "K-POP Social",
-        img: "/gallery/kpop.webp",
-        code: "https://github.com/basedhound/kpop-social_ui_react",
-        link: "https://ksocial-fv.netlify.app",
-        tech: ["React", "CSS", "JS"],
-        modal: (
-            <>
-                🍵 User interface design for a social media platform inspired by the
-                vibrant aesthetic of Kpop culture. Built with React, it features cozy,
-                girly color palettes and aesthetics. Leveraging the Mantine library and
-                complemented by Unicons, it aims to deliver an engaging and visually
-                appealing user experience.
-                <br />
-                <br />
-                🥐 Design pour un réseau social inspiré par l'esthétique vibrante de la
-                culture Kpop. Développé avec React, il intègre une palette de couleurs
-                "girly". Utilisant la bibliothèque Mantine et complété par Unicons,
-                l'objectif est de fournir une expérience utilisateur engageante et
-                visuellement attrayante.
-            </>
-        ),
-    },
-    {
-        cat: "React",
-        title: "Portfolio v2",
-        img: "/gallery/portfolio2.webp",
-        code: "https://github.com/basedhound/portfolio-v2_react",
-        link: "https://portfolio-v2-fv.netlify.app",
-        tech: ["React", "Framer", "Swiper.js", "Email.js"],
-        modal: (
-            <>
-                🍵 A modern and minimalist portfolio website crafted using React and
-                Vite. The site features smooth animations powered by Framer Motion, a
-                responsive carousel implemented with the Swiper library, and also
-                typewriter effect which adds a dynamic touch to the text elements.
-                Additionally, dynamic filtering and sorting enhance the usability of the
-                portfolio. For communication, EmailJS is integrated to enable direct
-                contact using the form.
-                <br />
-                <br />
-                🥐 Un portfolio moderne et minimaliste réalisé avec React et Vite. Le
-                site intègre des animations fluides grâce à Framer Motion, un carrousel
-                réactif implémenté avec la bibliothèque Swiper, ainsi qu'un effet de
-                machine à écrire qui ajoute une touche dynamique aux éléments textuels.
-                Le filtrage ainsi que le tri dynamiques améliorent l'utilisation du
-                portfolio. Pour la communication, EmailJS est intégré pour permettre un
-                contact direct via le formulaire.
-            </>
-        ),
-    },
-    {
-        cat: "React",
-        title: "Portfolio v1",
-        img: "/gallery/portfolio1.webp",
-        code: "https://github.com/basedhound/portfolio-v1_reactt",
-        link: "https://portfolio-v1-fv.netlify.app",
-        tech: ["React", "Sanity", "Framer", "Sass"],
-        modal: (
-            <>
-                🍵 Portfolio website built using React for dynamic UI components and
-                Sanity as a headless CMS for flexible content management. The project
-                also incorporates Framer Motion for smooth animations and Sass for
-                maintainable styles. This portfolio demonstrates my skills in leveraging
-                modern web technologies to create a dynamic and visually appealing
-                online presence.
-                <br />
-                <br />
-                🥐 Portfolio réalisé avec React pour des composants UI dynamiques et
-                Sanity comme CMS headless pour une gestion de contenu flexible. Le
-                projet utilise également Framer Motion pour des animations fluides et
-                Sass pour des styles maintenables. Ce portfolio illustre mes compétences
-                dans l’utilisation des technologies web modernes pour créer une présence
-                en ligne dynamique et visuellement attrayante.
-            </>
-        ),
-    },
-    //! P5 -> MOBILE
-    {
-        cat: "Mobile",
-        title: "Aora Video",
-        img: "/gallery/aora.webp",
-        code: "https://github.com/basedhound/video-sharing_react-native",
-        link: "/",
-        tech: ["React Native", "Expo", "Appwrite"],
-        modal: (
-            <>
-                🍵 Built with React Native for seamless user experiences, Animatable for
-                captivating animations, and integrated with the dependable backend
-                systems of Appwrite, this app showcases modern design and functionality,
-                enabling seamless sharing of videos within the community.
-                <br />
-                <br />
-                🥐 Construite avec React Native pour une expérience utilisateur fluide,
-                "Animatable" pour des animations captivantes, et intégrée aux systèmes
-                backend fiables d'Appwrite, cette application présente un design moderne
-                et des fonctionnalités facilitant le partage de vidéos au sein d'une
-                communauté.
-            </>
-        ),
-    },
-    {
-        cat: "Mobile",
-        title: "Job Seeker",
-        img: "/gallery/jobseek.webp",
-        code: "https://github.com/basedhound/job-seeker_react-native",
-        link: "/",
-        tech: ["React Native", "Expo", "Rapide API"],
-        modal: (
-            <>
-                🍵 A hands-on experience in React Native development, this project
-                involves building a feature-rich job seeker app with a strong focus on
-                UI/UX, external data integration, and best practices. The app leverages
-                RapidAPI to efficiently help users find job opportunities.
-                <br />
-                <br />
-                🥐 Une expérience pratique du développement en React Native, ce projet
-                consiste à créer une application de recherche d'emploi riche en
-                fonctionnalités avec un fort accent sur l'UI/UX, l'intégration de
-                données externes et les meilleures pratiques. L'application utilise
-                RapidAPI pour aider efficacement les utilisateurs à trouver des
-                opportunités d'emploi.
-            </>
-        ),
-    },
-
-    //! P6 -> HTML/CSS/JS
-    {
-        cat: "Design, ",
-        title: "Modern Scroll",
-        img: "/gallery/modernscroll.webp",
-        code: "https://github.com/basedhound/scroll-animation_js",
-        link: "https://scroll-animation-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS"],
-        modal: (
-            <>
-                🍵 Landing page featuring a modern scroll animation, built using only
-                HTML, CSS, and JavaScript, without any libraries. This design
-                incorporates smooth, engaging animations triggered by scrolling,
-                enhancing user interaction and visual appeal with a clean and
-                contemporary aesthetic.
-                <br />
-                <br />
-                🥐 Page d'accueil avec des animations modernes au défilement, réalisées
-                uniquement en HTML, CSS et JavaScrip, sans utilisation de bibliothèque.
-                Ce design offre des animations fluides et captivantes qui se déclenchent
-                lors du défilement, optimisant l'interaction utilisateur et l'attrait
-                visuel avec une esthétique moderne et épurée.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Accessories",
-        img: "/gallery/accessories.webp",
-        code: "https://github.com/basedhound/accessory-shop_ui",
-        link: "https://accessories-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for an accessory shop featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour une boutique d'accessoires, mettant en avant une
-                esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "🩵, Design",
-        title: "Clothing",
-        img: "/gallery/clothing.webp",
-        code: "https://github.com/basedhound/clothing-shop_ui",
-        link: "https://clothing-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a clothing shop featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour une boutique de vêtements, mettant en avant une
-                esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Coffee",
-        img: "/gallery/coffee1.webp",
-        code: "https://github.com/basedhound/coffee-brand-1_ui",
-        link: "https://coffee-1-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a coffee brand featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour une marque de café, mettant en avant une
-                esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "🩵, Design",
-        title: "Coffee 2",
-        img: "/gallery/coffee2.webp",
-        code: "https://github.com/basedhound/coffee-brand-2_ui",
-        link: "https://coffee-2-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a coffee brand featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour une marque de café, mettant en avant une
-                esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Coffee 3D",
-        img: "/gallery/coffee3.webp",
-        code: "https://github.com/basedhound/coffee-3d_ui",
-        link: "https://coffee-3d-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a coffee brand featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour une marque de café, mettant en avant une
-                esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Christmas 1",
-        img: "/gallery/christmas1.webp",
-        code: "https://github.com/basedhound/christmas-1_ui",
-        link: "https://christmas-1-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for Christmas Day featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour la fête de Noël, mettant en avant une esthétique
-                moderne et minimaliste, réalisée avec HTML, CSS et JavaScript.
-                Agrémentée d'animations fluides grâce à la bibliothèque ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Christmas 2",
-        img: "/gallery/christmas2.webp",
-        code: "https://github.com/basedhound/christmas-2_ui",
-        link: "https://christmas-2-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for Christmas Day featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour la fête de Noël, mettant en avant une esthétique
-                moderne et minimaliste, réalisée avec HTML, CSS et JavaScript.
-                Agrémentée d'animations fluides grâce à la bibliothèque ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Christmas 3",
-        img: "/gallery/christmas3.webp",
-        code: "https://github.com/basedhound/christmas-3-parallax_ui",
-        link: "https://christmas-3-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for Christmas Day featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour la fête de Noël, mettant en avant une esthétique
-                moderne et minimaliste, réalisée avec HTML, CSS et JavaScript.
-                Agrémentée d'animations fluides grâce à la bibliothèque ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Delivery",
-        img: "/gallery/delivery.webp",
-        code: "https://github.com/basedhound/delivery-service_ui",
-        link: "https://delivery-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a delivery service featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour un service de livraison, mettant en avant une
-                esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Electric Cars",
-        img: "/gallery/electric-cars.webp",
-        code: "https://github.com/basedhound/electric-car-shop_ui",
-        link: "https://electric-cars-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for an electric car shop featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour une boutique de voitures électriques, mettant en
-                avant une esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Plants",
-        img: "/gallery/garden.webp",
-        code: "https://github.com/basedhound/plant-shop_ui",
-        link: "https://plants-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a gardening shop featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour une boutique de jardinage, mettant en avant une
-                esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Halloween 1",
-        img: "/gallery/halloween1.webp",
-        code: "https://github.com/basedhound/halloween-1_ui",
-        link: "https://halloween-1-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for Halloween featuring a modern and minimalist
-                aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced with smooth
-                animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour Halloween, mettant en avant une esthétique
-                moderne et minimaliste, réalisée avec HTML, CSS et JavaScript.
-                Agrémentée d'animations fluides grâce à la bibliothèque ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Halloween 2",
-        img: "/gallery/halloween2.webp",
-        code: "https://github.com/basedhound/halloween-2_ui",
-        link: "https://halloween-2-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for Halloween featuring a modern and minimalist
-                aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced with smooth
-                animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour Halloween, mettant en avant une esthétique
-                moderne et minimaliste, réalisée avec HTML, CSS et JavaScript.
-                Agrémentée d'animations fluides grâce à la bibliothèque ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "🩵, Design",
-        title: "Headphones",
-        img: "/gallery/headphones.webp",
-        code: "https://github.com/basedhound/headphone-shop_ui",
-        link: "https://headphones-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a headphone shop featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour une boutique de casques audio, mettant en avant
-                une esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Juice Brand",
-        img: "/gallery/juice.webp",
-        code: "https://github.com/basedhound/juice-brand_ui",
-        link: "https://juice-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a juice brand featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour une marque de jus, mettant en avant une
-                esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-
-    {
-        cat: "Design",
-        title: "Lamps",
-        img: "/gallery/lamps.webp",
-        code: "https://github.com/basedhound/lamp-shop_ui",
-        link: "https://lamps-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a lamp shop featuring a modern and minimalist
-                aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced with smooth
-                animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour une boutique de lampes, mettant en avant une
-                esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "🩵, Design",
-        title: "Real Estate",
-        img: "/gallery/realestate.webp",
-        code: "https://github.com/basedhound/real-estate-agency_ui",
-        link: "https://real-estate-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a real estate agency featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour une agence immobilière, mettant en avant une
-                esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Sneakers",
-        img: "/gallery/sneakers.webp",
-        code: "https://github.com/basedhound/sneaker-shop_ui",
-        link: "https://sneakers-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a sneaker shop featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour une boutique de sneakers, mettant en avant une
-                esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Space Travel",
-        img: "/gallery/space.webp",
-        code: "https://github.com/basedhound/space-travel_ui",
-        link: "https://space-travel-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS"],
-        modal: (
-            <>
-                🍵 A responsive Space Travel website built with HTML, CSS, and
-                JavaScript, featuring a modern landing page with interactive elements.
-                This project highlights responsive design principles, effective use of
-                media queries for adaptive styling, and JavaScript-driven interactions
-                to ensure a dynamic and engaging user experience across all devices.
-                <br />
-                <br />
-                🥐 Un site web responsive sur le thème de l'Espace construit avec HTML,
-                CSS et JavaScript, présentant une page de destination moderne avec des
-                éléments interactifs. Ce projet met en avant les principes de design
-                responsive, l'utilisation efficace des media queries pour un style
-                adaptatif, et des interactions JavaScript pour garantir une expérience
-                utilisateur dynamique et engageante sur tous les appareils.
-            </>
-        ),
-    },
-
-    {
-        cat: "🩵, Design",
-        title: "Sushi",
-        img: "/gallery/sushi1.webp",
-        code: "https://github.com/basedhound/sushi-restaurant-1_ui",
-        link: "https://sushi-1-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Vite"],
-        modal: (
-            <>
-                🍵 Landing page design for a sushi restaurant featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour un restaurant de sushi, mettant en avant une
-                esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-
-    {
-        cat: "🩵, Design",
-        title: "Sushi 2",
-        img: "/gallery/sushi2.webp",
-        code: "https://github.com/basedhound/sushi-restaurant-2_ui",
-        link: "https://sushi-2-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a sushi restaurant featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour un restaurant de sushi, mettant en avant une
-                esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Tasty Food",
-        img: "/gallery/tasty.webp",
-        code: "https://github.com/basedhound/tasty-restaurant_ui",
-        link: "https://tasty-restaurant-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a restaurant featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour un restaurant, mettant en avant une esthétique
-                moderne et minimaliste, réalisée avec HTML, CSS et JavaScript.
-                Agrémentée d'animations fluides grâce à la bibliothèque ScrollReveal.js.
-            </>
-        ),
-    },
-
-    {
-        cat: "Design",
-        title: "Travel Agency 1",
-        img: "/gallery/travel1.webp",
-        code: "https://github.com/basedhound/travel-agency-1_ui",
-        link: "https://travel-1-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a travel agency featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour une agence du voyage, mettant en avant une
-                esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "🩵, Design",
-        title: "Travel Agency 2",
-        img: "/gallery/travel2.webp",
-        code: "https://github.com/basedhound/travel-agency-2_ui",
-        link: "https://travel-2-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a travel agency featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour une agence du voyage, mettant en avant une
-                esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "🩵, Design",
-        title: "Watches",
-        img: "/gallery/watches.webp",
-        code: "https://github.com/basedhound/watch-shop_ui",
-        link: "https://watches-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a watch shop featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour une boutique de montres, mettant en avant une
-                esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Workout Plan",
-        img: "/gallery/workout2.webp",
-        code: "https://github.com/basedhound/yoga-coach_ui",
-        link: "https://yoga-coach-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a yoga coaching platform featuring a modern
-                and minimalist aesthetic, crafted using HTML, CSS, and JavaScript.
-                Enhanced with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour une plateforme de formateurs de yoga, mettant en
-                avant une esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Yoga Coach",
-        img: "/gallery/yoga.webp",
-        code: "https://github.com/basedhound/workout-program_ui",
-        link: "https://workout-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a workout program featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour programme de musculation, mettant en avant une
-                esthétique moderne et minimaliste, réalisée avec HTML, CSS et
-                JavaScript. Agrémentée d'animations fluides grâce à la bibliothèque
-                ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "404 Ghost",
-        img: "/gallery/404ghost.webp",
-        code: "https://github.com/basedhound/404-ghost_ui",
-        link: "https://404-ghost-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Error 404 page design featuring a modern and minimalist aesthetic,
-                crafted using HTML, CSS, and JavaScript. Enhanced with smooth animations
-                powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page Erreur 404 mettant en avant une esthétique moderne et
-                minimaliste, réalisée avec HTML, CSS et JavaScript. Agrémentée
-                d'animations fluides grâce à la bibliothèque ScrollReveal.js.
-            </>
-        ),
-    },
-
-    {
-        cat: "Design",
-        title: "NFT",
-        img: "/gallery/nft.webp",
-        code: "https://github.com/basedhound/nft_ui",
-        link: "https://nft-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a NFT website featuring a modern and
-                minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced
-                with smooth animations powered by ScrollReveal.js library.
-                <br />
-                <br />
-                🥐 Page d'accueil pour un site NFT, mettant en avant une esthétique
-                moderne et minimaliste, réalisée avec HTML, CSS et JavaScript.
-                Agrémentée d'animations fluides grâce à la bibliothèque ScrollReveal.js.
-            </>
-        ),
-    },
-    {
-        cat: "🩵, Design",
-        title: "IMG Slider",
-        img: "/gallery/imgslider1.webp",
-        code: "https://github.com/basedhound/background-img-slider-1_js",
-        link: "https://bg-img-slider-1.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design featuring a stunning image background slider and
-                paradise islands theme. Created using HTML, CSS, and JavaScript, with
-                smooth transitions and engaging visuals to captivate visitors. Dynamic
-                animations created with GSAP and interactive slider powered by
-                Swiper.js.
-                <br />
-                <br />
-                🥐 Page d'accueil intégrant un diaporama d'images en arrière-plan sur
-                les thème des îles paradisiaques. Réalisée en HTML, CSS et JavaScript,
-                avec des transitions fluides et des visuels captivants pour attirer les
-                visiteurs. Animations dynamiques créées avec GSAP et diaporama
-                interactif optimisé par Swiper.js.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "IMG Slider 2",
-        img: "/gallery/imgslider2.webp",
-        code: "https://github.com/basedhound/background-img-slider-2_js",
-        link: "https://bg-img-slider-2.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design featuring a stunning image background slider and
-                four seasons theme. Created using HTML, CSS, and JavaScript, with smooth
-                transitions and engaging visuals to captivate visitors. Interactive
-                slider powered by Swiper.js.
-                <br />
-                <br />
-                🥐 Page d'accueil intégrant un diaporama d'images en arrière-plan sur
-                les thème des saisons. Réalisée en HTML, CSS et JavaScript, avec des
-                transitions fluides et des visuels captivants pour attirer les
-                visiteurs. Diaporama interactif optimisé par Swiper.js.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Video BG",
-        img: "/gallery/videobg.webp",
-        code: "https://github.com/basedhound/background-video_js",
-        link: "https://bg-video-1.netlify.app",
-        tech: ["HTML", "CSS", "JS"],
-        modal: (
-            <>
-                🍵 Landing page design featuring a captivating video background. Created
-                using HTML, CSS, and JavaScript only.
-                <br />
-                <br />
-                🥐 Page d'accueil avec un background vidéo captivant sur le thème de
-                l'Aventure. Réalisée uniquement en HTML, CSS et JavaScript.
-            </>
-        ),
-    },
-    {
-        cat: "🩵, Design",
-        title: "Video Slider",
-        img: "/gallery/videoslider.webp",
-        code: "https://github.com/basedhound/background-video-slider_js",
-        link: "https://bg-video-slider-1.netlify.app",
-        tech: ["HTML", "CSS", "JS"],
-        modal: (
-            <>
-                🍵 Landing page design featuring a captivating video background slider
-                and an adventure theme. Created using HTML, CSS, and JavaScript only,
-                with smooth transitions and engaging visuals to captivate visitors.
-                <br />
-                <br />
-                🥐 Page d'accueil avec un diaporama de fond vidéo captivant sur le thème
-                de l'Aventure. Réalisée uniquement en HTML, CSS et JavaScript, avec des
-                transitions fluides et des visuels engageants pour captiver les
-                visiteurs.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Parallax 1",
-        img: "/gallery/parallax1.webp",
-        code: "https://github.com/basedhound/parallax-mountain-1_js",
-        link: "https://parallax-1-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS"],
-        modal: (
-            <>
-                🍵 Parallax landing page design featuring a modern and minimalist
-                aesthetic, crafted using HTML, CSS, and JavaScript. This project is a
-                test to build a parallax effect while scrolling the page.
-                <br />
-                <br />
-                🥐 Page d'accueil Parallax avec un design moderne et minimaliste,
-                réalisée en HTML, CSS et JavaScript. Ce projet est un test pour créer un
-                effet de parallaxe lors du défilement de la page.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Parallax 2",
-        img: "/gallery/parallax2.webp",
-        code: "https://github.com/basedhound/parallax-mountain-2_js",
-        link: "https://parallax-2-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS"],
-        modal: (
-            <>
-                🍵 Parallax landing page design featuring a modern and minimalist
-                aesthetic, crafted using HTML, CSS, and JavaScript. This project is a
-                test to build a parallax effect while scrolling the page.
-                <br />
-                <br />
-                🥐 Page d'accueil Parallax avec un design moderne et minimaliste,
-                réalisée en HTML, CSS et JavaScript. Ce projet est un test pour créer un
-                effet de parallaxe lors du défilement de la page.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Parallax 3",
-        img: "/gallery/parallax3.webp",
-        code: "https://github.com/basedhound/parallax-mountain-3_js",
-        link: "https://parallax-3-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Parallax landing page design featuring a modern and minimalist
-                aesthetic, crafted using HTML, CSS, and JavaScript. This project is a
-                test to build a parallax effect while scrolling the page.
-                <br />
-                <br />
-                🥐 Page d'accueil Parallax avec un design moderne et minimaliste,
-                réalisée en HTML, CSS et JavaScript. Ce projet est un test pour créer un
-                effet de parallaxe lors du défilement de la page.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Resume 1",
-        img: "/gallery/resume1.webp",
-        code: "https://github.com/basedhound/resume-1",
-        link: "https://resume-1-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a resume featuring a modern and minimalist
-                aesthetic, crafted using HTML, CSS, and JavaScript. It includes a
-                dark/light mode and features the ability to download a resume as a PDF
-                file.
-                <br />
-                <br />
-                🥐 Page d'accueil pour un CV, mettant en avant une esthétique moderne et
-                minimaliste, réalisée avec HTML, CSS et JavaScript. Il inclut un mode
-                sombre/clair et permet de télécharger un CV au format PDF.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Resume 2",
-        img: "/gallery/resume2.webp",
-        code: "https://github.com/basedhound/resume-2",
-        link: "https://resume-2-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing page design for a resume featuring a modern and minimalist
-                aesthetic, crafted using HTML, CSS, and JavaScript. It includes a
-                dark/light mode and features the ability to download a resume as a PDF
-                file.
-                <br />
-                <br />
-                🥐 Page d'accueil pour un CV, mettant en avant une esthétique moderne et
-                minimaliste, réalisée avec HTML, CSS et JavaScript. Il inclut un mode
-                sombre/clair et permet de télécharger un CV au format PDF.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Modern Gallery",
-        img: "/gallery/moderngallery.webp",
-        code: "https://github.com/basedhound/responsive-gallery_css",
-        link: "https://responsive-gallery-fv.netlify.app",
-        tech: ["HTML", "CSS", "JS"],
-        modal: (
-            <>
-                🍵 Responsive gallery designed with Flexbox, featuring a modern
-                aesthetic and seamless layout adjustments across various devices. Built
-                using HTML, CSS, this gallery offers an intuitive and visually appealing
-                way to showcase images.
-                <br />
-                <br />
-                🥐 Galerie responsive conçue avec Flexbox, arborant une esthétique
-                moderne et un agencement fluide sur tout type d'appareil. Réalisée en
-                HTML et CSS, cette galerie offre un moyen intuitif et visuellement
-                attrayant pour présenter des images.
-            </>
-        ),
-    },
-    {
-        cat: "Design",
-        title: "Ohmyfood",
-        img: "/gallery/ohmyfood.webp",
-        code: "https://github.com/basedhound/ohmyfood-restaurant_ui",
-        link: "https://ohmyfood-fv.netlify.app",
-        tech: ["HTML", "CSS", "Sass"],
-        modal: (
-            <>
-                🍵 Landing/Menu pages design for a restaurant featuring a modern and
-                minimalist aesthetic, crafted using HTML and CSS only. Enhanced with
-                smooth CSS animations built from scratch.
-                <br />
-                <br />
-                🥐 Pages d'accueil/menu pour un restaurant présentant une esthétique
-                moderne et minimaliste, réalisées uniquement avec HTML et CSS. Embellie
-                par des animations CSS fluides.
-            </>
-        ),
-    },
-];
-
-export default Gallery;
+export default Gallery

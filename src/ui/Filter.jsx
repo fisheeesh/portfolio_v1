@@ -1,7 +1,7 @@
 const Filter = ({ activeFilter, handleFilter }) => {
     return (
         <div className="flex flex-wrap justify-center py-4 px-8 gap-2" >
-            {["🩵", "App", "Design", "Next", "React", "Mobile"].map((filter) => (
+            {["🩵", "App", "Design", "Next", "React", "Vue"].map((filter) => (
                 <button
                     key={filter}
                     className={`

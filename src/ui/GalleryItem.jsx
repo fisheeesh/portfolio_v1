@@ -55,7 +55,7 @@ export const GalleryItem = ({ modal, link, img, title, code, tech }) => {
                     onClick={() => setIsOpen(true)}
                     className="w-full aspect-[16/9] bg-[#232323] cursor-pointer relative rounded-[0.8rem] overflow-hidden">
                     <img
-                        className={`transition-all duration-300 absolute -bottom-[35px] rounded-[0.4rem] ${hovered ? "scale-[0.9] rotate-[2deg]" : "scale-[0.85] rotate-0"
+                        className={`transition-all duration-300 absolute -bottom-[40px] rounded-[0.4rem] ${hovered ? "scale-[0.9] rotate-[2deg]" : "scale-[0.85] rotate-0"
                             }`}
                         src={img}
                         alt={`An image of the ${title} project.`}
