@@ -20,12 +20,12 @@ const About = () => {
                         </Reveal>
                         <Reveal>
                             <p className="mb-6 text-[15px] sm:text-base">
-                                Passionate about delivering user-friendly responsive designs and optimizing site performance, I also provide SEO and copyrighting services to enhance online visibility and engagement.
+                                Passionate about delivering user-friendly responsive designs and optimizing site performance, I’m currently working on my university senior project, exploring creative solutions to real-world challenges.
                             </p>
                         </Reveal>
                         <Reveal>
                             <p className="mb-6 text-[15px] sm:text-base">
-                                I'm specialized in React and Next.js frontend frameworks. I've also worked with backend technologies like Node.js, PostgreSQL and MongoDB, allowing me to build full-stack applications. AI tools such as ChatGPT, Git Copilot, and Claude are also part of my workflow.
+                                I'm specialized in <strong>React.js</strong> and <strong>Next.js</strong> frontend frameworks. I've also worked with backend technologies like Node.js, PostgreSQL and MongoDB, allowing me to build full-stack applications. AI tools such as ChatGPT, Git Copilot, Claude and time management tool like Structured are also part of my workflow.
                             </p>
                         </Reveal>
                         <Reveal>
@@ -35,7 +35,7 @@ const About = () => {
                         </Reveal>
                         <Reveal>
                             <p className="mb-6 text-[15px] sm:text-base">
-                                I'm always looking for new challenges and opportunities to learn and grow as a developer. If you're interested in working together or have any questions, please don't hesitate to get in touch!
+                                I'm always looking for new challenges and opportunities to learn and grow as a software engineer. If you're interested in working together or have any questions, please don't hesitate to get in touch!
                             </p>
                         </Reveal>
                         <Reveal>

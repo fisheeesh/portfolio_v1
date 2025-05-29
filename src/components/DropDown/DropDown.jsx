@@ -1,3 +1,4 @@
+import { AiOutlineDownload } from "react-icons/ai";
 import { FaTimes } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
 
@@ -28,7 +29,7 @@ function Dropdown({ isOpen, toggle }) {
                     Projects
                 </ScrollLink>
                 <ScrollLink
-                    to="certificate"
+                    to="certification"
                     className="text-white text-[1.7rem] cursor-pointer hover:text-gray-400"
                     onClick={toggle}
                 >
@@ -50,7 +51,8 @@ function Dropdown({ isOpen, toggle }) {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Resume
+                    CV
+                    <AiOutlineDownload size="1.5rem" />
                 </a>
             </div>
         </div>

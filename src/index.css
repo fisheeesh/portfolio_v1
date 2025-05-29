@@ -152,7 +152,7 @@
     }
 
     .btn {
-        @apply rounded-lg cursor-pointer transition-all duration-200 ease-in-out font-medium outline-0;
+        @apply rounded-lg cursor-pointer flex items-center gap-2 transition-all duration-200 ease-in-out font-bold text-xl outline-0;
     }
 
     .PrimaryBtn {

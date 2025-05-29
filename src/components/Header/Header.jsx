@@ -1,5 +1,6 @@
 import { Link as ScrollLink } from "react-scroll";
 import { FaBars } from "react-icons/fa";
+import { AiOutlineDownload } from "react-icons/ai";
 
 export default function Header({ toggle }) {
     return (
@@ -20,7 +21,7 @@ export default function Header({ toggle }) {
                     <ScrollLink to="projects" className="text-[#777779] flex text-[1.2rem] items-center h-full cursor-pointer hover:text-[#f6f6f6]">
                         Projects
                     </ScrollLink>
-                    <ScrollLink to="certificate" className="text-[#777779] flex text-[1.2rem] items-center h-full cursor-pointer hover:text-[#f6f6f6]">
+                    <ScrollLink to="certification" className="text-[#777779] flex text-[1.2rem] items-center h-full cursor-pointer hover:text-[#f6f6f6]">
                         Certif.
                     </ScrollLink>
                     <ScrollLink to="contact" className="text-[#777779] flex text-[1.2rem] items-center h-full cursor-pointer hover:text-[#f6f6f6]">
@@ -34,7 +35,8 @@ export default function Header({ toggle }) {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Resume
+                        CV
+                        <AiOutlineDownload size="1.5rem" />
                     </a>
                 </div>
                 <FaBars onClick={toggle} className="hidden text-white text-[1.8rem] cursor-pointer max-md:block" />
