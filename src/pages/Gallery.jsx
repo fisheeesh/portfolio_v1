@@ -16,7 +16,7 @@ const Gallery = () => {
         setFilteredProjects(
             projects.filter((project) => project.cat.includes(filter))
         );
-    };
+    };;
 
     return (
         <>

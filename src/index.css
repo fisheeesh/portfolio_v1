@@ -61,6 +61,9 @@
         background: #fafaff;
         font-weight: 400;
         overflow-x: hidden;
+        transition-property: opacity, transform, filter, background;
+        transition-timing-function: ease-in-out;
+        transition-duration: 500ms;
     }
 
     html {
