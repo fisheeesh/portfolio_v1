@@ -7,7 +7,6 @@ export default function Header({ toggle }) {
         <div className='Container' style={{ padding: 0 }}>
             <nav className='bg-transparent h-[100px] flex items-center justify-between z-[10]'>
                 <div>
-                    {/* <h1 className="text-white font-extrabold text-3xl">syp.</h1> */}
                     <img
                         className='w-[47px] h-[47px]'
                         src="/logo.png"
