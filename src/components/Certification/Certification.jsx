@@ -51,6 +51,7 @@ export default function Certification() {
                 "Vue",
                 "Javascript",
                 "Pinia",
+                "i18n",
                 "Firebase",
                 "TailwindCSS",
                 "PWA",
