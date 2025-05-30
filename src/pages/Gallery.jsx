@@ -40,7 +40,7 @@ const Gallery = () => {
                 </div>
 
                 {/* Gallery */}
-                <section className="grid grid-cols-2 gap-[3.2rem] my-6 max-[860px]:grid-cols-1 max-[860px]:py-0 max-[860px]:px-8 max-[480px]:py-0 max-[480px]:px-4">
+                <section className="grid grid-cols-2 space-x-10 max-[860px]:space-y-2 space-y-4 my-6 max-[860px]:grid-cols-1 max-[860px]:py-0 max-[860px]:px-8 max-[480px]:py-0 max-[480px]:px-4">
                     {filteredProjects.map((project) => (
                         <GalleryItem
                             key={`${project.title}-${activeFilter}`}

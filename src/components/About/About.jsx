@@ -11,7 +11,7 @@ const About = () => {
             <Wave />
             <section id="about" className="relative z-[10] w-[90%] max-w-[1150px] mx-auto overflow-hidden px-4 max-[480px]:text-[1.6rem]">
                 <SectionHeader title="About" dir="l" />
-                <div className="grid grid-cols-[1fr_350px] gap-6 max-[992px]:grid-cols-1">
+                <div className="grid grid-cols-[1fr_360px] gap-6 max-[992px]:grid-cols-1">
                     <div>
                         <Reveal>
                             <p className="mb-6 text-[15px] sm:text-base first-letter:bg-brand first-letter:text-white first-letter:rounded first-letter:mr-2 first-letter:p-[6px] sm:first-letter:text-[1.4rem] first-letter:text-[1.3rem] first-letter:font-bold first-letter:float-left">

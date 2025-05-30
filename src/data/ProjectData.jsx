@@ -4,18 +4,18 @@ export const projects = [
         img: "/gallery/lit-library.webp",
         code: "https://github.com/fisheeesh/lit-library",
         link: "https://www.litlibrary.blog/",
-        tech: ["React", "Firebase", "Tailwind", "Context API"],
-        desc: "A vibrant blogging platform using React.js and TailwindCSS. It highlights the effective use of Firebase real-time database.",
-        modal: <>This is a vibrant blogging platform using React.js and TailwindCSS. It highlights the effective use of Firebase real-time database</>,
+        tech: ["React", "Firebase", "Tailwind", "Context API", "Zod", "Swiper.js"],
+        desc: "A vibrant blogging platform using React.js and TailwindCSS. It highlights the effective use of Firebase real-time database to enable instant content updates.",
+        modal: <>📚 A vibrant blogging platform designed to foster a positive and supportive community. Users can share personal growth experiences, life knowledge, advice, and insights while engaging with others' blogs. It’s a place to inspire, learn, and connect.</>,
     },
     {
         title: "Filmpire",
         img: "/gallery/filmpire.webp",
         code: "https://github.com/fisheeesh/filmpire",
         link: "https://filmpire-ashy.vercel.app/",
-        tech: ["React", "TMDB API", "Alan AI", "MUI"],
-        desc: "Event management platform built on Next.js. This app serves as a hub for showcasing events and features secure payment through Stripe.",
-        modal: <>Evently is an event management platform, built on Next.js. It serves as a hub for showcasing events, features payment through Stripe, the capability to purchase tickets and manage your own events.</>,
+        tech: ["React", "RTK Query", "TMDB API", "Alan AI", "MUI"],
+        desc: "A dynamic and fully responsive movie showcase web application built with React and Material UI, powered by The Movie Database (TMDB) API.",
+        modal: <>🎬 Filmpire is a dynamic and fully responsive movie showcase web application built with React and Material UI, powered by The Movie Database (TMDB) API. It allows users to explore, search, and interact with a wide collection of movies, offering features like trailers, ratings, and personalized watchlists for an immersive cinematic experience.</>,
     },
     {
         title: "TWO Website",
@@ -23,8 +23,8 @@ export const projects = [
         code: "https://github.com/fisheeesh/the-wild-oasis-website",
         link: "https://the-wild-oasis-website-eta-flame.vercel.app/",
         tech: ["React", "Next.js", "Tailwind", "Supabase", "NextAuth"],
-        desc: "Landing page design for a travel agency featuring a modern and minimalist aesthetic, crafted using HTML, CSS, and JavaScript.",
-        modal: <>Landing page design for a travel agency featuring a modern and minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced with smooth animations powered by ScrollReveal.js library.</>,
+        desc: 'A customer facing website of "The Wild Oasis" designed to let users explore and book serene stays with ease, built with Next.js and Supabase. Ensure fast load times and excellent SEO.',
+        modal: <>🌐 A customer facing website of "The Wild Oasis" designed to let users explore and book serene stays with ease, built with Next.js and Supabase. It uses SSR, SSG, and ISR to ensure fast load times and excellent SEO — delivering a seamless stay-booking experience for customers. Authentication is secured with Google Sign-In via NextAuth.js</>,
     },
     {
         title: "TWO Dashboard",
@@ -32,8 +32,8 @@ export const projects = [
         code: "https://github.com/fisheeesh/the-wild-oasis-dashboard",
         link: "https://the-wild-oasis-dashboard-amber.vercel.app/dashboard",
         tech: ["React", "Supabase", "React Query", "Styled Components", "Recharts"],
-        desc: "Landing page for a sushi restaurant featuring a modern and minimalist aesthetic, crafted using HTML, CSS, and JavaScript.",
-        modal: <>Landing page design for a sushi restaurant featuring a modern and minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced with smooth animations powered by ScrollReveal.js library.</>,
+        desc: "An internal Hotel Management Dashboard for staff to handle bookings, guests, cabins, and settings, with insights via interactive charts and a clean UI.",
+        modal: <>🖥️ An internal Hotel Management Dashboard for staff to manage bookings, check-ins, cabins, user accounts, and hotel settings, while offering business insights through interactive charts and a clean, intuitive dashboard. As it’s secured behind authentication, responsiveness wasn’t prioritized. 🙏 </>,
     },
 ];
 
@@ -44,26 +44,8 @@ export const galleryShowCases = [
         img: "/gallery/lit-library.webp",
         code: "https://github.com/fisheeesh/lit-library",
         link: "https://www.litlibrary.blog/",
-        tech: ["React", "Firebase", "Tailwind", "Context API"],
-        modal: <>This is a vibrant blogging platform using React.js and TailwindCSS. It highlights the effective use of Firebase real-time database</>,
-    },
-    {
-        cat: "🩵, App, Next",
-        title: "TWO Website",
-        img: "/gallery/thewildoasis-web.webp",
-        code: "https://github.com/fisheeesh/the-wild-oasis-website",
-        link: "https://the-wild-oasis-website-eta-flame.vercel.app/",
-        tech: ["React", "Next.js", "Tailwind", "Supabase", "NextAuth"],
-        modal: <>Landing page design for a travel agency featuring a modern and minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced with smooth animations powered by ScrollReveal.js library.</>,
-    },
-    {
-        cat: "🩵, App, React",
-        title: "TWO Dashboard",
-        img: "/gallery/thewildoasis-d.webp",
-        code: "https://github.com/fisheeesh/the-wild-oasis-dashboard",
-        link: "https://the-wild-oasis-dashboard-amber.vercel.app/dashboard",
-        tech: ["React", "Supabase", "React Query", "Styled Components", "Recharts"],
-        modal: <>Landing page design for a sushi restaurant featuring a modern and minimalist aesthetic, crafted using HTML, CSS, and JavaScript. Enhanced with smooth animations powered by ScrollReveal.js library.</>,
+        tech: ["React", "Firebase", "Tailwind", "Context API", "Zod", "Swpier.js"],
+        modal: <>📚 A vibrant blogging platform designed to foster a positive and supportive community. Users can share personal growth experiences, life knowledge, advice, and insights while engaging with others' blogs. It’s a place to inspire, learn, and connect.</>,
     },
     {
         cat: "🩵, App, React",
@@ -72,7 +54,25 @@ export const galleryShowCases = [
         code: "https://github.com/fisheeesh/filmpire",
         link: "https://filmpire-ashy.vercel.app/",
         tech: ["React", "TMDB API", "Alan AI", "MUI"],
-        modal: <>Evently is an event management platform, built on Next.js. It serves as a hub for showcasing events, features payment through Stripe, the capability to purchase tickets and manage your own events.</>,
+        modal: <>🎬 Filmpire is a dynamic and fully responsive movie showcase web application built with React and Material UI, powered by The Movie Database (TMDB) API. It allows users to explore, search, and interact with a wide collection of movies, offering features like trailers, ratings, and personalized watchlists for an immersive cinematic experience.</>,
+    },
+    {
+        cat: "🩵, App, Next",
+        title: "TWO Website",
+        img: "/gallery/thewildoasis-web.webp",
+        code: "https://github.com/fisheeesh/the-wild-oasis-website",
+        link: "https://the-wild-oasis-website-eta-flame.vercel.app/",
+        tech: ["React", "Next.js", "Tailwind", "Supabase", "NextAuth"],
+        modal: <>🌐 A customer facing website of "The Wild Oasis" designed to let users explore and book serene stays with ease, built with Next.js and Supabase. It uses SSR, SSG, and ISR to ensure fast load times and excellent SEO — delivering a seamless stay-booking experience for customers. Authentication is secured with Google Sign-In via NextAuth.js</>,
+    },
+    {
+        cat: "🩵, App, React",
+        title: "TWO Dashboard",
+        img: "/gallery/thewildoasis-d.webp",
+        code: "https://github.com/fisheeesh/the-wild-oasis-dashboard",
+        link: "https://the-wild-oasis-dashboard-amber.vercel.app/dashboard",
+        tech: ["React", "Supabase", "React Query", "Styled Components", "Recharts"],
+        modal: <>🖥️ An internal Hotel Management Dashboard for staff to manage bookings, check-ins, cabins, user accounts, and hotel settings, while offering business insights through interactive charts and a clean, intuitive dashboard. As it’s secured behind authentication, responsiveness wasn’t prioritized. 🙏 </>,
     },
     {
         cat: "🩵, App, Vue",
@@ -81,7 +81,7 @@ export const galleryShowCases = [
         code: "https://github.com/fisheeesh/chatty",
         link: "https://chatty-1090b.web.app/",
         tech: ["Vue", "Firebase", "Boostrap"],
-        modal: <>CarHub presents various car types, showcasing comprehensive information with advanced filtering and pagination support. Built with Next.js and leveraging its server-side rendering capabilities.</>,
+        modal: <>💬 A real-time chat application built with Vue.js and Firebase. It allows users to send and receive messages in real-time, providing a seamless and interactive messaging experience.</>,
     },
     {
         cat: "🩵, App, Vue",
@@ -90,352 +90,132 @@ export const galleryShowCases = [
         code: "https://github.com/fisheeesh/audionix",
         link: "https://music-b055.web.app/",
         tech: ["Vue", "Pinia", "Firebase", "i18n", "Tailwind", "Howler.js", "VeeValidate"],
-        modal: <>This 3D website, built with React and powered by Three.js, features engaging interactive elements. Navigate aboard a small plane to explore a floating island and discover various information. On the contact page, a fox will dynamically react as you fill out the fields!</>,
-    },
-    {
-        cat: "🩵, Design",
-        title: "Blog Mastery",
-        img: "/gallery/blog-mastery.webp",
-        code: "https://github.com/basedhound/bank-platform_app_next",
-        link: "https://horizon-bank-fv.vercel.app",
-        tech: ["Next", "Plaid", "Dwolla", "TS"],
-        modal: (
-            <>
-                🍵 Built with Next.js, Horizon is a financial SaaS platform that
-                connects to multiple bank accounts, displays transactions in real-time,
-                allows users to transfer money to other platform users, and manages
-                their finances altogether.
-                <br />
-                <br />
-                🥐 Construit avec Next.js, Horizon est une plateforme SaaS financière
-                qui se connecte à plusieurs comptes bancaires, affiche les transactions
-                en temps réel, permet aux utilisateurs de transférer de l'argent à
-                d'autres utilisateurs de la plateforme et gère leurs finances de manière
-                globale.
-            </>
-        ),
-    },
-    {
-        cat: "🩵, Design",
-        title: "Bookmark",
-        img: "/gallery/bookmark.webp",
-        code: "https://demo-sf.vercel.app/",
-        link: "https://demo-sf.vercel.app/",
-        tech: ["Next", "React", "TS", "MongoDB", "Stripe"],
-        modal: (
-            <>
-                🍵 This is a Next.js starter project designed for fast development,
-                featuring NextAuth for authentication, MongoDB for data management, and
-                Stripe for payment integration. Built with React, TypeScript, and
-                TailwindCSS, it provides a scalable foundation for web apps. It includes
-                tools like Axios for HTTP requests, Zod for validation, Mailgun for
-                email delivery, and DaisyUI for UI components. With React 18 and Next.js
-                14, it's ideal for building sales pages, e-commerce sites, or apps with
-                user and payment management.
-                <br />
-                <br />
-                🥐 Il s'agit d'un projet de démarrage Next.js conçu pour un
-                développement rapide, avec NextAuth pour l'authentification, MongoDB
-                pour la gestion des données et Stripe pour l'intégration des paiements.
-                Construit avec React, TypeScript et TailwindCSS, il offre une base
-                évolutive pour les applications web. Il inclut des outils comme Axios
-                pour les requêtes HTTP, Zod pour la validation, Mailgun pour la gestion
-                des e-mails et DaisyUI pour les composants UI. Avec React 18 et Next.js
-                14, il est idéal pour créer des pages de vente, des sites e-commerce ou
-                des applications avec gestion des utilisateurs et des paiements.
-            </>
-        ),
-    },
-    {
-        cat: "🩵, Design",
-        title: "Carso Training",
-        img: "/gallery/carso.webp",
-        code: "https://github.com/basedhound/pricewise-scraper_app_next",
-        link: "https://pricewise-fv.vercel.app",
-        tech: ["Next", "Bright Data", "MongoDB", "TS"],
-        modal: (
-            <>
-                🍵 Developed using Next.js and Bright Data's webunlocker, this
-                e-commerce product scraping site is designed to assist users in making
-                informed decisions. It notifies users when a product drops in price and
-                helps competitors by alerting them when the product is out of stock, all
-                managed through cron jobs.
-                <br />
-                <br />
-                🥐 Développé avec Next.js et le webunlocker de Bright Data, ce site de
-                scraping de produits e-commerce est conçu pour aider les utilisateurs à
-                prendre des décisions éclairées. Il informe les utilisateurs lorsque le
-                prix d'un produit baisse et aide les concurrents en les alertant lorsque
-                le produit est en rupture de stock, le tout géré à travers des tâches
-                cron.
-            </>
-        ),
-    },
-    {
-        cat: "🩵, Design",
-        title: "Clipboard",
-        img: "/gallery/clipboard.webp",
-        code: "https://github.com/basedhound/prompt-share_app_next",
-        link: "https://prompt-share-fv.vercel.app",
-        tech: ["Next", "MongoDB", "Tailwind", "TS"],
-        modal: (
-            <>
-                🍵 Next.js application designed for seamless AI prompt sharing between
-                users. Explore, create, and share prompts effortlessly with MongoDB
-                integration and secure authentication via NextAuth. Enjoy a modern
-                design and responsive interface for optimal user experience.
-                <br />
-                <br />
-                🥐 Application Next.js conçue pour le partage prompts entre
-                utilisateurs. Découvrez, créez et partagez des prompts facilement grâce
-                à l'intégration MongoDB et à l'authentification sécurisée via NextAuth.
-                Profitez d'un design moderne et d'une interface responsive pour une
-                expérience utilisateur optimale.
-            </>
-        ),
-    },
-    {
-        cat: "🩵, Design",
-        title: "Fylo",
-        img: "/gallery/fylo.webp",
-        code: "https://github.com/basedhound/figma-clone_app_next",
-        link: "https://figpro-fv.vercel.app",
-        tech: ["Next", "LiveBlocks", "Fabric", "TS"],
-        modal: (
-            <>
-                🍵 A minimalistic Figma clone to show how to add real-world features
-                like live collaboration with cursor chat, comments, reactions, and
-                drawing designs (shapes, image upload) on the canvas using fabric.js.
-                <br />
-                <br />
-                🥐 Un clone minimaliste de Figma conçu pour illustrer l'intégration de
-                fonctionnalités réalistes telles que la collaboration en temps réel avec
-                chat de curseur, commentaires, réactions, ainsi que la création de
-                designs (formes, téléchargement d'images) sur le canevas à l'aide de
-                fabric.js.
-            </>
-        ),
-    },
-    {
-        cat: "🩵, Design",
-        title: "LoopStudios",
-        img: "/gallery/loop-studio.webp",
-        code: "https://github.com/basedhound/anime-db_app_next",
-        link: "https://animedb-fv.netlify.app",
-        tech: ["Next", "Rapid API", "Framer", "TS"],
-        modal: (
-            <>
-                🍵 Explore your favorite anime with this Next.js application powered by
-                Shikimori API. Discover new shows, enjoy seamless scrolling through an
-                extensive anime database, and experience smooth transitions with Framer
-                Motion.
-                <br />
-                <br />
-                🥐 Explorez vos animes préférés facilement avec cette application
-                Next.js alimentée par l'API Shikimori. Décrouvrez de nouvelles séries,
-                profitez d'un défilement fluide à travers une vaste base de données
-                d'animes et d'animations modernes avec Framer Motion.
-            </>
-        ),
-    },
-    {
-        cat: "🩵, Design",
-        title: "Portfolio v1",
-        img: "/gallery/portfolio-v1.webp",
-        code: "https://github.com/basedhound/portfolio-v3_next",
-        link: "/",
-        tech: ["Next", "Sass", "Framer", "TypeScript"],
-        modal: (
-            <>
-                🍵 This portfolio is a showcase of my skills, built with React and
-                powered by Next.js. I've leveraged TypeScript to ensure robust code
-                quality and maintainability. A styling system crafted with Sass brings a
-                polished visual identity to life. And, with Framer Motion and Anime.js,
-                I've added a touch of dynamism with smooth animations and transitions,
-                creating an engaging user experience.
-                <br />
-                <br />
-                🥐 Ce portfolio est une vitrine de mes compétences, conçu avec React et
-                propulsé par Next.js. J'ai mis à profit TypeScript pour assurer une
-                qualité de code robuste et maintenable. Un système de styling conçu avec
-                Sass donne vie à une identité visuelle soignée. Et, avec Framer Motion
-                et Anime.js, j'ai ajouté une touche de dynamisme avec des animations et
-                des transitions fluides, créant une expérience utilisateur engageante.
-            </>
-        ),
+        modal: <>🎵 A modern music application where users can enjoy and manage music in a seamless experience.Audionix offers intuitive tools to explore, upload, and manage your music. Built with Vue 3, Firebase, Pinia, Howler.js and Tailwind CSS, this single-page application (SPA) ensures smooth interactions, an elegant design, and secure features for everyone. It also support mutli-language like English and Burmese</>,
     },
     {
         cat: "🩵, React",
         title: "Fast React Pizza",
         img: "/gallery/fast-react-pizza.webp",
-        code: "https://github.com/basedhound/spotlight_portfolio_next",
-        link: "https://spotlight-fv.netlify.app",
-        tech: ["Next", "Threejs", "Framer", "TS"],
-        modal: (
-            <>
-                🍵 Built with Next.js for handling the user interface, Three.js for
-                rendering 3D elements, Framer motion for beautiful animations, and
-                styled with TailwindCSS, this portfolio demonstrates the developer's
-                skills in a unique manner that creates a lasting impact.
-                <br />
-                <br />
-                🥐 Conçu avec Next.js pour l'interface utilisateur, Three.js pour le
-                rendu 3D, Framer Motion pour des animations élégantes, et stylisé avec
-                TailwindCSS, ce portfolio illustre les compétences du développeur de
-                manière moderne et marquante.
-            </>
-        ),
-    },
-    {
-        cat: "🩵, React",
-        title: "WorldWise",
-        img: "/gallery/theworldwise.webp",
-        code: "https://github.com/basedhound/spotlight_portfolio_next",
-        link: "https://spotlight-fv.netlify.app",
-        tech: ["Next", "Threejs", "Framer", "TS"],
-        modal: (
-            <>
-                🍵 Built with Next.js for handling the user interface, Three.js for
-                rendering 3D elements, Framer motion for beautiful animations, and
-                styled with TailwindCSS, this portfolio demonstrates the developer's
-                skills in a unique manner that creates a lasting impact.
-                <br />
-                <br />
-                🥐 Conçu avec Next.js pour l'interface utilisateur, Three.js pour le
-                rendu 3D, Framer Motion pour des animations élégantes, et stylisé avec
-                TailwindCSS, ce portfolio illustre les compétences du développeur de
-                manière moderne et marquante.
-            </>
-        ),
+        code: "https://github.com/fisheeesh/fast-react-pizza.git",
+        link: "https://fast-react-pizza-six-gamma.vercel.app/",
+        tech: ["React", "React Router", "Redux", "Tailwind", "JS"],
+        modal: <>🍕 A blazing-fast pizza ordering app built with React, Redux, React Router, and Tailwind CSS. Users can browse pizzas, customize orders, select quantity, and place orders with live delivery tracking and pricing</>
     },
     {
         cat: "🩵, React",
         title: "React Quiz",
         img: "/gallery/react-quiz.webp",
-        code: "https://github.com/basedhound/hilink-travel_ui_next",
-        link: "https://hilink-travel-fv.netlify.app",
-        tech: ["Next", "Tailwind", "TypeScript"],
-        modal: (
-            <>
-                🍵 Modern landing page design for a travel website built with Next.js,
-                TailwindCSS, and TypeScript. This project leverages Next.js for
-                server-side rendering (SSR) and static site generation (SSG), enhancing
-                performance and SEO while offering features like automatic code
-                splitting and API routes. TailwindCSS is used for its utility-first
-                approach, enabling rapid UI development with pre-built classes for
-                custom design and consistent styling. TypeScript ensures robust and
-                maintainable code by providing static typing, which helps in catching
-                errors early and improving overall application stability. The
-                combination of these technologies results in a high-performance,
-                visually appealing landing page tailored for travel enthusiasts.
-                <br />
-                <br />
-                🥐 Page d'accueil au design moderne pour un site de voyage, développée
-                avec Next.js, TailwindCSS et TypeScript. Ce projet utilise Next.js pour
-                le rendu côté serveur (SSR) et la génération de sites statiques (SSG),
-                optimisant les performances et le SEO avec des fonctionnalités comme le
-                découpage automatique du code et les routes API. TailwindCSS facilite le
-                développement rapide de l'interface utilisateur grâce à ses classes
-                utilitaires, permettant un design personnalisé et cohérent. TypeScript
-                améliore la robustesse et la maintenabilité du code en offrant une
-                typage statique, ce qui permet de détecter les erreurs tôt et d'assurer
-                la stabilité de l'application.
-            </>
-        ),
+        code: "https://github.com/fisheeesh/quiz.git",
+        link: "https://mini-quizz.vercel.app/",
+        tech: ["React", "Redux", "JS"],
+        modal: <>🧠 A mini quiz app to test your React Mastery.</>
+    },
+    {
+        cat: "🩵, React",
+        title: "WorldWise",
+        img: "/gallery/theworldwise.webp",
+        code: "https://github.com/fisheeesh/worldwise.git",
+        link: "https://worldwise-pearl-ten.vercel.app/",
+        tech: ["React", "React Leaflet", "React Router", "JS"],
+        modal: <>🌍 A mini app that helps users track places they’ve visited around the world. Built with React-Leaflet, it allows users to mark locations on a map, add personal notes or memories, and view them later.</>
     },
     {
         cat: "🩵, Design, React, App",
         title: "RentMate",
         img: "/gallery/rentmate.webp",
-        code: "https://github.com/basedhound/dashboard_app_react-refine",
-        link: "https://dashboard-refine-fv.netlify.app",
-        tech: ["React", "Refine", "GraphQL"],
-        modal: (
-            <>
-                🍵 React-based internal tools, admin panels, dashboards, B2B apps with
-                flexibility in mind. An open-source, headless React meta-framework,
-                developed with a commitment to best practices, flexibility, minimal tech
-                debt, and team alignment, could be a perfect fit for dynamic
-                environments.
-                <br />
-                <br />
-                🥐 Applications internes, panneaux d'administration, tableaux de bord et
-                applications B2B basés sur React, conçus pour offrir une grande
-                flexibilité. Développé selon les meilleures pratiques, favorisant la
-                flexibilité, minimisant la dette technique et favorisant l'alignement
-                d'équipe, idéal pour les environnements dynamiques.
-            </>
-        ),
+        code: "https://github.com/fisheeesh/rentmate.git",
+        link: "https://rentmate-xi.vercel.app/",
+        tech: ["React", "Tailwind", "Lottie", "JS", "Recharts", "Zod"],
+        modal: <>📦 A responsive web application that enables users to rent and lend everyday items in a seamless and secure way. The platform supports two user roles — Renter and Lender, and each user can switch roles anytime.</>
+    },
+    {
+        cat: "🩵, Design",
+        title: "Clipboard",
+        img: "/gallery/clipboard.webp",
+        code: "https://github.com/fisheeesh/bootstrap-training.git",
+        link: "https://clip-board-syp.netlify.app/",
+        tech: ["HTML", "CSS", "Tailwind"],
+        modal: <>🖇️ Landing page design for tracking copy history website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Tailwind and Javascript.</>
+    },
+    {
+        cat: "🩵, Design",
+        title: "LoopStudios",
+        img: "/gallery/loop-studio.webp",
+        code: "https://github.com/fisheeesh/bootstrap-training.git",
+        link: "https://loop-stuido.netlify.app/",
+        tech: ["HTML", "CSS", "Tailwind", "JS"],
+        modal: <>📀 Landing page design for virtual reality production studio website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Tailwind and Javascript.</>
     },
     {
         cat: "🩵, Design",
         title: "Shortly",
         img: "/gallery/shortly.webp",
-        code: "https://github.com/basedhound/3d-tshirts_app_react",
-        link: "https://3d-tshirts-fv.netlify.app",
-        tech: ["React", "Threejs", "Node", "MongoDB"],
-        modal: (
-            <>
-                🍵 Create your own style with this 3D Customization App. Pick colors,
-                add logos, and try AI designs to make your virtual swag unique. Built
-                using React.js, Three.js, and OpenAI.
-                <br />
-                <br />
-                🥐 Créez votre propre style avec cette application de personnalisation
-                3D. Choisissez vos couleurs, ajoutez des logos et essayez des designs IA
-                pour rendre votre style virtuel unique. Réalisée avec React.js, Three.js
-                et OpenAI.
-            </>
-        ),
+        code: "https://github.com/fisheeesh/tailwind_training.git",
+        link: "https://shortly-syp.netlify.app/",
+        tech: ["HTML", "CSS", "Tailwind"],
+        modal: <>⛓️ Landing page design for URL shortening website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Tailwind.</>
     },
     {
         cat: "🩵, Design",
-        title: "Skywings",
-        img: "/gallery/skywings.webp",
-        code: "https://github.com/basedhound/summarizer-ai_react",
-        link: "https://summarize-fv.netlify.app",
-        tech: ["React", "OpenAI", "Rapid API"],
-        modal: (
-            <>
-                🍵 Summarize any article with one click using the powerful OpenAI model.
-                This web app features a modern interface, allowing users to input
-                article URLs for concise AI-generated summaries. It saves summaries
-                locally for easy history management and offers copy-to-clipboard
-                functionality for effortless sharing. Advanced RTK Query API requests
-                optimize data fetching and management.
-                <br />
-                <br />
-                🥐 Résumez n'importe quel article en un clic grâce au puissant modèle
-                OpenAI. Cette application web offre une interface moderne et conviviale,
-                permettant aux utilisateurs d'entrer des URL d'articles pour obtenir des
-                résumés concis générés par l'IA. Les résumés sont enregistrés localement
-                pour une gestion facile de l'historique, et une fonction de copie dans
-                le presse-papiers facilite le partage. Les requêtes API avancées de RTK
-                Query optimisent la récupération et la gestion des données.
-            </>
-        ),
+        title: "Fylo",
+        img: "/gallery/fylo.webp",
+        code: "https://github.com/fisheeesh/bootstrap-training.git",
+        link: "https://fylo-website-syp.netlify.app/",
+        tech: ["HTML", "CSS", "Tailwind", "JS"],
+        modal: <>Landing page design for tracking copy history website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Tailwind and Javascript. It features a clean UI with support for light and dark theme toggling.</>
+    },
+    {
+        cat: "🩵, Design",
+        title: "Bookmark",
+        img: "/gallery/bookmark.webp",
+        code: "https://github.com/fisheeesh/tailwind_training.git",
+        link: "https://book-mark-webiste.netlify.app/",
+        tech: ["HTML", "CSS", "Tailwind", "JS"],
+        modal: <>🔖 Landing page design for bookmarking website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Tailwind and Javascript.</>
+    },
+    {
+        cat: "🩵, Design",
+        title: "Portfolio v1",
+        img: "/gallery/portfolio-v1.webp",
+        code: "https://github.com/fisheeesh/bootstrap-training.git",
+        link: "https://fisheeesh.netlify.app/",
+        tech: ["HTML", "CSS", "Bootstrap", "Scss", "JS"],
+        modal: <>🌐 My first personal portfolio design, showcasing a sleek, professional look. Built with HTML, CSS, JavaScript, Bootstrap, and SCSS to ensure clean structure and responsive performance.</>
+    },
+    {
+        cat: "🩵, Design",
+        title: "Blog Mastery",
+        img: "/gallery/blog-mastery.webp",
+        code: "https://github.com/fisheeesh/bootstrap-training.git",
+        link: "https://ebook-website-black-nine.vercel.app/",
+        tech: ["HTML", "CSS", "Bootstrap", "Scss"],
+        modal: <>📝 Landing page design for blogging website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Boostrap and Scss.</>
+    },
+    {
+        cat: "🩵, Design",
+        title: "Carso Training",
+        img: "/gallery/carso.webp",
+        code: "https://github.com/fisheeesh/bootstrap-training.git",
+        link: "https://carso-website-syp.netlify.app/",
+        tech: ["HTML", "CSS", "Bootstrap", "Scss", "JS"],
+        modal: <>📝 Landing page design for personal training website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Boostrap and Scss.</>
     },
     {
         cat: "🩵, Design",
         title: "Vera",
         img: "/gallery/vera.webp",
-        code: "https://github.com/basedhound/instagram-clone_app_react",
-        link: "https://snapgram-fv.vercel.app",
-        tech: ["React", "Appwrite", "TanStack"],
-        modal: (
-            <>
-                🍵 Explore social media with this user-friendly platform that has a nice
-                look and lots of features. Easily create and explore posts, and enjoy a
-                strong authentication system and quick data fetching using React Query
-                for a smooth user experience.
-                <br />
-                <br />
-                🥐 Explorez les réseaux sociaux avec cette plateforme conviviale, au
-                design élégant et riche en fonctionnalités. Créez et découvrez des
-                publications facilement, et bénéficiez d'un système d'authentification
-                sécurisé ainsi que d'une récupération rapide des données grâce à React
-                Query, pour une expérience utilisateur fluide et agréable.
-            </>
-        ),
+        code: "https://github.com/fisheeesh/bootstrap-training.git",
+        link: "https://skywings-nu.vercel.app/",
+        tech: ["HTML", "CSS", "Bootstrap", "Scss", "JS"],
+        modal: <>🏢 Landing page design for IT Software Solution company website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, JS, Bootstrap and Scss.</>
+    },
+    {
+        cat: "🩵, Design",
+        title: "Skywings",
+        img: "/gallery/skywings.webp",
+        code: "https://github.com/fisheeesh/skywings.git",
+        link: "https://summarize-fv.netlify.app",
+        tech: ["HTML", "CSS", "JS", "Swiper.js"],
+        modal: <>✈️ Landing page design for Air tickets booking website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, JS and with the help of Swiper.js.</>
     },
 ]
