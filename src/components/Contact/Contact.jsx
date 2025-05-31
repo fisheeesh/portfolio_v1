@@ -20,7 +20,7 @@ export const Contact = () => {
                             target="_blank"
                             rel="nofollow"
                             aria-label="Connect with me on LinkedIn"
-                            className="text-brand hover:border-b-[1.5px] hover:border-current font-medium transition duration-200"
+                            className="text-brand hover:border-b-2 font-medium transition duration-200"
                         >
                             LinkedIn
                         </a>

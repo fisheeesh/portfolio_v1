@@ -15,17 +15,20 @@ export default function Router() {
             children: [
                 {
                     index: true,
-                    element: <Home />
+                    element: <Home />,
+                    errorElement: <ErrorElement />,
                 },
                 {
                     path: 'gallery',
-                    element: <Gallery />
+                    element: <Gallery />,
+                    errorElement: <ErrorElement />,
                 }
             ]
         },
         {
             path: '*',
-            element: <NotFound />
+            element: <NotFound />,
+            errorElement: <ErrorElement />,
         },
     ])
 

@@ -92,7 +92,7 @@ export const ShowCaseItem = ({
                     <Reveal>
                         <p className="font-normal">
                             {desc} <br />
-                            <span className="inline-block text-lg font-medium mt-3 text-brand cursor-pointer opacity-100 transition duration-200 hover:opacity-80" onClick={() => setIsOpen(true)} aria-label="View Details">Details {">"}</span>
+                            <span className="inline-block font-medium mt-3 text-brand cursor-pointer opacity-100 transition duration-200 hover:opacity-80" onClick={() => setIsOpen(true)} aria-label="View Details">Details {">"}</span>
                         </p>
                     </Reveal>
                 </div>

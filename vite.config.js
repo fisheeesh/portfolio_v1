@@ -10,6 +10,7 @@ export default defineConfig({
     port: 4000,
     open: true
   },
+  assetsInclude: ['**/*.lottie'],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

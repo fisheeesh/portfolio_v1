@@ -38,7 +38,7 @@ export const Modal = ({
                     className={`rounded-[1.2rem_1.2rem_0_0] w-full h-auto ${isImageLoading ? 'blur' : 'remove-blur'}`}
                 />
                 <div className="p-6 space-y-4">
-                    <h4 className="text-2xl md:text-4xl font-bold ">{title}</h4>
+                    <h4 className="text-2xl md:text-3xl font-bold ">{title}</h4>
                     <div className="flex flex-wrap font-medium gap-2 text-brand md:text-lg">{tech.join(" - ")}</div>
                     <div className="flex flex-col gap-[1.2rem]">{modal}</div>
                     <div className="">

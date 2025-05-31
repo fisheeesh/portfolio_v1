@@ -4,6 +4,22 @@ import { CertificationItem } from './CertificationItem';
 export default function Certification() {
     const certification = [
         {
+            title: "React Mastery Course",
+            school: "JS Mastery",
+            date: "May 2025",
+            link: "https://drive.google.com/file/d/1oGhEhGqJJ9MnUEJX9bbjgcaIv0DxOeC4/view?usp=drive_link",
+            description:
+                "Focused on mastering advanced JavaScript tools including React.js, Material UI, and Alan AI. Gained practical, hands-on experience building interactive applications, tailored for intermediate to expert-level development. Emphasized real-world use cases and modern UI development techniques.",
+            tech: [
+                "React",
+                "Javascript",
+                "Material UI",
+                "RTK Query",
+                "Alan AI",
+                "TMDB API",
+            ],
+        },
+        {
             title: "The Ultimate Next.js Course",
             school: "Udemy",
             date: "Apirl 2025 - 84 hours",
@@ -22,22 +38,6 @@ export default function Certification() {
                 "SSR",
                 "SSG",
                 "ISR",
-            ],
-        },
-        {
-            title: "React Mastery Course",
-            school: "JS Mastery",
-            date: "May 2025",
-            link: "https://drive.google.com/file/d/1oGhEhGqJJ9MnUEJX9bbjgcaIv0DxOeC4/view?usp=drive_link",
-            description:
-                "Focused on mastering advanced JavaScript tools including React.js, Material UI, and Alan AI. Gained practical, hands-on experience building interactive applications, tailored for intermediate to expert-level development. Emphasized real-world use cases and modern UI development techniques.",
-            tech: [
-                "React",
-                "Javascript",
-                "Material UI",
-                "RTK Query",
-                "Alan AI",
-                "TMDB API",
             ],
         },
         {
