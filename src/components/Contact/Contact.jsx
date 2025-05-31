@@ -1,19 +1,19 @@
-import { AiFillMail, AiFillCalendar } from "react-icons/ai";
-import { Reveal } from "../../utils/Reveal";
+import { AiFillMail } from "react-icons/ai";
 import { Socials } from "../../ui/Socials";
+import { Reveal } from "../../utils/Reveal";
 
 export const Contact = () => {
     return (
         <section className="py-24 px-4" id="contact">
             <div className="max-w-[750px] mx-auto space-y-4 rounded-[1.2rem]">
                 <Reveal width="100%">
-                    <h4 className="text-center font-black leading-none text-6xl md:text-[6rem]">
+                    <h4 className="text-center font-black leading-none text-5xl md:text-[5.5rem]">
                         Contact<span className="text-brand">.</span>
                     </h4>
                 </Reveal>
 
                 <Reveal width="100%">
-                    <p className="text-center text-xl">
+                    <p className="text-center md:text-xl">
                         Got a project in mind or just want to chat? Feel free to drop me an email. I'm also active on{" "}
                         <a
                             href="https://www.linkedin.com/in/syp-dev"
@@ -35,10 +35,10 @@ export const Contact = () => {
                             target="_blank"
                             rel="nofollow"
                             aria-label="Send me an email"
-                            className="flex items-center justify-center gap-2 text-base sm:text-sm mb-2 transition hover:text-brand"
+                            className="flex items-center justify-center md:text-lg gap-2 mb-2 transition hover:text-brand"
                         >
                             <AiFillMail size="24" />
-                            <span className="text-lg font-medium">swanphyo444@gmail.com</span>
+                            <span className="font-medium">swanphyo444@gmail.com</span>
                         </a>
                     </div>
                 </Reveal>

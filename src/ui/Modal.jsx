@@ -38,8 +38,8 @@ export const Modal = ({
                     className={`rounded-[1.2rem_1.2rem_0_0] w-full h-auto ${isImageLoading ? 'blur' : 'remove-blur'}`}
                 />
                 <div className="p-6 space-y-4">
-                    <h4 className="text-4xl font-bold ">{title}</h4>
-                    <div className="flex flex-wrap font-medium gap-2 text-brand text-lg">{tech.join(" - ")}</div>
+                    <h4 className="text-2xl md:text-4xl font-bold ">{title}</h4>
+                    <div className="flex flex-wrap font-medium gap-2 text-brand md:text-lg">{tech.join(" - ")}</div>
                     <div className="flex flex-col gap-[1.2rem]">{modal}</div>
                     <div className="">
                         <p className="font-bold text-2xl mb-[0.8rem]">
@@ -48,11 +48,11 @@ export const Modal = ({
                         <div className="flex flex-row justify-between">
                             <div className="flex items-center gap-[1.5rem]">
                                 <a className="flex items-center gap-[0.4rem] font-medium text-brand opacity-100 duration-200 hover:opacity-80" target="_blank" rel="nofollow" href={code} title="GitHub" aria-label="View Code">
-                                    <AiFillGithub size="2rem" />
+                                    <AiFillGithub size="1.8rem" />
                                     Code
                                 </a>
                                 <a className="flex items-center gap-[0.4rem] font-medium text-brand opacity-100 duration-200 hover:opacity-80" target="_blank" rel="nofollow" href={link} title="Demo" aria-label="View Website">
-                                    <BsGlobe size="1.7rem" />
+                                    <BsGlobe size="1.5rem" />
                                     Demo
                                 </a>
                             </div>
