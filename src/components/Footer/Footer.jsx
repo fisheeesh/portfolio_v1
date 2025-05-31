@@ -3,8 +3,8 @@ export default function Footer() {
         // <footer className='footer'>
         //     <div className="Container" />
         // </footer>
-        <footer className="text-center  my-4 text-sm text-gray-600">
-            <div>Copyright © {(new Date()).getFullYear()} Swam Yi Phyo. All rights reserved.</div>
+        <footer className="text-center  my-4 text-gray-600">
+            <div>Copyright © {(new Date()).getFullYear()}. All rights reserved.</div>
         </footer>
     )
 }

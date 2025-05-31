@@ -5,6 +5,7 @@ import {
     AiFillLinkedin,
     AiOutlineMail
 } from "react-icons/ai";
+import { SiMedium } from "react-icons/si";
 
 export const Socials = () => {
     return (
@@ -22,6 +23,21 @@ export const Socials = () => {
                     title="LinkedIn"
                     aria-label="Contact me on LinkedIn">
                     <AiFillLinkedin size="1.6rem" />
+                </a>
+            </motion.span>
+
+            <motion.span
+                initial={{ y: -30, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.1 }}>
+                <a
+                    className="z-[29] opacity-50 transition duration-200 hover:opacity-100 hover:text-brand max-[360px]:gap-[1.2rem]"
+                    href="https://medium.com/@swanphyo444"
+                    target="_blank"
+                    rel="nofollow"
+                    title="Medium"
+                    aria-label="Check out my article on Medium">
+                    <SiMedium size="1.3rem" />
                 </a>
             </motion.span>
 

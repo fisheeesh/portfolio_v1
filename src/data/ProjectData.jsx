@@ -6,7 +6,7 @@ export const projects = [
         link: "https://www.litlibrary.blog/",
         tech: ["React", "Firebase", "Tailwind", "Context API", "Zod", "Swiper.js"],
         desc: "A vibrant blogging platform using React.js and TailwindCSS. It highlights the effective use of Firebase real-time database to enable instant content updates.",
-        modal: <>📚 A vibrant blogging platform designed to foster a positive and supportive community. Users can share personal growth experiences, life knowledge, advice, and insights while engaging with others' blogs. It’s a place to inspire, learn, and connect.</>,
+        modal: <>📚 A vibrant blogging platform designed to foster a positive and supportive community. Users can share personal growth experiences, life knowledge, advice, and insights while engaging with others' blogs. It’s a place to inspire, learn, and connect. I love writing blogs there too, it’s my way of sharing what I’ve learned and connecting with others.</>,
     },
     {
         title: "Filmpire",
