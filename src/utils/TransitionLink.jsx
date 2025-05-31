@@ -19,12 +19,12 @@ export const TransitionLink = ({
         body.classList.add("page-transition");
         await sleep(400);
 
-        // Check if the destination has a hash (like /#projects)
+        //* Check if the destination has a hash (like /#projects)
         if (to.includes('#')) {
             const [path, hash] = to.split('#');
             navigate(path);
 
-            // Wait for navigation to complete, then scroll to the hash element
+            //* Wait for navigation to complete, then scroll to the hash element
             await sleep(400);
 
             if (hash) {
@@ -32,19 +32,19 @@ export const TransitionLink = ({
                 if (element) {
                     element.scrollIntoView({ behavior: 'smooth' });
                 } else {
-                    // If element not found, scroll to top
+                    //* If element not found, scroll to top
                     window.scrollTo(0, 0);
                 }
             } else {
-                // No hash, scroll to top
+                //* No hash, scroll to top
                 window.scrollTo(0, 0);
             }
         } else {
-            // Regular navigation without hash - scroll to top first
+            //* Regular navigation without hash - scroll to top first
             window.scrollTo(0, 0);
             navigate(to);
             await sleep(400);
-            // Ensure we're at the top after navigation
+            //* Ensure we're at the top after navigation
             window.scrollTo(0, 0);
         }
 
