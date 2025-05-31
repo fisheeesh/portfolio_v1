@@ -14,17 +14,17 @@ export const Contact = () => {
 
                 <Reveal width="100%">
                     <p className="text-center md:text-xl">
-                        Got a project in mind or just want to chat? Feel free to drop me an email. I'm also active on{" "}
+                        Want to collaborate or have a quick chat? Shoot me an email or connect with me on{" "}
                         <a
                             href="https://www.linkedin.com/in/syp-dev"
                             target="_blank"
                             rel="nofollow"
                             aria-label="Connect with me on LinkedIn"
-                            className="text-brand hover:border-b-2 font-medium transition duration-200"
+                            className="text-brand border-b-2 hover:border-b-2 font-medium transition duration-200"
                         >
                             LinkedIn
                         </a>
-                        {" "}if you'd rather connect there.
+                        .
                     </p>
                 </Reveal>
 

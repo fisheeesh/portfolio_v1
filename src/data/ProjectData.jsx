@@ -178,7 +178,7 @@ export const galleryShowCases = [
         title: "Portfolio v1",
         img: "/gallery/portfolio-v1.webp",
         code: "https://github.com/fisheeesh/bootstrap-training.git",
-        link: "https://fisheeesh.netlify.app/",
+        link: "https://fissheeesh.netlify.app/",
         tech: ["HTML", "CSS", "Bootstrap", "Scss", "JS"],
         modal: <>🌐 My first personal portfolio design, showcasing a sleek, professional look. Built with HTML, CSS, JavaScript, Bootstrap, and SCSS to ensure clean structure and responsive performance.</>
     },

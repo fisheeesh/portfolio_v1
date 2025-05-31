@@ -1,12 +1,36 @@
-# React + Vite
+![Preview](./public/preview.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Table of Contents
 
-Currently, two official plugins are available:
+- [👋 Introduction](#-introduction)
+- [✨ Features](#-features)
+- [🚀 Get Started](#-get-started)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 👋 Introduction
+This is my personal developer portfolio built with React.js, styled using TailwindCSS and Material UI (MUI). It highlights my skills, projects, and certifications with a focus on smooth user interaction using libraries like Framer Motion, React Scroll, and React Type Animation.
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👉 **Fully Responsive**: Works seamlessly across desktops, tablets, and mobile devices.  
+👉 **Smooth Animations**: Framer Motion and React Scroll create a fluid, modern browsing experience.   
+👉 **Showcase Projects**: Interactive project cards linking to live demos and code repositories.  
+👉 **Certifications Display**: A dedicated section to highlight verified certifications.  
+👉 **Search Functionality**: Quickly find projects or skills from the list.  
+👉 **React Type Animation**: Adds dynamic text effects to draw attention and improve UX.
+
+## 🚀 Get Started
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/fisheeesh/syp-portfolio.git
+2. **Go to your folder**
+   ```bash
+   cd syp-portfolio 
+3. **Install Dependencies**:
+   ```bash  
+   npm install
+4. **Run the development server**
+    ```bash
+    npm run dev
+5. 	**Open http://localhost:3000 in your browser to see it live.**
