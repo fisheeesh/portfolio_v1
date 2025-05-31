@@ -75,6 +75,15 @@ export const galleryShowCases = [
         modal: <>🖥️ An internal Hotel Management Dashboard for staff to manage bookings, check-ins, cabins, user accounts, and hotel settings, while offering business insights through interactive charts and a clean, intuitive dashboard. As it’s secured behind authentication, responsiveness wasn’t prioritized. 🙏 </>,
     },
     {
+        cat: "🩵, App, React",
+        title: "My Portfolio",
+        img: "/gallery/portfolio_v2.webp",
+        code: "https://github.com/fisheeesh/syp-portfolio",
+        link: "https://www.syp.dev",
+        tech: ["React", "Tailwind", "Framer Motion", "React Type Animation", "React Scroll", "MUI"],
+        modal: <>🌐 This is my personal developer portfolio built with React.js, styled using TailwindCSS and Material UI (MUI). It highlights my skills, projects, and certifications with a focus on smooth user interaction using libraries like Framer Motion, React Scroll, and React Type Animation. </>,
+    },
+    {
         cat: "🩵, App, Vue",
         title: "Chatty",
         img: "/gallery/chatty.webp",
