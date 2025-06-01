@@ -18,7 +18,7 @@ export const projects = [
         modal: <>🎬 Filmpire is a dynamic and fully responsive movie showcase web application built with React and Material UI, powered by The Movie Database (TMDB) API. It allows users to explore, search, and interact with a wide collection of movies, offering features like trailers, ratings, and personalized watchlists for an immersive cinematic experience.</>,
     },
     {
-        title: "TWO Website",
+        title: "TWO Web",
         img: "/gallery/thewildoasis-web.webp",
         code: "https://github.com/fisheeesh/the-wild-oasis-website",
         link: "https://the-wild-oasis-website-eta-flame.vercel.app/",
@@ -27,7 +27,7 @@ export const projects = [
         modal: <>🌐 A customer facing website of "The Wild Oasis" designed to let users explore and book serene stays with ease, built with Next.js and Supabase. It uses SSR, SSG, and ISR to ensure fast load times and excellent SEO — delivering a seamless stay-booking experience for customers. Authentication is secured with Google Sign-In via NextAuth.js</>,
     },
     {
-        title: "TWO Dashboard",
+        title: "TWO Dash",
         img: "/gallery/thewildoasis-d.webp",
         code: "https://github.com/fisheeesh/the-wild-oasis-dashboard",
         link: "https://the-wild-oasis-dashboard-amber.vercel.app/dashboard",
@@ -58,7 +58,7 @@ export const galleryShowCases = [
     },
     {
         cat: "🩵, App, Next",
-        title: "TWO Website",
+        title: "TWO Web",
         img: "/gallery/thewildoasis-web.webp",
         code: "https://github.com/fisheeesh/the-wild-oasis-website",
         link: "https://the-wild-oasis-website-eta-flame.vercel.app/",
@@ -67,7 +67,7 @@ export const galleryShowCases = [
     },
     {
         cat: "🩵, App, React",
-        title: "TWO Dashboard",
+        title: "TWO Dash",
         img: "/gallery/thewildoasis-d.webp",
         code: "https://github.com/fisheeesh/the-wild-oasis-dashboard",
         link: "https://the-wild-oasis-dashboard-amber.vercel.app/dashboard",
