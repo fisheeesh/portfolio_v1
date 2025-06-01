@@ -110,7 +110,7 @@ export default function Hero() {
                         variants={flipInX}
                         style={{ transformStyle: 'preserve-3d', perspective: 600 }}
                     >
-                        <LinkScroll className='flex justify-start cursor-pointer absolute animate-scroll max-[992px]:relative max-[992px]:justify-center max-[992px]:mt-8' to="projects" id="scrollDown">
+                        <LinkScroll className='flex justify-start cursor-pointer absolute animate-scroll max-[992px]:relative max-[992px]:justify-center max-[992px]:mt-8' to="about" id="scrollDown">
                             <div className='flex items-center text-[1.3rem] text-[#f6f6f6]'>
                                 Scroll down
                                 <img
