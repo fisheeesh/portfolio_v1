@@ -25,7 +25,7 @@ const About = () => {
                         </Reveal>
                         <Reveal>
                             <p className="mb-6 text-[15px] sm:text-base">
-                                On the frontend, I love working with <strong>React.js</strong> and <strong>Next.js</strong>, and I’m also experienced with backend technologies like Spring Boot, Node.js, and serverless platforms like Supabase and Firebase. I excel at planning, finding optimal solutions. AI tools like ChatGPT, Claude, GitHub Copilot, and structured time planning apps help me to stay sharp and productive.
+                                On the frontend, I love working with <strong>React.js</strong> and <strong>Next.js</strong>, and I’m also experienced with backend technologies like Spring Boot, Node.js, and serverless platforms like Supabase and Firebase. I excel at planning, finding optimal solutions. AI tools like ChatGPT, Claude, GitHub Copilot, and Structured time planning apps help me to stay sharp and productive.
                             </p>
                         </Reveal>
                         <Reveal>
