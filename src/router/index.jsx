@@ -1,9 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import AppLayout from "../pages/layout/AppLayout"
-import Home from "../pages/Home"
-import NotFound from "../pages/NotFound"
-import ErrorElement from "../pages/ErrorElement"
-import Gallery from "../pages/Gallery"
+import { lazy } from "react"
+
+const Home = lazy(() => import('../pages/Home'))
+const AppLayout = lazy(() => import('../pages/layout/AppLayout'))
+const NotFound = lazy(() => import('../pages/NotFound'))
+const ErrorElement = lazy(() => import('../pages/ErrorElement'))
+const Gallery = lazy(() => import('../pages/Gallery'))
 
 export default function Router() {
 
