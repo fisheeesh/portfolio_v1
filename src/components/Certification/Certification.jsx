@@ -4,6 +4,29 @@ import { CertificationItem } from './CertificationItem';
 export default function Certification() {
     const certification = [
         {
+            title: "Next.js E-commerce 2025",
+            school: "Udemy",
+            date: "June 2025 - 22.5 hours",
+            link: "https://drive.google.com/file/d/1BtjnZ5bMwNl7QZClbBAVgXoxR75XZ9PZ/view?usp=drive_link",
+            description:
+                "Focused on mastering advanced Next.js by building a full-featured ecommerce platform from scratch. Gained practical experience with real payment integrations using PayPal and Stripe, built full authentication with NextAuth, and managed products, orders, and users through a powerful admin dashboard. Gained hands-on experience with PostgreSQL, Prisma, and type-safe form validation using Zod and React Hook Form.",
+            tech: [
+                "React",
+                "Next.js",
+                "Typescript",
+                "shadcn/ui",
+                "TailwindCSS",
+                "Stripe",
+                "Paypal",
+                "Uploadthing",
+                "Jest",
+                "Resend Email",
+                "Next Auth",
+                "PostgreSQL",
+                "Prisma"
+            ],
+        },
+        {
             title: "React Mastery Course",
             school: "JS Mastery",
             date: "May 2025",
@@ -64,7 +87,7 @@ export default function Certification() {
             date: "December 2024 – 12.5 hours",
             link: "https://drive.google.com/file/d/13KTDLzkORPgfoRU2R0NzEGfZ9ZIlp0Jw/view?usp=drive_link",
             description:
-                "Focused on enhancing front-end skills with popular libraries and frameworks. Gained proficiency in quickly styling websites with TailwindCass. Emphasized integrating advanced styling techniques for dynamic and efficient web applications.",
+                "Focused on enhancing front-end skills with popular libraries and frameworks. Gained proficiency in quickly styling websites with TailwindCSS. Emphasized integrating advanced styling techniques for dynamic and efficient web applications.",
             tech: ["HTML", "CSS", "Javascript", "TailwindCSS", "Responsive"],
         },
         {
@@ -74,7 +97,7 @@ export default function Certification() {
             link: "https://drive.google.com/file/d/1uzwRaurA42mj9DuaIiaL7eCepYql6gjf/view?usp=drive_link",
             description:
                 "Focused on enhancing front-end skills with popular libraries and frameworks. Gained proficiency in quickly styling websites with Bootstrap and extending CSS styles with Sass. Developed skills in responsive design, Flexbox, CSS Grid and accessibility through 5 projects. Emphasized modern techniques and best practices for crafting well-structured and accessible web pages.",
-            tech: ["HTML", "CSS", "Javascript", "Bootstrap", "Sass", "Responsive"],
+            tech: ["HTML", "CSS", "Javascript", "Bootstrap", "Scss", "Responsive"],
         },
     ];
 

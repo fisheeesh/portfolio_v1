@@ -1,5 +1,14 @@
 export const projects = [
     {
+        title: "Prostore",
+        img: "/gallery/prostore.webp",
+        code: "https://github.com/fisheeesh/prostore_next",
+        link: "https://www.theprostore.shop",
+        tech: ["Next.js", "Typescript", "shadcn/ui", "PayPal", "Stripe", "PostgreSQL"],
+        desc: "A full featured Ecommerce platform from scratch using Next.js, TypeScript, shadcn/ui, PostgreSQL, and Prisma. Integrated secure and flexible payment options with Stripe and PayPal.",
+        modal: <>🛒  A full featured Ecommerce platform from scratch using Next.js, TypeScript, shadcn/ui, PostgreSQL, and Prisma. Integrated secure and flexible payment options with Stripe and PayPal, supporting both one-time and multi-product purchases. Features include user authentication, admin panel product management, shopping cart, order history, checkout process, responsive UI and more.</>,
+    },
+    {
         title: "LitLibrary",
         img: "/gallery/lit-library.webp",
         code: "https://github.com/fisheeesh/lit-library",
@@ -9,20 +18,11 @@ export const projects = [
         modal: <>📚 A vibrant blogging platform designed to foster a positive and supportive community. Users can share personal growth experiences, life knowledge, advice, and insights while engaging with others' blogs. It’s a place to inspire, learn, and connect. I love writing blogs there too, it’s my way of sharing what I’ve learned and connecting with others.</>,
     },
     {
-        title: "Filmpire",
-        img: "/gallery/filmpire.webp",
-        code: "https://github.com/fisheeesh/filmpire",
-        link: "https://www.filmpire.net",
-        tech: ["React", "RTK Query", "TMDB API", "Alan AI", "MUI"],
-        desc: "A dynamic and fully responsive movie showcase web application built with React and Material UI, powered by The Movie Database (TMDB) API.",
-        modal: <>🎬 Filmpire is a dynamic and fully responsive movie showcase web application built with React and Material UI, powered by The Movie Database (TMDB) API. It allows users to explore, search, and interact with a wide collection of movies, offering features like trailers, ratings, and personalized watchlists for an immersive cinematic experience.</>,
-    },
-    {
         title: "TWO Web",
         img: "/gallery/thewildoasis-web.webp",
         code: "https://github.com/fisheeesh/the-wild-oasis-website",
         link: "https://www.thewildoasis.co",
-        tech: ["React", "Next.js", "Tailwind", "Supabase", "NextAuth"],
+        tech: ["React", "Next.js", "Tailwind", "Supabase", "NextAuth", "Framer Motion"],
         desc: 'A customer facing website of "The Wild Oasis" designed to let users explore and book serene stays with ease, built with Next.js and Supabase. Ensure fast load times and excellent SEO.',
         modal: <>🌐 A customer facing website of "The Wild Oasis" designed to let users explore and book serene stays with ease, built with Next.js and Supabase. It uses SSR, SSG, and ISR to ensure fast load times and excellent SEO — delivering a seamless stay-booking experience for customers. Authentication is secured with Google Sign-In via NextAuth.js</>,
     },
@@ -35,9 +35,36 @@ export const projects = [
         desc: "An internal Hotel Management Dashboard for staff to handle bookings, guests, cabins, and settings, with insights via interactive charts and a clean UI.",
         modal: <>🖥️ An internal Hotel Management Dashboard for staff to manage bookings, check-ins, cabins, user accounts, and hotel settings, while offering business insights through interactive charts and a clean, intuitive dashboard. As it’s secured behind authentication, responsiveness wasn’t prioritized. 🙏 </>,
     },
+    {
+        title: "Filmpire",
+        img: "/gallery/filmpire.webp",
+        code: "https://github.com/fisheeesh/filmpire",
+        link: "https://www.filmpire.net",
+        tech: ["React", "RTK Query", "TMDB API", "Alan AI", "MUI"],
+        desc: "A dynamic and fully responsive movie showcase web application built with React and Material UI, powered by The Movie Database (TMDB) API.",
+        modal: <>🎬 Filmpire is a dynamic and fully responsive movie showcase web application built with React and Material UI, powered by The Movie Database (TMDB) API. It allows users to explore, search, and interact with a wide collection of movies, offering features like trailers, ratings, and personalized watchlists for an immersive cinematic experience.</>,
+    },
+    {
+        title: "My Portfolio",
+        img: "/gallery/portfolio_v2.webp",
+        code: "https://github.com/fisheeesh/syp-portfolio",
+        link: "https://www.syp.dev",
+        tech: ["React", "Tailwind", "Framer Motion"],
+        desc: "This is my personal developer portfolio built with React.js, highlights my skills, projects, and certifications with a focus on smooth user interaction.",
+        modal: <>🌐 This is my personal developer portfolio built with React.js, styled using TailwindCSS and Material UI (MUI). It highlights my skills, projects, and certifications with a focus on smooth user interaction using libraries like Framer Motion, React Scroll, and React Type Animation. </>,
+    },
 ];
 
 export const galleryShowCases = [
+    {
+        cat: "🩵, App, Next",
+        title: "Prostore",
+        img: "/gallery/prostore.webp",
+        code: "https://github.com/fisheeesh/prostore_next",
+        link: "https://www.theprostore.shop",
+        tech: ["Next.js", "Typescript", "shadcn/ui", "PayPal", "Stripe", "PostgreSQL"],
+        modal: <>🛒  A full featured Ecommerce platform from scratch using Next.js, TypeScript, shadcn/ui, PostgreSQL, and Prisma. Integrated secure and flexible payment options with Stripe and PayPal, supporting both one-time and multi-product purchases. Features include user authentication, admin panel product management, shopping cart, order history, checkout process, responsive UI and more.</>,
+    },
     {
         cat: "🩵, App, React",
         title: "LitLibrary",
@@ -62,7 +89,7 @@ export const galleryShowCases = [
         img: "/gallery/thewildoasis-web.webp",
         code: "https://github.com/fisheeesh/the-wild-oasis-website",
         link: "https://www.thewildoasis.co",
-        tech: ["React", "Next.js", "Tailwind", "Supabase", "NextAuth"],
+        tech: ["React", "Next.js", "Tailwind", "Supabase", "NextAuth", "Framer Motion"],
         modal: <>🌐 A customer facing website of "The Wild Oasis" designed to let users explore and book serene stays with ease, built with Next.js and Supabase. It uses SSR, SSG, and ISR to ensure fast load times and excellent SEO — delivering a seamless stay-booking experience for customers. Authentication is secured with Google Sign-In via NextAuth.js</>,
     },
     {
