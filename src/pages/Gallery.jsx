@@ -12,7 +12,7 @@ const Gallery = () => {
     const activeFilter = searchParams.get('category') || "🩵";
 
     const [filteredProjects, setFilteredProjects] = useState(
-        galleryShowCases.filter((project) => project.cat.includes("🩵"))
+        galleryShowCases.filter((project) => project.cat.includes(activeFilter))
     );
 
     const handleFilter = (filter) => {
@@ -40,7 +40,7 @@ const Gallery = () => {
                 </div>
 
                 {/* Gallery */}
-                <section className="grid grid-cols-2 space-x-10 max-[860px]:space-x-0 max-[860px]:space-y-2 space-y-4 my-6 max-[860px]:grid-cols-1 max-[860px]:py-0 max-[860px]:px-8 max-[480px]:py-0 max-[480px]:px-4">
+                <section className="grid grid-cols-2 gap-10 max-[860px]:grid-cols-1 max-[860px]:gap-y-4 max-[480px]:px-4">
                     {filteredProjects.map((project) => (
                         <GalleryItem
                             key={`${project.title}-${activeFilter}`}
