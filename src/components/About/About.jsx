@@ -1,9 +1,9 @@
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { SectionHeader } from "../../ui/SectionHeader";
-import { Reveal } from "../../utils/Reveal";
-import Wave from "../../ui/Wave";
-import { Stats } from "../../ui/Stats";
-import { Socials } from "../../ui/Socials";
+import { SectionHeader } from "@/ui/SectionHeader";
+import { Reveal } from "@/utils/Reveal";
+import Wave from "@/ui/Wave";
+import { Stats } from "@/ui/Stats";
+import { Socials } from "@/ui/Socials";
 
 const About = () => {
     return (

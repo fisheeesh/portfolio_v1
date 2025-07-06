@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { AiOutlineArrowLeft } from "react-icons/ai";
-import Filter from "../ui/Filter";
-import { GalleryItem } from "../ui/GalleryItem";
-import { TransitionLink } from "../utils/TransitionLink";
+import Filter from "@/ui/Filter";
+import { GalleryItem } from "@/ui/GalleryItem";
+import { TransitionLink } from "@/utils/TransitionLink";
 import { useSearchParams } from "react-router-dom";
-import { galleryShowCases } from "../data/ProjectData";
+import { galleryShowCases } from "@/data/config";
 
 const Gallery = () => {
     const [searchParams, setSearchParams] = useSearchParams();

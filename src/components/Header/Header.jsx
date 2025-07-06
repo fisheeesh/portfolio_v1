@@ -29,13 +29,13 @@ export default function Header({ toggle }) {
                 </div>
                 <div className="flex items-center mr-6 max-md:hidden">
                     <a
-                        className="btn PrimaryBtn"
+                        className="btn primaryBtn"
                         href="https://www.linkedin.com/in/syp-dev/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         CV
-                        <AiOutlineDownload size="1.5rem" />
+                        <AiOutlineDownload size="1.4rem" />
                     </a>
                 </div>
                 <FaBars onClick={toggle} className="hidden text-white text-[1.8rem] cursor-pointer max-md:block" />

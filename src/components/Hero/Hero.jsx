@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 import DropDown from '../DropDown/DropDown';
 import Header from '../Header/Header';
 import { Link as LinkScroll } from "react-scroll";
-import { fadeIn, flipInX } from '../../data/motion';
+import { fadeIn, flipInX } from '@/data/motion';
 
 export default function Hero() {
     const [isOpen, setIsOpen] = useState(false);

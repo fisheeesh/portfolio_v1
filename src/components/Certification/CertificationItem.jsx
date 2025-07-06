@@ -1,4 +1,5 @@
-import { Reveal } from "../../utils/Reveal";
+import { statClassName } from "@/data/config";
+import { Reveal } from "@/utils/Reveal";
 
 export const CertificationItem = ({
     title,
@@ -43,7 +44,7 @@ export const CertificationItem = ({
             <Reveal>
                 <div className="flex flex-wrap">
                     {tech.map((item) => (
-                        <span key={item} className="rounded-[10px] text-[#000000D0] cursor-default shadow-[0px_2px_5px_rgba(160,170,180,0.6)] bg-[#f5f5f5] py-[5px] px-2.5 m-[5px] flex items-center justify-center text-[15px] font-normal ">
+                        <span key={item} className={statClassName}>
                             {item}
                         </span>
                     ))}

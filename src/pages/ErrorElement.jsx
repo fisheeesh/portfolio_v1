@@ -1,5 +1,5 @@
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import error from '@/assets/error.lottie'
+import error from '/lottie/error.lottie'
 import { Link } from 'react-router-dom';
 
 function ErrorElement() {

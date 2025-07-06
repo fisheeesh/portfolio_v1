@@ -46,7 +46,7 @@ function Dropdown({ isOpen, toggle }) {
 
             <div className="mt-20 flex justify-center text-[1.7rem]">
                 <a
-                    className="btn PrimaryBtn"
+                    className="btn primaryBtn"
                     href="https://www.linkedin.com/in/syp-dev/"
                     target="_blank"
                     rel="noopener noreferrer"

@@ -1,6 +1,6 @@
 import { AiFillMail } from "react-icons/ai";
-import { Socials } from "../../ui/Socials";
-import { Reveal } from "../../utils/Reveal";
+import { Socials } from "@/ui/Socials";
+import { Reveal } from "@/utils/Reveal";
 
 export const Contact = () => {
     return (

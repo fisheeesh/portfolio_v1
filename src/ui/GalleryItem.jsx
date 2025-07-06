@@ -3,20 +3,16 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { BsGlobe } from "react-icons/bs";
-import { Modal } from "../ui/Modal";
-import { Reveal } from "../utils/Reveal";
+import { Modal } from "@/ui/Modal";
+import { Reveal } from "@/utils/Reveal";
 
 export const GalleryItem = ({ modal, link, img, title, code, tech }) => {
-    // Image Animation
     const [hovered, setHovered] = useState(false);
-    // Modal
     const [isOpen, setIsOpen] = useState(false);
-    // Else
     const controls = useAnimation();
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 
-    // Reveal Animation
     useEffect(() => {
         if (isInView) {
             controls.start("visible");
@@ -25,9 +21,6 @@ export const GalleryItem = ({ modal, link, img, title, code, tech }) => {
         }
     }, [isInView, controls]);
 
-    // Body Scroll Lock
-    // https://www.jayfreestone.com/writing/locking-body-scroll-ios/
-    // Try : cleaner way -> conditional CSS using global state (context)
     useEffect(() => {
         const body = document.querySelector("body");
         if (isOpen) {

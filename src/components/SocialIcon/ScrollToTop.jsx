@@ -1,49 +1,38 @@
-import { IconButton, Tooltip, styled } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { MdKeyboardArrowUp } from 'react-icons/md';
-import { animateScroll as scroll } from 'react-scroll';
-
-const StyledIconButton = styled(IconButton)`
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    color: white;
-    padding: 10px;
-    z-index: 999;
-`
-
-const StyledArrowIcon = styled(MdKeyboardArrowUp)`
-    background-color: #007bff;
-    border-radius: 50%;
-    padding: 5px;
-    box-shadow: 0px 4px 20px rgba(160, 170, 180, 0.6);
-`
 
 function ScrollToTop() {
-    const [open, setOpen] = useState(false);
-    const [shouldRender, setShouldRender] = useState(false);
-
-    const handleClick = () => {
-        setOpen(false);
-        scroll.scrollToTop({ duration: 0 });
-    };
+    const [showBtn, setShowBtn] = useState(false)
 
     useEffect(() => {
         const handleScroll = () => {
-            const scrollThreshold = 500;
-            if (window.scrollY > scrollThreshold) setShouldRender(true)
-            else setShouldRender(false);
+            setShowBtn(window.scrollY > 50);
         };
-        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, []);
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        })
+    }
+
     return (
-        shouldRender &&
-        <Tooltip title='Scroll to top' placement='top' open={open} onOpen={() => setOpen(true)} onClose={() => setOpen(false)}>
-            <StyledIconButton size='large' aria-label='scroll to top' onClick={handleClick} >
-                <StyledArrowIcon fontSize={40} />
-            </StyledIconButton>
-        </Tooltip>
+        <button
+            onClick={scrollToTop}
+            type="button"
+            id="to-top"
+            className={`${showBtn ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'} 
+    p-1.5 outline-none cursor-pointer rounded-full bg-brand text-white hover:bg-[#126FFA] transition duration-300
+    flex fixed bottom-5 right-5 z-50 items-center justify-center`}>
+            <MdKeyboardArrowUp className='size-6' />
+        </button>
     )
 }
 

@@ -1,4 +1,4 @@
-import cat from '@/assets/cat.lottie';
+import cat from '/lottie/cat.lottie';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';

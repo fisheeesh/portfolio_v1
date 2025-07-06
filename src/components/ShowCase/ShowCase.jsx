@@ -1,7 +1,7 @@
-import { SectionHeader } from '../../ui/SectionHeader'
+import { SectionHeader } from '@/ui/SectionHeader'
 import { ShowCaseItem } from './ShowCaseItem'
-import LinkToGalleryBtn from '../../ui/LinkToGalleryBtn';
-import { projects } from '../../data/ProjectData';
+import LinkToGalleryBtn from '@/ui/LinkToGalleryBtn';
+import { projects } from '@/data/config';
 
 export default function ShowCase() {
 

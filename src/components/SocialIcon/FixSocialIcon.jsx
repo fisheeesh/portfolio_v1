@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { motion } from 'framer-motion';
-import { fadeIn } from '../../data/motion'
+import { fadeIn } from '@/data/motion'
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function FixSocialIcon() {

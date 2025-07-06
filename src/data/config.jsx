@@ -1,3 +1,104 @@
+export const statClassName = "rounded-[10px] text-[#000000D0] cursor-default shadow-[0px_2px_5px_rgba(160,170,180,0.6)] bg-[#f5f5f5] py-[5px] px-2.5 m-[5px] flex items-center justify-center text-[15px] font-normal"
+
+export const stackTech = [
+    "Vue", "React", "Next.js", "JavaScript", "TypeScript", "Flutter",
+    "Tailwind", "Bootstrap", "shadcn/ui", "Node.js", "Express", "MongoDB",
+    "PostgreSQL", "MySQL", "Jest", "Firebase", "Supabase"
+];
+
+export const extraTech = [
+    "Arc", "Git", "GitHub", "Structured", "SEO", "Prisma", "Postman", "Vercel", "Figma",
+    "ChatGPT", "Claude", "Git Copilot"
+];
+
+export const certification = [
+    {
+        title: "JavaScript Algorithms and Data Structures",
+        school: "freeCodeCamp",
+        date: "July 2025 - 300 hours",
+        link: "https://github.com/fisheeesh/freeCodeCamp_DSA",
+        description:
+            "Focued on mastering core JavaScript concepts such as variables, arrays, objects, loops, functions, and manipulating the DOM. Enhanced proficiency in Object-Oriented and Functional Programming, while sharpening problem-solving and algorithmic thinking. Gained hands-on experience with browser storage and integrating external data using APIs. Focused on building dynamic, responsive web applications through real-world use cases and coding best practices.",
+        tech: [
+            "Javascript",
+            "Algorithms Thinking",
+            "OOP",
+            "API Fetching",
+            "Functions",
+            "DOM",
+        ],
+    },
+    {
+        title: "Next.js E-commerce 2025",
+        school: "Udemy",
+        date: "June 2025 - 22.5 hours",
+        link: "https://drive.google.com/file/d/1BtjnZ5bMwNl7QZClbBAVgXoxR75XZ9PZ/view?usp=drive_link",
+        description:
+            "Focused on mastering advanced Next.js by building a full-featured ecommerce platform from scratch. Gained practical experience with real payment integrations using PayPal and Stripe, including production-level Stripe webhooks. Built full authentication with NextAuth and managed products, orders, and users through a powerful admin dashboard. Developed and validated forms using Zod and React Hook Form, implemented image uploads with Uploadthing, and added email functionality via Resend. Also gained experience in unit testing critical features with Jest to ensure application reliability and maintainability.",
+        tech: [
+            "React",
+            "Next.js",
+            "Typescript",
+            "shadcn/ui",
+            "TailwindCSS",
+            "Stripe",
+            "Paypal",
+            "Uploadthing",
+            "Jest",
+            "Resend Email",
+            "Next Auth",
+            "PostgreSQL",
+            "Prisma"
+        ],
+    },
+    {
+        title: "React Mastery Course",
+        school: "JS Mastery",
+        date: "May 2025",
+        link: "https://drive.google.com/file/d/1oGhEhGqJJ9MnUEJX9bbjgcaIv0DxOeC4/view?usp=drive_link",
+        description:
+            "Focused on mastering advanced JavaScript tools like React.js, Material UI, and Alan AI. Built real-time, interactive apps using component-driven architecture and modern UI techniques. Gained hands-on experience with Redux Toolkit, RTK Query, and integrating voice-based features via Alan AI. Emphasized responsive design, performance, scalability, and accessibility, while integrating third-party APIs and building reusable custom components.",
+        tech: [
+            "React",
+            "Javascript",
+            "Material UI",
+            "RTK Query",
+            "Alan AI",
+            "TMDB API",
+        ],
+    },
+    {
+        title: "The Ultimate Next.js Course",
+        school: "Udemy",
+        date: "Apirl 2025 - 84 hours",
+        link: "https://drive.google.com/file/d/1ylevOCDzma2KW4jV3stSWZ-PooKqrmb4/view?usp=drive_link",
+        description:
+            "Focused on mastering modern React and Next.js by building real-world projects from the ground up. Gained experience in reusable and compound components, advanced state management with Redux Toolkit and React Query, and implemented features like authentication, dynamic routing, server-side rendering, and performance optimization. Also explored incremental static regeneration and API handling. Emphasized code scalability, modular design, accessibility, and production-grade performance through best practices.",
+        tech: [
+            "React",
+            "JavaScript",
+            "Next.js",
+            "Supabase",
+            "Redux",
+            "TailwindCSS",
+            "Styled Components",
+            "React Query",
+            "SSR",
+            "SSG",
+            "ISR",
+        ],
+    },
+    {
+        title: "TaiwindCSS Training",
+        school: "Udemy",
+        date: "December 2024 – 12.5 hours",
+        link: "https://drive.google.com/file/d/13KTDLzkORPgfoRU2R0NzEGfZ9ZIlp0Jw/view?usp=drive_link",
+        description:
+            "Focused on enhancing front-end skills with popular libraries and frameworks. Gained proficiency in rapidly building responsive UIs using TailwindCSS utility-first classes. Emphasized integrating advanced styling techniques, dark mode support, and component-based design for dynamic and efficient web applications. Developed a deeper understanding of design systems, layout strategies, and maintaining clean, scalable styles across projects.",
+        tech: ["HTML", "CSS", "Javascript", "TailwindCSS", "Responsive"],
+    },
+];
+
 export const projects = [
     {
         title: "Prostore",
@@ -57,7 +158,7 @@ export const projects = [
 
 export const galleryShowCases = [
     {
-        cat: "🩵, App, Next",
+        cat: "🩵, Next",
         title: "Prostore",
         img: "/gallery/prostore.webp",
         code: "https://github.com/fisheeesh/prostore_next",
@@ -66,7 +167,7 @@ export const galleryShowCases = [
         modal: <>🛒  A full featured Ecommerce platform from scratch using Next.js, TypeScript, shadcn/ui, PostgreSQL, and Prisma. Integrated secure and flexible payment options with Stripe and PayPal, supporting both one-time and multi-product purchases. Features include user authentication, admin panel product management, shopping cart, order history, checkout process, responsive UI and more.</>,
     },
     {
-        cat: "🩵, App, React",
+        cat: "🩵, React",
         title: "LitLibrary",
         img: "/gallery/lit-library.webp",
         code: "https://github.com/fisheeesh/lit-library",
@@ -75,7 +176,7 @@ export const galleryShowCases = [
         modal: <>📚 A vibrant blogging platform designed to foster a positive and supportive community. Users can share personal growth experiences, life knowledge, advice, and insights while engaging with others' blogs. It’s a place to inspire, learn, and connect.</>,
     },
     {
-        cat: "🩵, App, React",
+        cat: "🩵, React",
         title: "Filmpire",
         img: "/gallery/filmpire.webp",
         code: "https://github.com/fisheeesh/filmpire",
@@ -84,7 +185,7 @@ export const galleryShowCases = [
         modal: <>🎬 Filmpire is a dynamic and fully responsive movie showcase web application built with React and Material UI, powered by The Movie Database (TMDB) API. It allows users to explore, search, and interact with a wide collection of movies, offering features like trailers, ratings, and personalized watchlists for an immersive cinematic experience.</>,
     },
     {
-        cat: "🩵, App, Next",
+        cat: "🩵, Next",
         title: "TWO Web",
         img: "/gallery/thewildoasis-web.webp",
         code: "https://github.com/fisheeesh/the-wild-oasis-website",
@@ -93,7 +194,7 @@ export const galleryShowCases = [
         modal: <>🌐 A customer facing website of "The Wild Oasis" designed to let users explore and book serene stays with ease, built with Next.js and Supabase. It uses SSR, SSG, and ISR to ensure fast load times and excellent SEO — delivering a seamless stay-booking experience for customers. Authentication is secured with Google Sign-In via NextAuth.js</>,
     },
     {
-        cat: "🩵, App, React",
+        cat: "🩵, React",
         title: "TWO Dash",
         img: "/gallery/thewildoasis-d.webp",
         code: "https://github.com/fisheeesh/the-wild-oasis-dashboard",
@@ -102,7 +203,7 @@ export const galleryShowCases = [
         modal: <>🖥️ An internal Hotel Management Dashboard for staff to manage bookings, check-ins, cabins, user accounts, and hotel settings, while offering business insights through interactive charts and a clean, intuitive dashboard. As it’s secured behind authentication, responsiveness wasn’t prioritized. 🙏 </>,
     },
     {
-        cat: "🩵, App, React",
+        cat: "🩵, React",
         title: "My Portfolio",
         img: "/gallery/portfolio_v2.webp",
         code: "https://github.com/fisheeesh/syp-portfolio",
@@ -111,7 +212,7 @@ export const galleryShowCases = [
         modal: <>🌐 This is my personal developer portfolio built with React.js, styled using TailwindCSS and Material UI (MUI). It highlights my skills, projects, and certifications with a focus on smooth user interaction using libraries like Framer Motion, React Scroll, and React Type Animation. </>,
     },
     {
-        cat: "🩵, App, Vue",
+        cat: "🩵, Vue",
         title: "Chatty",
         img: "/gallery/chatty.webp",
         code: "https://github.com/fisheeesh/chatty",
@@ -120,7 +221,7 @@ export const galleryShowCases = [
         modal: <>💬 A real-time chat application built with Vue.js and Firebase. It allows users to send and receive messages in real-time, providing a seamless and interactive messaging experience.</>,
     },
     {
-        cat: "🩵, App, Vue",
+        cat: "🩵, Vue",
         title: "Audionix",
         img: "/gallery/audionix.webp",
         code: "https://github.com/fisheeesh/audionix",

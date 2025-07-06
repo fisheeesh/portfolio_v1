@@ -1,4 +1,4 @@
-import { Reveal } from "../utils/Reveal";
+import { Reveal } from "@/utils/Reveal";
 
 export const SectionHeader = ({ title, dir = "r" }) => {
     return (
