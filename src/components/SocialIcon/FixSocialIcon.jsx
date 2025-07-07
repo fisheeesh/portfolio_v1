@@ -20,8 +20,9 @@ export default function FixSocialIcon() {
                             href="https://www.linkedin.com/in/syp-dev"
                             target="_blank"
                             rel="noopener noreferrer"
+                            aria-label="Contact me on LinkedIn"
                         >
-                            <FaLinkedin />
+                            <FaLinkedin aria-hidden="true" />
                         </a>
                     </li>
                     <li>
@@ -30,8 +31,9 @@ export default function FixSocialIcon() {
                             href="https://github.com/fisheeesh"
                             target="_blank"
                             rel="noopener noreferrer"
+                            aria-label="View my GitHub Profile"
                         >
-                            <FaGithub />
+                            <FaGithub aria-hidden="true" />
                         </a>
                     </li>
                 </ul>

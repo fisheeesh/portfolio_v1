@@ -1,6 +1,6 @@
 import { AiFillCode } from "react-icons/ai";
 import { Reveal } from "@/utils/Reveal";
-import { extraTech, stackTech, statClassName } from "../data/config";
+import { extraTech, stackTech, statClassName } from "@/data/config";
 
 export const Stats = () => {
     const renderItems = (items) =>
@@ -15,7 +15,7 @@ export const Stats = () => {
             <Reveal>
                 <div>
                     <h4 className="flex items-center mb-1">
-                        <AiFillCode size="2.4rem" color="#3986FA" />
+                        <AiFillCode aria-hidden="true" size="2.4rem" color="#3986FA" />
                         <span className="font-bold relative ml-1.5 text-[1.6rem]">Stack</span>
                     </h4>
                     <div className="flex flex-wrap mb-4">{renderItems(stackTech)}</div>
@@ -24,8 +24,8 @@ export const Stats = () => {
 
             <Reveal>
                 <div>
-                    <h4 className="flex items-center mb-1">
-                        <AiFillCode size="2.4rem" color="#3986FA" />
+                    <h4 className="flex items-center mb-1 mt-0.5">
+                        <AiFillCode aria-hidden="true" size="2.4rem" color="#3986FA" />
                         <span className="font-bold relative ml-1.5 text-[1.6rem]">+</span>
                     </h4>
                     <div className="flex flex-wrap">{renderItems(extraTech)}</div>

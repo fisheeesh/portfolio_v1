@@ -7,7 +7,7 @@ export const stackTech = [
 ];
 
 export const extraTech = [
-    "Arc", "Git", "GitHub", "Structured", "SEO", "Prisma", "Postman", "Vercel", "Figma",
+    "Arc", "Git", "GitHub", "Structured", "Prisma", "Postman", "Vercel", "Figma",
     "ChatGPT", "Claude", "Git Copilot"
 ];
 
@@ -73,7 +73,7 @@ export const certification = [
         date: "Apirl 2025 - 84 hours",
         link: "https://drive.google.com/file/d/1ylevOCDzma2KW4jV3stSWZ-PooKqrmb4/view?usp=drive_link",
         description:
-            "Focused on mastering modern React and Next.js by building real-world projects from the ground up. Gained experience in reusable and compound components, advanced state management with Redux Toolkit and React Query, and implemented features like authentication, dynamic routing, server-side rendering, and performance optimization. Also explored incremental static regeneration and API handling. Emphasized code scalability, modular design, accessibility, and production-grade performance through best practices.",
+            "Focused on mastering modern React and Next.js by building real-world projects from the ground up. Gained experience in reusable and compound components, advanced state management with Redux Toolkit and React Query, and implemented features like authentication, dynamic routing, server-side rendering, and performance optimization. Also explored incremental static regeneration and API handling. Emphasized code scalability, SEO, accessibility, and production-grade performance through best practices.",
         tech: [
             "React",
             "JavaScript",

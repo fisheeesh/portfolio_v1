@@ -63,11 +63,11 @@ export const GalleryItem = ({ modal, link, img, title, code, tech }) => {
                             <div className="w-full h-0.5 opacity-30 bg-gray-400" />
 
                             <a className="opacity-75 transition-opacity duration-200 hover:opacity-100" href={code} target="_blank" rel="nofollow" title="GitHub" aria-label="View Code">
-                                <AiFillGithub size="2rem" />
+                                <AiFillGithub size="2rem" aria-hidden="true" />
                             </a>
 
                             <a className="opacity-75 transition-opacity duration-200 hover:opacity-100" href={link} target="_blank" rel="nofollow" title="Demo" aria-label="View Website">
-                                <BsGlobe size="1.7rem" />
+                                <BsGlobe size="1.7rem" aria-hidden="true" />
                             </a>
                         </div>
                     </Reveal>

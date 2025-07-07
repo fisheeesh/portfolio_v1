@@ -22,7 +22,7 @@ export const Socials = () => {
                     rel="nofollow"
                     title="LinkedIn"
                     aria-label="Contact me on LinkedIn">
-                    <AiFillLinkedin size="1.6rem" />
+                    <AiFillLinkedin aria-hidden="true" size="1.6rem" />
                 </a>
             </motion.span>
 
@@ -37,7 +37,7 @@ export const Socials = () => {
                     rel="nofollow"
                     title="Medium"
                     aria-label="Check out my article on Medium">
-                    <SiMedium size="1.3rem" />
+                    <SiMedium aria-hidden="true" size="1.3rem" />
                 </a>
             </motion.span>
 
@@ -53,7 +53,7 @@ export const Socials = () => {
                     rel="nofollow"
                     title="GitHub"
                     aria-label="View my GitHub Profile">
-                    <AiFillGithub size="1.6rem" />
+                    <AiFillGithub aria-hidden="true" size="1.6rem" />
                 </a>
             </motion.span>
 
@@ -63,12 +63,12 @@ export const Socials = () => {
                 transition={{ duration: 0.5, delay: 0.4 }}>
                 <a
                     className="z-[29] opacity-50 transition duration-200 hover:opacity-100 hover:text-brand max-[360px]:gap-[1.2rem]"
-                    href="mailto:swanphyo444@gmail.com"
+                    href="mailto:swamyiphyo.dev@gmail.com"
                     target="_blank"
                     rel="nofollow"
                     title="Email"
                     aria-label="Send me an Email">
-                    <AiOutlineMail size="1.6rem" />
+                    <AiOutlineMail aria-hidden="true" size="1.6rem" />
                 </a>
             </motion.span>
         </div>

@@ -32,7 +32,7 @@ const Gallery = () => {
                         className="absolute left-0 max-[860px]:static mt-2"
                         to="/#projects"
                         aria-label="Back to Homepage">
-                        <AiOutlineArrowLeft className="transition duration-200 opacity-50 hover:opacity-100 text-3xl max-[860px]:text-2xl" />
+                        <AiOutlineArrowLeft aria-hidden="true" className="transition duration-200 opacity-50 hover:opacity-100 text-3xl max-[860px]:text-2xl" />
                     </TransitionLink>
 
                     {/* Filter */}

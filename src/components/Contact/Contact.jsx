@@ -31,14 +31,14 @@ export const Contact = () => {
                 <Reveal width="100%">
                     <div className="flex flex-col items-center gap-2">
                         <a
-                            href="mailto:swanphyo444@gmail.com"
+                            href="mailto:swamyiphyo.dev@gmail.com"
                             target="_blank"
                             rel="nofollow"
                             aria-label="Send me an email"
                             className="flex items-center justify-center md:text-lg gap-2 mb-2 transition hover:text-brand"
                         >
-                            <AiFillMail size="24" />
-                            <span className="font-medium">swanphyo444@gmail.com</span>
+                            <AiFillMail size="24" aria-hidden="true" />
+                            <span className="font-medium">swamyiphyo.dev@gmail.com</span>
                         </a>
                     </div>
                 </Reveal>
