@@ -342,7 +342,7 @@ export const galleryShowCases = [
         title: "Vera",
         img: "/gallery/vera.webp",
         code: "https://github.com/fisheeesh/bootstrap-training.git",
-        link: "https://skywings-nu.vercel.app/",
+        link: "https://vera-website-syp.netlify.app/",
         tech: ["HTML", "CSS", "Bootstrap", "Scss", "JS"],
         modal: <>🏢 Landing page design for IT Software Solution company website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, JS, Bootstrap and Scss.</>
     },
@@ -351,7 +351,7 @@ export const galleryShowCases = [
         title: "Skywings",
         img: "/gallery/skywings.webp",
         code: "https://github.com/fisheeesh/skywings.git",
-        link: "https://summarize-fv.netlify.app",
+        link: "https://skywings-nu.vercel.app/",
         tech: ["HTML", "CSS", "JS", "Swiper.js"],
         modal: <>✈️ Landing page design for Air tickets booking website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, JS and with the help of Swiper.js.</>
     },
