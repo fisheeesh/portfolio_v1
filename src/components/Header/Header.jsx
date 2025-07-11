@@ -1,6 +1,6 @@
 import { FaBars } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
-import CvBtn from "@/ui/CvBtn";
+import ResumeBtn from "@/ui/ResumeBtn";
 
 export default function Header({ toggle }) {
     return (
@@ -55,7 +55,7 @@ export default function Header({ toggle }) {
                 </ul>
 
                 <div className="flex items-center mr-6 max-md:hidden">
-                    <CvBtn />
+                    <ResumeBtn />
                 </div>
 
                 <button

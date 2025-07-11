@@ -16,7 +16,7 @@ export const Contact = () => {
                     <p className="text-center md:text-xl max-[769px]:max-w-md max-[1300px]:max-w-lg mx-auto">
                         Want to collaborate or have a quick chat? Shoot me an email or connect with me on{" "}
                         <a
-                            href="https://www.linkedin.com/in/syp-dev"
+                            href="https://www.linkedin.com/in/swamyiphyo/"
                             target="_blank"
                             rel="nofollow"
                             aria-label="Connect with me on LinkedIn"

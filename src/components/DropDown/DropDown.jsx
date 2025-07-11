@@ -1,6 +1,6 @@
 import { FaTimes } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
-import CvBtn from "@/ui/CvBtn";
+import ResumeBtn from "@/ui/ResumeBtn";
 
 function Dropdown({ isOpen, toggle }) {
     return (
@@ -49,7 +49,7 @@ function Dropdown({ isOpen, toggle }) {
             </nav>
 
             <div className="mt-20 flex justify-center text-[1.7rem]">
-                <CvBtn />
+                <ResumeBtn />
             </div>
         </div>
     );

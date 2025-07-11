@@ -17,7 +17,7 @@ export const Socials = () => {
                 transition={{ duration: 0.5, delay: 0.1 }}>
                 <a
                     className="z-[29] opacity-50 transition duration-200 hover:opacity-100 hover:text-brand max-[360px]:gap-[1.2rem]"
-                    href="https://www.linkedin.com/in/syp-dev"
+                    href="https://www.linkedin.com/in/swamyiphyo/"
                     target="_blank"
                     rel="nofollow"
                     title="LinkedIn"

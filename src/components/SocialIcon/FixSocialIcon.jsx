@@ -17,7 +17,7 @@ export default function FixSocialIcon() {
                     <li className='mb-5 max-[1000px]:mb-0'>
                         <a
                             className='text-[2.3rem] text-[#777779] hover:text-[#3986FA] max-[1000px]:text-[2.5rem] max-[1000px]:text-[#151418] max-[1000px]:hover:text-[#3986FA]'
-                            href="https://www.linkedin.com/in/syp-dev"
+                            href="https://www.linkedin.com/in/swamyiphyo/"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Contact me on LinkedIn"

@@ -147,7 +147,7 @@ export const projects = [
     },
     {
         title: "My Portfolio",
-        img: "/gallery/portfolio_v2.webp",
+        img: "/gallery/portfolio-v2.webp",
         code: "https://github.com/fisheeesh/syp-portfolio",
         link: "https://www.syp.dev",
         tech: ["React", "Tailwind", "Framer Motion"],
@@ -205,7 +205,7 @@ export const galleryShowCases = [
     {
         cat: "🩵, React",
         title: "My Portfolio",
-        img: "/gallery/portfolio_v2.webp",
+        img: "/gallery/portfolio-v2.webp",
         code: "https://github.com/fisheeesh/syp-portfolio",
         link: "https://www.syp.dev",
         tech: ["React", "Tailwind", "Framer Motion", "React Type Animation", "React Scroll", "MUI"],
