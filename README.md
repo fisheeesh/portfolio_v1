@@ -25,10 +25,10 @@ This is my personal developer portfolio built with React.js, styled using Tailwi
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/fisheeesh/syp-portfolio.git
+   git clone https://github.com/fisheeesh/portfolio_v1.git
 2. **Go to your folder**
    ```bash
-   cd syp-portfolio 
+   cd portfolio_v1 
 3. **Install Dependencies**:
    ```bash  
    npm install
