@@ -2,7 +2,7 @@ export const statClassName = "rounded-[10px] text-[#000000D0] cursor-default sha
 
 export const stackTech = [
     "Vue", "React", "Next.js", "JavaScript", "TypeScript", "Flutter",
-    "Tailwind", "Bootstrap", "shadcn/ui", "Node.js", "Express", "MongoDB",
+    "Tailwind CSS", "Bootstrap", "shadcn/ui", "Node.js", "Express", "MongoDB",
     "PostgreSQL", "MySQL", "Jest", "Firebase", "Supabase"
 ];
 
@@ -38,9 +38,9 @@ export const certification = [
         tech: [
             "React",
             "Next.js",
-            "Typescript",
+            "TypeScript",
             "shadcn/ui",
-            "TailwindCSS",
+            "Tailwind CSS",
             "Stripe",
             "Paypal",
             "Uploadthing",
@@ -80,7 +80,7 @@ export const certification = [
             "Next.js",
             "Supabase",
             "Redux",
-            "TailwindCSS",
+            "Tailwind CSS",
             "Styled Components",
             "React Query",
             "SSR",
@@ -94,8 +94,8 @@ export const certification = [
         date: "December 2024 – 12.5 hours",
         link: "https://drive.google.com/file/d/13KTDLzkORPgfoRU2R0NzEGfZ9ZIlp0Jw/view?usp=drive_link",
         description:
-            "Focused on enhancing front-end skills with popular libraries and frameworks. Gained proficiency in rapidly building responsive UIs using TailwindCSS utility-first classes. Emphasized integrating advanced styling techniques, dark mode support, and component-based design for dynamic and efficient web applications. Developed a deeper understanding of design systems, layout strategies, and maintaining clean, scalable styles across projects.",
-        tech: ["HTML", "CSS", "Javascript", "TailwindCSS", "Responsive"],
+            "Focused on enhancing front-end skills with popular libraries and frameworks. Gained proficiency in rapidly building responsive UIs using Tailwind CSS utility-first classes. Emphasized integrating advanced styling techniques, dark mode support, and component-based design for dynamic and efficient web applications. Developed a deeper understanding of design systems, layout strategies, and maintaining clean, scalable styles across projects.",
+        tech: ["HTML", "CSS", "Javascript", "Tailwind CSS", "Responsive"],
     },
 ];
 
@@ -105,7 +105,7 @@ export const projects = [
         img: "/gallery/prostore.webp",
         code: "https://github.com/fisheeesh/prostore_next",
         link: "https://www.theprostore.shop",
-        tech: ["Next.js", "Typescript", "shadcn/ui", "PayPal", "Stripe", "PostgreSQL"],
+        tech: ["Next.js", "TypeScript", "shadcn/ui", "PayPal", "Stripe", "PostgreSQL"],
         desc: "A full featured Ecommerce platform from scratch using Next.js, TypeScript, shadcn/ui, PostgreSQL, and Prisma. Integrated secure and flexible payment options with Stripe and PayPal.",
         modal: <>🛒  A full featured Ecommerce platform from scratch using Next.js, TypeScript, shadcn/ui, PostgreSQL, and Prisma. Integrated secure and flexible payment options with Stripe and PayPal, supporting both one-time and multi-product purchases. Features include user authentication, admin panel product management, shopping cart, order history, checkout process, responsive UI and more.</>,
     },
@@ -115,7 +115,7 @@ export const projects = [
         code: "https://github.com/fisheeesh/lit-library",
         link: "https://www.litlibrary.blog",
         tech: ["React", "Firebase", "Tailwind", "Context API", "Zod", "Swiper.js"],
-        desc: "A vibrant blogging platform using React.js and TailwindCSS. It highlights the effective use of Firebase real-time database to enable instant content updates.",
+        desc: "A vibrant blogging platform using React.js and Tailwind CSS. It highlights the effective use of Firebase real-time database to enable instant content updates.",
         modal: <>📚 A vibrant blogging platform designed to foster a positive and supportive community. Users can share personal growth experiences, life knowledge, advice, and insights while engaging with others&apos; blogs. It’s a place to inspire, learn, and connect. I love writing blogs there too, it’s my way of sharing what I’ve learned and connecting with others.</>,
     },
     {
@@ -150,9 +150,9 @@ export const projects = [
         img: "/gallery/portfolio-v2.webp",
         code: "https://github.com/fisheeesh/syp-portfolio",
         link: "https://www.syp.dev",
-        tech: ["React", "Tailwind", "Framer Motion"],
-        desc: "This is my personal developer portfolio built with React.js, highlights my skills, projects, and certifications with a focus on smooth user interaction.",
-        modal: <>🌐 This is my personal developer portfolio built with React.js, styled using TailwindCSS and Material UI (MUI). It highlights my skills, projects, and certifications with a focus on smooth user interaction using libraries like Framer Motion, React Scroll, and React Type Animation. </>,
+        tech: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+        desc: "This is my personal developer portfolio built with Next.js, highlights my skills, projects, and certifications with a focus on smooth user interaction.",
+        modal: <>🌐 This is my personal developer portfolio built with Next.js, styled using Tailwind CSS. It highlights my skills, projects, and certifications with a focus on smooth user interaction using libraries like Framer Motion, React Scroll, and React Type Animation. </>,
     },
 ];
 
@@ -163,7 +163,7 @@ export const galleryShowCases = [
         img: "/gallery/prostore.webp",
         code: "https://github.com/fisheeesh/prostore_next",
         link: "https://www.theprostore.shop",
-        tech: ["Next.js", "Typescript", "shadcn/ui", "PayPal", "Stripe", "PostgreSQL"],
+        tech: ["Next.js", "TypeScript", "shadcn/ui", "PayPal", "Stripe", "PostgreSQL"],
         modal: <>🛒  A full featured Ecommerce platform from scratch using Next.js, TypeScript, shadcn/ui, PostgreSQL, and Prisma. Integrated secure and flexible payment options with Stripe and PayPal, supporting both one-time and multi-product purchases. Features include user authentication, admin panel product management, shopping cart, order history, checkout process, responsive UI and more.</>,
     },
     {
@@ -203,13 +203,13 @@ export const galleryShowCases = [
         modal: <>🖥️ An internal Hotel Management Dashboard for staff to manage bookings, check-ins, cabins, user accounts, and hotel settings, while offering business insights through interactive charts and a clean, intuitive dashboard. As it’s secured behind authentication, responsiveness wasn’t prioritized. 🙏 </>,
     },
     {
-        cat: "🩵, React",
+        cat: "🩵, Next",
         title: "My Portfolio",
         img: "/gallery/portfolio-v2.webp",
         code: "https://github.com/fisheeesh/syp-portfolio",
         link: "https://www.syp.dev",
-        tech: ["React", "Tailwind", "Framer Motion", "React Type Animation", "React Scroll", "MUI"],
-        modal: <>🌐 This is my personal developer portfolio built with React.js, styled using TailwindCSS and Material UI (MUI). It highlights my skills, projects, and certifications with a focus on smooth user interaction using libraries like Framer Motion, React Scroll, and React Type Animation. </>,
+        tech: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+        modal: <>🌐 This is my personal developer portfolio built with Next.js, styled using Tailwind CSS. It highlights my skills, projects, and certifications with a focus on smooth user interaction using libraries like Framer Motion, React Scroll, and React Type Animation. </>,
     },
     {
         cat: "🩵, Vue",
