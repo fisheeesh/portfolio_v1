@@ -9,7 +9,7 @@
 - [🚀 Get Started](#-get-started)
 
 ## 👋 Introduction
-This is my personal developer portfolio built with React.js, styled using TailwindCSS and Material UI (MUI). It highlights my skills, projects, and certifications with a focus on smooth user interaction using libraries like Framer Motion, React Scroll, and React Type Animation.
+This is my personal developer portfolio built with Next.js, styled using TailwindCSS. It highlights my skills, projects, and certifications with a focus on smooth user interaction using libraries like Framer Motion, React Scroll, and React Type Animation.
 
 ## ✨ Features
 
