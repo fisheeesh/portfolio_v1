@@ -20,7 +20,7 @@ export const certification = [
         description:
             "Focued on mastering core JavaScript concepts such as variables, arrays, objects, loops, functions, and manipulating the DOM. Enhanced proficiency in Object-Oriented and Functional Programming, while sharpening problem-solving and algorithmic thinking. Gained hands-on experience with browser storage and integrating external data using APIs. Focused on building dynamic, responsive web applications through real-world use cases and coding best practices.",
         tech: [
-            "Javascript",
+            "JavaScript",
             "Algorithms Thinking",
             "OOP",
             "API Fetching",
@@ -60,7 +60,7 @@ export const certification = [
             "Focused on mastering advanced JavaScript tools like React.js, Material UI, and Alan AI. Built real-time, interactive apps using component-driven architecture and modern UI techniques. Gained hands-on experience with Redux Toolkit, RTK Query, and integrating voice-based features via Alan AI. Emphasized responsive design, performance, scalability, and accessibility, while integrating third-party APIs and building reusable custom components.",
         tech: [
             "React",
-            "Javascript",
+            "JavaScript",
             "Material UI",
             "RTK Query",
             "Alan AI",
@@ -95,7 +95,7 @@ export const certification = [
         link: "https://drive.google.com/file/d/13KTDLzkORPgfoRU2R0NzEGfZ9ZIlp0Jw/view?usp=drive_link",
         description:
             "Focused on enhancing front-end skills with popular libraries and frameworks. Gained proficiency in rapidly building responsive UIs using Tailwind CSS utility-first classes. Emphasized integrating advanced styling techniques, dark mode support, and component-based design for dynamic and efficient web applications. Developed a deeper understanding of design systems, layout strategies, and maintaining clean, scalable styles across projects.",
-        tech: ["HTML", "CSS", "Javascript", "Tailwind CSS", "Responsive"],
+        tech: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "Responsive"],
     },
 ];
 
@@ -272,7 +272,7 @@ export const galleryShowCases = [
         code: "https://github.com/fisheeesh/bootstrap-training.git",
         link: "https://clip-board-syp.netlify.app/",
         tech: ["HTML", "CSS", "Tailwind"],
-        modal: <>🖇️ Landing page design for tracking copy history website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Tailwind and Javascript.</>
+        modal: <>🖇️ Landing page design for tracking copy history website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Tailwind and JavaScript.</>
     },
     {
         cat: "🩵, Design",
@@ -281,7 +281,7 @@ export const galleryShowCases = [
         code: "https://github.com/fisheeesh/bootstrap-training.git",
         link: "https://loop-stuido.netlify.app/",
         tech: ["HTML", "CSS", "Tailwind", "JS"],
-        modal: <>📀 Landing page design for virtual reality production studio website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Tailwind and Javascript.</>
+        modal: <>📀 Landing page design for virtual reality production studio website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Tailwind and JavaScript.</>
     },
     {
         cat: "🩵, Design",
@@ -299,7 +299,7 @@ export const galleryShowCases = [
         code: "https://github.com/fisheeesh/bootstrap-training.git",
         link: "https://fylo-website-syp.netlify.app/",
         tech: ["HTML", "CSS", "Tailwind", "JS"],
-        modal: <>Landing page design for tracking copy history website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Tailwind and Javascript. It features a clean UI with support for light and dark theme toggling.</>
+        modal: <>Landing page design for tracking copy history website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Tailwind and JavaScript. It features a clean UI with support for light and dark theme toggling.</>
     },
     {
         cat: "🩵, Design",
@@ -308,7 +308,7 @@ export const galleryShowCases = [
         code: "https://github.com/fisheeesh/tailwind_training.git",
         link: "https://book-mark-webiste.netlify.app/",
         tech: ["HTML", "CSS", "Tailwind", "JS"],
-        modal: <>🔖 Landing page design for bookmarking website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Tailwind and Javascript.</>
+        modal: <>🔖 Landing page design for bookmarking website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Tailwind and JavaScript.</>
     },
     {
         cat: "🩵, Design",
