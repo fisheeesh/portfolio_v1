@@ -1,5 +1,5 @@
 <a href="https://www.syp.dev" target="_blank" rel="noopener noreferrer">
-  <img src="./public/preview.png" alt="Preview" />
+  <img src="./public/assets/preview.png" alt="Preview" />
 </a>
 
 ## 📋 Table of Contents

@@ -7,24 +7,15 @@ import Filter from "@/components/gallery/filter";
 import { GalleryItem } from "@/components/gallery/gallery-item";
 import { TransitionLink } from "@/components/shared/transition-link";
 import ScrollTopBtn from "@/components/shared/scroll-top-btn";
-import { useSearchParams, usePathname, useRouter } from "next/navigation";
 
 const Gallery = () => {
-    const searchParams = useSearchParams()
-    const router = useRouter()
-    const pathname = usePathname()
-
-    const filterParams = searchParams.get('category') ?? '🩵'
-    const [activeFilter, setActiveFilter] = useState(filterParams);
+    const [activeFilter, setActiveFilter] = useState("🩵");
 
     const [filteredProjects, setFilteredProjects] = useState(
-        galleryShowCases.filter((project) => project.cat.includes(activeFilter))
+        galleryShowCases.filter((project) => project.cat.includes("🩵"))
     );
 
     const handleFilter = (filter: string) => {
-        const params = new URLSearchParams(searchParams)
-        params.set('category', filter)
-        router.replace(`${pathname}?${params.toString()}`, { scroll: false })
         setActiveFilter(filter);
         setFilteredProjects(
             galleryShowCases.filter((project) => project.cat.includes(filter))
