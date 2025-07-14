@@ -202,3 +202,13 @@
     background-color: #3986FA;
     color: white;
 }
+
+.blur {
+    filter: blur(5px);
+    transition: filter 0.3s ease-in;
+}
+
+.remove-blur {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+}
