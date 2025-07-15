@@ -45,7 +45,7 @@ export const certification = [
             "Paypal",
             "Uploadthing",
             "Jest",
-            "Resend Email",
+            "Resend",
             "Next Auth",
             "PostgreSQL",
             "Prisma"
