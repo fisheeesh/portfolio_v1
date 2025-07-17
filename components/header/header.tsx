@@ -10,15 +10,14 @@ export default function Header({ toggle }: { toggle: () => void }) {
                 className="bg-transparent h-[100px] flex items-center justify-between z-[10]"
                 aria-label="Main navigation"
             >
-                <div>
-                    <a href="#top" aria-label="Go to top">
-                        <Image
-                            src="/assets/logo.png"
-                            alt="Swam Yi Phyo logo"
-                            width={47}
-                            height={47}
-                        />
-                    </a>
+                <div className="mt-0.5">
+                    <Image
+                        src="/assets/logo.png"
+                        priority
+                        alt="Swam Yi Phyo logo"
+                        width={54}
+                        height={54}
+                    />
                 </div>
 
                 <ul className="flex items-center -mr-6 space-x-[1rem] max-md:hidden">

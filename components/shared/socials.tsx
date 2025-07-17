@@ -29,7 +29,7 @@ export const Socials = () => {
             <motion.span
                 initial={{ y: -30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.1 }}>
+                transition={{ duration: 0.5, delay: 0.2 }}>
                 <a
                     className="z-[29] opacity-50 transition duration-200 hover:opacity-100 hover:text-brand max-[360px]:gap-[1.2rem]"
                     href="https://medium.com/@swanphyo444"
@@ -45,7 +45,7 @@ export const Socials = () => {
             <motion.span
                 initial={{ y: -30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.2 }}>
+                transition={{ duration: 0.5, delay: 0.3 }}>
                 <a
                     className="z-[29] opacity-50 transition duration-200 hover:opacity-100 hover:text-brand max-[360px]:gap-[1.2rem]"
                     href="https://github.com/fisheeesh"

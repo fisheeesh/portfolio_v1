@@ -107,7 +107,8 @@ export const projects = [
         link: "https://www.theprostore.shop",
         tech: ["Next.js", "TypeScript", "shadcn/ui", "PayPal", "Stripe", "PostgreSQL"],
         desc: "A full featured Ecommerce platform from scratch using Next.js, TypeScript, shadcn/ui, PostgreSQL, and Prisma. Integrated secure and flexible payment options with Stripe and PayPal.",
-        modal: <>🛒  A full featured Ecommerce platform from scratch using Next.js, TypeScript, shadcn/ui, PostgreSQL, and Prisma. Integrated secure and flexible payment options with Stripe and PayPal, supporting both one-time and multi-product purchases. Features include user authentication, admin panel product management, shopping cart, order history, checkout process, responsive UI and more.</>,
+        modal: <>🛒  A full featured Ecommerce platform from scratch using Next.js, TypeScript, shadcn/ui, PostgreSQL, and Prisma. Integrated secure and flexible payment options with Stripe and PayPal, supporting both one-time and multi-product purchases. Features include user authentication, admin panel product management, shopping cart, order history, checkout process, and responsive UI. I designed both customer-facing and admin interfaces, implemented role-based access control, and handled edge cases like failed transactions and stock availability.
+            <br /><br />This project gave me deep hands-on experience with e-commerce logic, scalable backend design, and full-stack payment flows. I tested over 100 transactions in sandbox mode for both PayPal and Stripe to ensure reliability, proper webhook handling, and graceful error management. Prostore helped me solidify my knowledge of building production-grade applications with real-world complexity and a strong focus on performance and user experience.</>,
     },
     {
         title: "LitLibrary",
@@ -116,7 +117,7 @@ export const projects = [
         link: "https://www.litlibrary.blog",
         tech: ["React", "Firebase", "Tailwind", "Context API", "Zod", "Swiper.js"],
         desc: "A vibrant blogging platform using React.js and Tailwind CSS. It highlights the effective use of Firebase real-time database to enable instant content updates.",
-        modal: <>📚 A vibrant blogging platform designed to foster a positive and supportive community. Users can share personal growth experiences, life knowledge, advice, and insights while engaging with others&apos; blogs. It’s a place to inspire, learn, and connect. I love writing blogs there too, it’s my way of sharing what I’ve learned and connecting with others.</>,
+        modal: <>📚 A vibrant blogging platform designed to foster a positive and supportive community. Users can share personal growth experiences, life knowledge, advice, and insights while engaging with others&apos; blogs. It’s a place to inspire, learn, and connect. I love writing blogs there too, it’s my way of sharing what I’ve learned and connecting with others. <br /><br />This was actually my very first React project, and it taught me a lot about building component-based UIs and managing real-time state. It also includes a real-time notification feature using Firebase, alerting users instantly when new content or interactions happen. Working on LitLibrary helped me explore schema validation with Zod, and gave me confidence in creating a fully functional interactive web app.</>,
     },
     {
         title: "TWO Web",
@@ -125,7 +126,8 @@ export const projects = [
         link: "https://www.thewildoasis.co",
         tech: ["React", "Next.js", "Tailwind", "Supabase", "NextAuth", "Framer Motion"],
         desc: 'A customer facing website of "The Wild Oasis" designed to let users explore and book serene stays with ease, built with Next.js and Supabase. Ensure fast load times and excellent SEO.',
-        modal: <>🌐 A customer facing website of &quot;The Wild Oasis&quot; designed to let users explore and book serene stays with ease, built with Next.js and Supabase. It uses SSR, SSG, and ISR to ensure fast load times and excellent SEO — delivering a seamless stay-booking experience for customers. Authentication is secured with Google Sign-In via NextAuth.js</>,
+        modal: <>🌐 A customer facing website of &quot;The Wild Oasis&quot; designed to let users explore and book serene stays with ease, built with Next.js and Supabase. It uses a combination of SSR (Server-Side Rendering), SSG (Static Site Generation), and ISR (Incremental Static Regeneration) to balance performance and freshness, resulting in up to 40% faster load times across key booking and browsing pages. Authentication is secured using Google Sign-In via NextAuth.js, providing users with a simple and secure login experience.
+            <br /><br />This project focuses on performance-first rendering strategies, smooth UX, and clean UI design powered by Tailwind CSS and Framer Motion. Users can explore cabin options with dynamic content, filter by availability, and view details without delay. I carefully structured data fetching logic and page generation methods to boost SEO. Building this platform helped me master hybrid rendering in Next.js and deliver a seamless, production-ready experience.</>,
     },
     {
         title: "TWO Dash",
@@ -134,7 +136,13 @@ export const projects = [
         link: "https://www.thewildoasis.xyz",
         tech: ["React", "Supabase", "React Query", "Styled Components", "Recharts"],
         desc: "An internal Hotel Management Dashboard for staff to handle bookings, guests, cabins, and settings, with insights via interactive charts and a clean UI.",
-        modal: <>🖥️ An internal Hotel Management Dashboard for staff to manage bookings, check-ins, cabins, user accounts, and hotel settings, while offering business insights through interactive charts and a clean, intuitive dashboard. As it’s secured behind authentication, responsiveness wasn’t prioritized. 🙏 </>,
+        modal: (
+            <>
+                🖥️ A clean and efficient Hotel Management Dashboard built with React, Supabase, React Query, and Recharts. It enables staff to manage bookings, check-ins, cabins, guest records, and hotel settings with features like role-based access control, filtering, pagination, and data validation for smooth handling of large datasets. The dashboard uses Recharts to visualize booking stats, occupancy trends, and revenue, providing actionable insights. Real-time sync with Supabase ensures up-to-date information and a responsive interface.
+                <br /><br />
+                React Query’s caching optimizes performance by minimizing repeated data fetching and instantly displaying cached results. This reduces server load and keeps data fresh automatically, so staff always see the latest booking and occupancy updates without needing manual refreshes.
+            </>
+        ),
     },
     {
         title: "Filmpire",
@@ -143,7 +151,13 @@ export const projects = [
         link: "https://www.filmpire.net",
         tech: ["React", "RTK Query", "TMDB API", "Alan AI", "MUI"],
         desc: "A dynamic and fully responsive movie showcase web application built with React and Material UI, powered by The Movie Database (TMDB) API.",
-        modal: <>🎬 Filmpire is a dynamic and fully responsive movie showcase web application built with React and Material UI, powered by The Movie Database (TMDB) API. It allows users to explore, search, and interact with a wide collection of movies, offering features like trailers, ratings, and personalized watchlists for an immersive cinematic experience.</>,
+        modal: (
+            <>
+                🎬 Filmpire is a dynamic and fully responsive movie showcase platform built with React and Material UI, powered by The Movie Database (TMDB) API. Users can explore trending and top-rated films, search by genre, view trailers, see ratings, and build a personalized watchlist and engaging cinematic experience. I created custom API endpoints using RTK Query to fetch and cache movie data efficiently, allowing for smoother performance and seamless interaction with the TMDB API.
+                <br /><br />
+                I also integrated Alan AI to enable voice command interactions, which gave me hands-on experience in building voice-powered user interfaces.
+            </>
+        ),
     },
     {
         title: "My Portfolio",
@@ -152,7 +166,7 @@ export const projects = [
         link: "https://www.syp.dev",
         tech: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
         desc: "This is my personal developer portfolio built with Next.js, highlights my skills, projects, and certifications with a focus on smooth user interaction.",
-        modal: <>🌐 This is my personal developer portfolio built with Next.js, styled using Tailwind CSS. It highlights my skills, projects, and certifications with a focus on smooth user interaction using libraries like Framer Motion, React Scroll, and React Type Animation. </>,
+        modal: <>🌐 This is my personal developer portfolio built with Next.js, styled using Tailwind CSS. It highlights my skills, projects, and certifications with a focus on smooth user interaction using libraries like Framer Motion, React Scroll, and React Type Animation. <br /><br />It represents my current learning, clean code habits, and visual preferences as a developer.</>,
     },
 ];
 
@@ -164,7 +178,8 @@ export const galleryShowCases = [
         code: "https://github.com/fisheeesh/prostore_next",
         link: "https://www.theprostore.shop",
         tech: ["Next.js", "TypeScript", "shadcn/ui", "PayPal", "Stripe", "PostgreSQL"],
-        modal: <>🛒  A full featured Ecommerce platform from scratch using Next.js, TypeScript, shadcn/ui, PostgreSQL, and Prisma. Integrated secure and flexible payment options with Stripe and PayPal, supporting both one-time and multi-product purchases. Features include user authentication, admin panel product management, shopping cart, order history, checkout process, responsive UI and more.</>,
+        modal: <>🛒  A full featured Ecommerce platform from scratch using Next.js, TypeScript, shadcn/ui, PostgreSQL, and Prisma. Integrated secure and flexible payment options with Stripe and PayPal, supporting both one-time and multi-product purchases. Features include user authentication, admin panel product management, shopping cart, order history, checkout process, and responsive UI. I designed both customer-facing and admin interfaces, implemented role-based access control, and handled edge cases like failed transactions and stock availability.
+            <br /><br />This project gave me deep hands-on experience with e-commerce logic, scalable backend design, and full-stack payment flows. I tested over 100 transactions in sandbox mode for both PayPal and Stripe to ensure reliability, proper webhook handling, and graceful error management. Prostore helped me solidify my knowledge of building production-grade applications with real-world complexity and a strong focus on performance and user experience.</>,
     },
     {
         cat: "🩵, React",
@@ -173,7 +188,7 @@ export const galleryShowCases = [
         code: "https://github.com/fisheeesh/lit-library",
         link: "https://www.litlibrary.blog",
         tech: ["React", "Firebase", "Tailwind", "Context API", "Zod", "Swpier.js"],
-        modal: <>📚 A vibrant blogging platform designed to foster a positive and supportive community. Users can share personal growth experiences, life knowledge, advice, and insights while engaging with others&apos; blogs. It’s a place to inspire, learn, and connect.</>,
+        modal: <>📚 A vibrant blogging platform designed to foster a positive and supportive community. Users can share personal growth experiences, life knowledge, advice, and insights while engaging with others&apos; blogs. It’s a place to inspire, learn, and connect. I love writing blogs there too — it’s my way of sharing what I’ve learned and connecting with others. <br /><br />This was actually my very first React project, and it taught me a lot about building component-based UIs and managing real-time state. It also includes a real-time notification feature using Firebase, alerting users instantly when new content or interactions happen. Working on LitLibrary helped me explore schema validation with Zod, and gave me confidence in creating a fully functional interactive web app.</>,
     },
     {
         cat: "🩵, React",
@@ -182,7 +197,13 @@ export const galleryShowCases = [
         code: "https://github.com/fisheeesh/filmpire",
         link: "https://www.filmpire.net",
         tech: ["React", "TMDB API", "Alan AI", "MUI"],
-        modal: <>🎬 Filmpire is a dynamic and fully responsive movie showcase web application built with React and Material UI, powered by The Movie Database (TMDB) API. It allows users to explore, search, and interact with a wide collection of movies, offering features like trailers, ratings, and personalized watchlists for an immersive cinematic experience.</>,
+        modal: (
+            <>
+                🎬 Filmpire is a dynamic and fully responsive movie showcase platform built with React and Material UI, powered by The Movie Database (TMDB) API. Users can explore trending and top-rated films, search by genre, view trailers, see ratings, and build a personalized watchlist and engaging cinematic experience. I created custom API endpoints using RTK Query to fetch and cache movie data efficiently, allowing for smoother performance and seamless interaction with the TMDB API.
+                <br /><br />
+                I also integrated Alan AI to enable voice command interactions, which gave me hands-on experience in building voice-powered user interfaces.
+            </>
+        ),
     },
     {
         cat: "🩵, Next",
@@ -191,7 +212,8 @@ export const galleryShowCases = [
         code: "https://github.com/fisheeesh/the-wild-oasis-website",
         link: "https://www.thewildoasis.co",
         tech: ["React", "Next.js", "Tailwind", "Supabase", "NextAuth", "Framer Motion"],
-        modal: <>🌐 A customer facing website of &quot;The Wild Oasis&quot; designed to let users explore and book serene stays with ease, built with Next.js and Supabase. It uses SSR, SSG, and ISR to ensure fast load times and excellent SEO — delivering a seamless stay-booking experience for customers. Authentication is secured with Google Sign-In via NextAuth.js</>,
+        modal: <>🌐 A customer facing website of &quot;The Wild Oasis&quot; designed to let users explore and book serene stays with ease, built with Next.js and Supabase. It uses a combination of SSR (Server-Side Rendering), SSG (Static Site Generation), and ISR (Incremental Static Regeneration) to balance performance and freshness, resulting in up to 40% faster load times across key booking and browsing pages. Authentication is secured using Google Sign-In via NextAuth.js, providing users with a simple and secure login experience.
+            <br /><br />This project focuses on performance-first rendering strategies, smooth UX, and clean UI design powered by Tailwind CSS and Framer Motion. Users can explore cabin options with dynamic content, filter by availability, and view details without delay. I carefully structured data fetching logic and page generation methods to boost SEO. Building this platform helped me master hybrid rendering in Next.js and deliver a seamless, production-ready experience.</>,
     },
     {
         cat: "🩵, React",
@@ -200,7 +222,13 @@ export const galleryShowCases = [
         code: "https://github.com/fisheeesh/the-wild-oasis-dashboard",
         link: "https://www.thewildoasis.xyz",
         tech: ["React", "Supabase", "React Query", "Styled Components", "Recharts"],
-        modal: <>🖥️ An internal Hotel Management Dashboard for staff to manage bookings, check-ins, cabins, user accounts, and hotel settings, while offering business insights through interactive charts and a clean, intuitive dashboard. As it’s secured behind authentication, responsiveness wasn’t prioritized. 🙏 </>,
+        modal: (
+            <>
+                🖥️ A clean and efficient Hotel Management Dashboard built with React, Supabase, React Query, and Recharts. It enables staff to manage bookings, check-ins, cabins, guest records, and hotel settings with features like role-based access control, filtering, pagination, and data validation for smooth handling of large datasets. The dashboard uses Recharts to visualize booking stats, occupancy trends, and revenue, providing actionable insights. Real-time sync with Supabase ensures up-to-date information and a responsive interface.
+                <br /><br />
+                React Query’s caching optimizes performance by minimizing repeated data fetching and instantly displaying cached results. This reduces server load and keeps data fresh automatically, so staff always see the latest booking and occupancy updates without needing manual refreshes.
+            </>
+        ),
     },
     {
         cat: "🩵, Next",
@@ -209,7 +237,7 @@ export const galleryShowCases = [
         code: "https://github.com/fisheeesh/syp-portfolio",
         link: "https://www.syp.dev",
         tech: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
-        modal: <>🌐 This is my personal developer portfolio built with Next.js, styled using Tailwind CSS. It highlights my skills, projects, and certifications with a focus on smooth user interaction using libraries like Framer Motion, React Scroll, and React Type Animation. </>,
+        modal: <>🌐 This is my personal developer portfolio built with Next.js, styled using Tailwind CSS. It highlights my skills, projects, and certifications with a focus on smooth user interaction using libraries like Framer Motion, React Scroll, and React Type Animation. <br /><br />It represents my current learning, clean code habits, and visual preferences as a developer.</>,
     },
     {
         cat: "🩵, Vue",
