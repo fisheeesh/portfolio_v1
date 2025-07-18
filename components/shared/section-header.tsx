@@ -12,14 +12,14 @@ export const SectionHeader = ({ title, dir = "r" }: Props) => {
             style={{ flexDirection: dir === "r" ? "row" : "row-reverse" }}
         >
             <div className="w-full h-0.5 opacity-30 bg-gray-400" />
-            <h3>
+            <h2>
                 <Reveal>
                     <span className="text-4xl md:text-5xl font-black text-end leading-tight">
                         {title}
                         <span className="text-brand">.</span>
                     </span>
                 </Reveal>
-            </h3>
+            </h2>
         </div>
     );
 };

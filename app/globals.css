@@ -6,6 +6,7 @@
     --animate-scroll: scrollAnimation 2s linear 0s infinite;
     --animate-point: point 1.2s ease-in-out infinite;
     --color-brand: #3986FA;
+    --color-light: #f6f6f6;
 
     @keyframes point {
         0% {
@@ -156,7 +157,7 @@
     }
 
     .primaryBtn {
-        @apply py-2.5 px-5 border-0 bg-[#3986FA] text-[#f6f6f6] hover:bg-[#126FFA]
+        @apply py-2.5 px-5 border-0 bg-[#3986FA] text-white hover:bg-[#126FFA]
     }
 }
 

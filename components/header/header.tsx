@@ -24,7 +24,7 @@ export default function Header({ toggle }: { toggle: () => void }) {
                     <li>
                         <Link
                             href="/#about"
-                            className="text-[#777779] flex text-[1.2rem] items-center h-full cursor-pointer hover:text-[#f6f6f6]"
+                            className="text-[#777779] flex text-[1.2rem] items-center h-full cursor-pointer hover:text-light"
                         >
                             About
                         </Link>
@@ -32,7 +32,7 @@ export default function Header({ toggle }: { toggle: () => void }) {
                     <li>
                         <Link
                             href="/#projects"
-                            className="text-[#777779] flex text-[1.2rem] items-center h-full cursor-pointer hover:text-[#f6f6f6]"
+                            className="text-[#777779] flex text-[1.2rem] items-center h-full cursor-pointer hover:text-light"
                         >
                             Projects
                         </Link>
@@ -41,7 +41,7 @@ export default function Header({ toggle }: { toggle: () => void }) {
                         <Link
                             aria-label="Certifications section"
                             href="/#certification"
-                            className="text-[#777779] flex text-[1.2rem] items-center h-full cursor-pointer hover:text-[#f6f6f6]"
+                            className="text-[#777779] flex text-[1.2rem] items-center h-full cursor-pointer hover:text-light"
                         >
                             Certif.
                         </Link>
@@ -49,7 +49,7 @@ export default function Header({ toggle }: { toggle: () => void }) {
                     <li>
                         <Link
                             href="/#contact"
-                            className="text-[#777779] flex text-[1.2rem] items-center h-full cursor-pointer hover:text-[#f6f6f6]"
+                            className="text-[#777779] flex text-[1.2rem] items-center h-full cursor-pointer hover:text-light"
                         >
                             Contact
                         </Link>

@@ -113,7 +113,7 @@ export default function Hero() {
                         style={{ transformStyle: 'preserve-3d', perspective: 600 }}
                     >
                         <Link className='flex justify-start cursor-pointer absolute animate-scroll max-[992px]:relative max-[992px]:justify-center max-[992px]:mt-8' href="/#about" id="scrollDown">
-                            <div className='flex items-center text-[1.3rem] text-[#f6f6f6]'>
+                            <div className='flex items-center text-[1.3rem] text-light'>
                                 Scroll down
                                 <Image
                                     src="/assets/scroll-down.svg"

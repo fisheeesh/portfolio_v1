@@ -10,7 +10,7 @@ const Filter = ({ activeFilter, handleFilter }: Props) => {
                 <button
                     key={filter}
                     className={`
-                    cursor-pointer font-medium bg-[#f6f6f6] py-1 px-4 rounded-full opacity-50 transition duration-200 hover:opacity-100 shadow-[0px_5px_15px_rgba(0,0,0,0.35)] 
+                    cursor-pointer font-medium bg-light py-1 px-4 rounded-full opacity-50 transition duration-200 hover:opacity-100 shadow-[0px_5px_15px_rgba(0,0,0,0.35)] 
                     ${activeFilter === filter ? "opacity-100 text-black" : ""
                         }`}
                     onClick={() => handleFilter(filter)}
