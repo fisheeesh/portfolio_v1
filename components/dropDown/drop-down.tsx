@@ -1,51 +1,52 @@
 import { FaTimes } from "react-icons/fa";
-import { Link as ScrollLink } from "react-scroll";
 import ResumeBtn from "../shared/resume-btn";
+import Link from "next/link";
 
 function Dropdown({ isOpen, toggle }: { isOpen: boolean, toggle: () => void }) {
     return (
         <div
-            className={`fixed left-0 w-full h-full bg-[#151418] z-[999] flex flex-col items-center justify-center transition ease-in-out duration-300 ${isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
-                }`}
+            className={`fixed left-0 w-full h-full bg-[#151418] z-[999] flex flex-col items-center justify-center transition ease-in-out duration-300 
+                ${isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}`}
             onClick={toggle}
         >
             <button
                 className="text-white text-[2rem] absolute top-8 right-8 cursor-pointer"
                 onClick={toggle}
-                aria-label="Close menu"
+                aria-label="Close mobile navigation menu"
             >
                 <FaTimes aria-hidden="true" />
             </button>
 
             <nav className="flex flex-col items-center justify-center space-y-8">
-                <ScrollLink
-                    to="about"
+                <Link
+                    href="/#about"
                     className="text-white text-[1.7rem] cursor-pointer hover:text-gray-400"
                     onClick={toggle}
                 >
                     About
-                </ScrollLink>
-                <ScrollLink
-                    to="projects"
+                </Link>
+                <Link
+                    href="/#projects"
                     className="text-white text-[1.7rem] cursor-pointer hover:text-gray-400"
                     onClick={toggle}
                 >
                     Projects
-                </ScrollLink>
-                <ScrollLink
-                    to="certification"
+                </Link>
+                <Link
+                    href="/#certification"
+                    aria-label="Certifications section"
                     className="text-white text-[1.7rem] cursor-pointer hover:text-gray-400"
                     onClick={toggle}
                 >
                     Certif.
-                </ScrollLink>
-                <ScrollLink
-                    to="contact"
+                </Link>
+                <Link
+                    href="/#contact"
                     className="text-white text-[1.7rem] cursor-pointer hover:text-gray-400"
                     onClick={toggle}
                 >
                     Contact
-                </ScrollLink>
+                </Link>
             </nav>
 
             <div className="mt-20 flex justify-center text-[1.7rem]">

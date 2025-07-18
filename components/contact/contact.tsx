@@ -2,7 +2,6 @@ import { AiFillMail } from "react-icons/ai";
 import { Reveal } from "../shared/reveal";
 import { Socials } from "../shared/socials";
 
-
 export const Contact = () => {
     return (
         <section className="py-24 px-4" id="contact">

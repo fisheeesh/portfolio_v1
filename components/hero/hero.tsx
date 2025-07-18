@@ -1,12 +1,11 @@
-
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import DropDown from '../dropDown/drop-down';
 import Header from '../header/header';
-import { Link as LinkScroll } from "react-scroll";
 import { fadeIn, flipInX } from '@/data/motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Hero() {
     const [isOpen, setIsOpen] = useState(false);
@@ -113,7 +112,7 @@ export default function Hero() {
                         variants={flipInX}
                         style={{ transformStyle: 'preserve-3d', perspective: 600 }}
                     >
-                        <LinkScroll className='flex justify-start cursor-pointer absolute animate-scroll max-[992px]:relative max-[992px]:justify-center max-[992px]:mt-8' to="about" id="scrollDown">
+                        <Link className='flex justify-start cursor-pointer absolute animate-scroll max-[992px]:relative max-[992px]:justify-center max-[992px]:mt-8' href="/#about" id="scrollDown">
                             <div className='flex items-center text-[1.3rem] text-[#f6f6f6]'>
                                 Scroll down
                                 <Image
@@ -124,7 +123,7 @@ export default function Hero() {
                                     className="ml-1.5"
                                 />
                             </div>
-                        </LinkScroll>
+                        </Link>
                     </motion.div>
                 }
             </div>

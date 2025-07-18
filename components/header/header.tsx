@@ -1,7 +1,7 @@
 import { FaBars } from "react-icons/fa";
-import { Link as ScrollLink } from "react-scroll";
 import ResumeBtn from "../shared/resume-btn";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header({ toggle }: { toggle: () => void }) {
     return (
@@ -22,36 +22,37 @@ export default function Header({ toggle }: { toggle: () => void }) {
 
                 <ul className="flex items-center -mr-6 space-x-[1rem] max-md:hidden">
                     <li>
-                        <ScrollLink
-                            to="about"
+                        <Link
+                            href="/#about"
                             className="text-[#777779] flex text-[1.2rem] items-center h-full cursor-pointer hover:text-[#f6f6f6]"
                         >
                             About
-                        </ScrollLink>
+                        </Link>
                     </li>
                     <li>
-                        <ScrollLink
-                            to="projects"
+                        <Link
+                            href="/#projects"
                             className="text-[#777779] flex text-[1.2rem] items-center h-full cursor-pointer hover:text-[#f6f6f6]"
                         >
                             Projects
-                        </ScrollLink>
+                        </Link>
                     </li>
                     <li>
-                        <ScrollLink
-                            to="certification"
+                        <Link
+                            aria-label="Certifications section"
+                            href="/#certification"
                             className="text-[#777779] flex text-[1.2rem] items-center h-full cursor-pointer hover:text-[#f6f6f6]"
                         >
                             Certif.
-                        </ScrollLink>
+                        </Link>
                     </li>
                     <li>
-                        <ScrollLink
-                            to="contact"
+                        <Link
+                            href="/#contact"
                             className="text-[#777779] flex text-[1.2rem] items-center h-full cursor-pointer hover:text-[#f6f6f6]"
                         >
                             Contact
-                        </ScrollLink>
+                        </Link>
                     </li>
                 </ul>
 
@@ -61,7 +62,7 @@ export default function Header({ toggle }: { toggle: () => void }) {
 
                 <button
                     onClick={toggle}
-                    aria-label="Open menu"
+                    aria-label="Open mobile navigation menu"
                     className="hidden text-white text-[1.8rem] cursor-pointer max-md:block"
                 >
                     <FaBars aria-hidden="true" />

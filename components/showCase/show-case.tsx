@@ -4,7 +4,6 @@ import LinkToGalleryBtn from '../shared/link-to-gallery-btn';
 import { ShowCaseItem } from './show-case-item';
 
 export default function ShowCase() {
-
     return (
         <section className="py-24" id="projects">
             <div className="Container">

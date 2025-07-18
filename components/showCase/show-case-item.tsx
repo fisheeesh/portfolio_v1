@@ -1,4 +1,3 @@
-
 import { motion, useAnimation, useInView } from "framer-motion";
 import { JSX, useEffect, useRef, useState } from "react";
 import { AiFillGithub } from "react-icons/ai";

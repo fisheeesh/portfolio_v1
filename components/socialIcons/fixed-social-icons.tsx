@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/data/motion'
 import { FaLinkedin, FaGithub } from "react-icons/fa";
