@@ -13,7 +13,6 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 2,
-  themeColor: "#3986FA",
 };
 
 export const metadata: Metadata = {
@@ -22,15 +21,8 @@ export const metadata: Metadata = {
   description:
     "A passionate full-stack web developer focused on building SEO-friendly, responsive, and scalable web applications using React, Next.js, and Spring Boot. With a self-driven mindset and strong communication skills, he delivers clean, user-centered digital experiences.",
   icons: {
-    icon: [
-      { url: "/assets/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/assets/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/assets/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-      { url: "/assets/favicon.ico" },
-    ],
-    shortcut: "/assets/favicon.ico",
-    apple: "/assets/apple-touch-icon.png",
-  },
+    icon: "/assets/favicon.ico",
+  }
 };
 
 export default function RootLayout({

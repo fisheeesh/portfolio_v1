@@ -81,7 +81,7 @@ export const Modal = ({
         </div>
     );
 
-    if (!isOpen) return <></>;
+    if (!isOpen) return null;
 
     const rootElement = document.getElementById("root");
     if (!rootElement) return null;
