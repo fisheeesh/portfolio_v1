@@ -77,7 +77,7 @@ export const ShowCaseItem = ({
                 <div className="my-3 mx-0 space-y-2">
                     <Reveal width="100%">
                         <div className="flex items-center gap-2">
-                            <h4 className="font-bold text-[1.6rem] shrink-0 [max-width:calc(100%-150px)]">{title}</h4>
+                            <h3 className="font-bold text-[1.6rem] shrink-0 [max-width:calc(100%-150px)]">{title}</h3>
                             <div className="w-full h-0.5 opacity-30 bg-gray-400" />
 
                             <a className="opacity-75 transition-opacity duration-200 hover:opacity-100" href={code} target="_blank" rel="nofollow" title="GitHub" aria-label="View Code">

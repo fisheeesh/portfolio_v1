@@ -62,13 +62,13 @@ export const GalleryItem = ({ modal, link, img, title, code, tech }: Props) => {
                         src={img}
                         alt={`An image of the ${title} project.`}
                         width={1000}
-                        height={0}
+                        height={562}
                     />
                 </div>
                 <div className="my-5 mx-0 space-y-1">
                     <Reveal width="100%">
                         <div className="flex items-center gap-2">
-                            <h4 className="cursor-default font-bold text-[1.5rem] shrink-0 [max-width:calc(100%-150px)] opacity-65 transition duration-200 hover:opacity-100">{title}</h4>
+                            <h3 className="cursor-default font-bold text-[1.5rem] shrink-0 [max-width:calc(100%-150px)] opacity-65 transition duration-200 hover:opacity-100">{title}</h3>
                             <div className="w-full h-0.5 opacity-30 bg-gray-400" />
 
                             <a className="opacity-75 transition-opacity duration-200 hover:opacity-100" href={code} target="_blank" rel="nofollow" title="GitHub" aria-label="View Code">

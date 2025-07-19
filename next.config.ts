@@ -4,7 +4,7 @@ import type { NextConfig } from "next";
 // https://nextjs.org/docs/app/building-your-application/configuring/content-security-policy
 const cspHeader = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline';
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' https://vercel.live;
     style-src 'self' 'unsafe-inline';
     img-src 'self' blob: data:;
     font-src 'self';
@@ -20,8 +20,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   experimental: {},
   typescript: {
-    //* This will still allow production build with type errors!
-    ignoreBuildErrors: true
+    ignoreBuildErrors: true,
   },
   eslint: {
     ignoreDuringBuilds: true,

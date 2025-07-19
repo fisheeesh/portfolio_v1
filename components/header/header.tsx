@@ -13,7 +13,6 @@ export default function Header({ toggle }: { toggle: () => void }) {
                 <div className="mt-0.5">
                     <Image
                         src="/assets/logo.png"
-                        priority
                         alt="Swam Yi Phyo logo"
                         width={54}
                         height={54}

@@ -7,9 +7,9 @@ export const Contact = () => {
         <section className="py-24 px-4" id="contact">
             <div className="max-w-[750px] mx-auto space-y-4">
                 <Reveal width="100%">
-                    <h4 className="text-center font-black leading-none text-5xl md:text-[5.5rem]">
+                    <h2 className="text-center font-black leading-none text-5xl md:text-[5.5rem]">
                         Contact<span className="text-brand">.</span>
-                    </h4>
+                    </h2>
                 </Reveal>
 
                 <Reveal width="100%">

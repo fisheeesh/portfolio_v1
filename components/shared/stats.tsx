@@ -14,20 +14,20 @@ export const Stats = () => {
         <div className="relative">
             <Reveal>
                 <div>
-                    <h4 className="flex items-center mb-1">
+                    <h3 className="flex items-center mb-1">
                         <AiFillCode aria-hidden="true" size="2.4rem" color="#3986FA" />
                         <span className="font-bold relative ml-1.5 text-[1.6rem]">Stack</span>
-                    </h4>
+                    </h3>
                     <div className="flex flex-wrap mb-4">{renderItems(stackTech)}</div>
                 </div>
             </Reveal>
 
             <Reveal>
                 <div>
-                    <h4 className="flex items-center mb-1 mt-0.5">
+                    <h3 className="flex items-center mb-1 mt-0.5">
                         <AiFillCode aria-hidden="true" size="2.4rem" color="#3986FA" />
                         <span className="font-bold relative ml-1.5 text-[1.6rem]">+</span>
-                    </h4>
+                    </h3>
                     <div className="flex flex-wrap">{renderItems(extraTech)}</div>
                 </div>
             </Reveal>

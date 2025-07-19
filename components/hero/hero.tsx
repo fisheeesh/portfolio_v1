@@ -79,7 +79,7 @@ export default function Hero() {
                                     ]}
                                     speed={50}
                                     deletionSpeed={65}
-                                    wrapper="h5"
+                                    wrapper="h2"
                                     repeat={Infinity}
                                 />
                             }
@@ -96,7 +96,6 @@ export default function Hero() {
                             <Image
                                 src="/assets/man-svgrepo-com.svg"
                                 alt="man-svgrepo"
-                                priority
                                 width={300}
                                 height={300}
                             />
