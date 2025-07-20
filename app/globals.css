@@ -144,7 +144,7 @@
         @apply text-[2rem] sm:text-[2.6rem] text-[#f6f6f6] opacity-[0.98] font-normal;
     }
 
-    .hero-left h5 {
+    .hero-left h2 {
         @apply text-[1.2rem] sm:text-[1.6rem] text-[#777779] mb-4 font-normal max-[992px]:min-h-[5rem];
     }
 
