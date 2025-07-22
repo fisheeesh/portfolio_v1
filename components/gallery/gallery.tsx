@@ -9,10 +9,10 @@ import { TransitionLink } from "@/components/shared/transition-link";
 import ScrollTopBtn from "@/components/shared/scroll-top-btn";
 
 const Gallery = () => {
-    const [activeFilter, setActiveFilter] = useState("🩵");
+    const [activeFilter, setActiveFilter] = useState("All");
 
     const [filteredProjects, setFilteredProjects] = useState(
-        galleryShowCases.filter((project) => project.cat.includes("🩵"))
+        galleryShowCases.filter((project) => project.cat.includes("All"))
     );
 
     const handleFilter = (filter: string) => {

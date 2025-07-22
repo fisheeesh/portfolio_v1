@@ -29,9 +29,17 @@ function ScrollTopBtn() {
             type="button"
             id="to-top"
             aria-label="Scroll to top"
-            className={`${showBtn ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'} 
-    p-1.5 outline-none cursor-pointer rounded-full bg-brand text-white hover:bg-[#126FFA] transition duration-300
-    flex fixed bottom-5 right-5 z-50 items-center justify-center`}>
+            className={`
+    fixed bottom-8 right-8 z-50
+    p-1.5 rounded-full bg-brand text-white
+    hover:bg-[#126FFA] outline-none cursor-pointer
+    flex items-center justify-center
+    transition-all duration-200 ease-in-out
+    ${showBtn
+                    ? 'opacity-100 translate-y-0 pointer-events-auto'
+                    : 'opacity-0 translate-y-10 pointer-events-none'}
+    `}
+        >
             <MdKeyboardArrowUp className='size-6' aria-hidden="true" />
         </button>
     )

@@ -9,7 +9,7 @@ const About = () => {
     return (
         <>
             <Wave />
-            <section id="about" className="relative z-[10] w-[90%] max-w-[1150px] mx-auto overflow-hidden px-4 max-[480px]:text-[1.6rem]">
+            <section id="about" className="relative z-[10] w-[90%] max-w-[1150px] mx-auto overflow-hidden pb-36 px-4 max-[480px]:text-[1.6rem]">
                 <SectionHeader title="About" dir="l" />
                 <div className="grid grid-cols-[1fr_360px] gap-6 max-[992px]:grid-cols-1">
                     <div>

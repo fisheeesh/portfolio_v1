@@ -1,3 +1,5 @@
+import { RiHeart2Fill } from "react-icons/ri";
+
 interface Props {
     activeFilter: string;
     handleFilter: (filter: string) => void;
@@ -6,7 +8,7 @@ interface Props {
 const Filter = ({ activeFilter, handleFilter }: Props) => {
     return (
         <div className="flex flex-wrap justify-center py-4 px-8 gap-2" >
-            {["🩵", "Design", "Next", "React", "Vue"].map((filter) => (
+            {["All", "Design", "Next", "React", "Vue"].map((filter) => (
                 <button
                     key={filter}
                     className={`
@@ -16,7 +18,9 @@ const Filter = ({ activeFilter, handleFilter }: Props) => {
                     onClick={() => handleFilter(filter)}
                     aria-label="Filter options"
                 >
-                    {filter}
+                    {filter === "All" ? (
+                        <RiHeart2Fill className="text-brand" size="1.1rem" aria-hidden="true" />
+                    ) : filter}
                 </button>
             ))}
         </div>

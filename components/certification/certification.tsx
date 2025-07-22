@@ -4,7 +4,7 @@ import { CertificationItem } from './certification-item';
 
 export default function Certification() {
     return (
-        <section className="py-24" id="certification">
+        <section className="pb-36" id="certification">
             <div className="Container">
                 <SectionHeader title="Certification" dir="l" />
                 {certification.map((item) => (

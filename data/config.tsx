@@ -172,7 +172,7 @@ export const projects = [
 
 export const galleryShowCases = [
     {
-        cat: "🩵, Next",
+        cat: "All, Next",
         title: "Prostore",
         img: "/gallery/prostore.webp",
         code: "https://github.com/fisheeesh/prostore_next",
@@ -182,7 +182,7 @@ export const galleryShowCases = [
             <br /><br />This project gave me deep hands-on experience with e-commerce logic, scalable backend design, and full-stack payment flows. I tested over 100 transactions in sandbox mode for both PayPal and Stripe to ensure reliability, proper webhook handling, and graceful error management. Prostore helped me solidify my knowledge of building production-grade applications with real-world complexity and a strong focus on performance and user experience.</>,
     },
     {
-        cat: "🩵, React",
+        cat: "All, React",
         title: "LitLibrary",
         img: "/gallery/lit-library.webp",
         code: "https://github.com/fisheeesh/lit-library",
@@ -191,7 +191,7 @@ export const galleryShowCases = [
         modal: <>📚 A vibrant blogging platform designed to foster a positive and supportive community. Users can share personal growth experiences, life knowledge, advice, and insights while engaging with others&apos; blogs. It’s a place to inspire, learn, and connect. I love writing blogs there too — it’s my way of sharing what I’ve learned and connecting with others. <br /><br />This was actually my very first React project, and it taught me a lot about building component-based UIs and managing real-time state. It also includes a real-time notification feature using Firebase, alerting users instantly when new content or interactions happen. Working on LitLibrary helped me explore schema validation with Zod, and gave me confidence in creating a fully functional interactive web app.</>,
     },
     {
-        cat: "🩵, React",
+        cat: "All, React",
         title: "Filmpire",
         img: "/gallery/filmpire.webp",
         code: "https://github.com/fisheeesh/filmpire",
@@ -206,7 +206,7 @@ export const galleryShowCases = [
         ),
     },
     {
-        cat: "🩵, Next",
+        cat: "All, Next",
         title: "TWO Web",
         img: "/gallery/thewildoasis-web.webp",
         code: "https://github.com/fisheeesh/the-wild-oasis-website",
@@ -216,7 +216,7 @@ export const galleryShowCases = [
             <br /><br />This project focuses on performance-first rendering strategies, smooth UX, and clean UI design powered by Tailwind CSS and Framer Motion. Users can explore cabin options with dynamic content, filter by availability, and view details without delay. I carefully structured data fetching logic and page generation methods to boost SEO. Building this platform helped me master hybrid rendering in Next.js and deliver a seamless, production-ready experience.</>,
     },
     {
-        cat: "🩵, React",
+        cat: "All, React",
         title: "TWO Dash",
         img: "/gallery/thewildoasis-d.webp",
         code: "https://github.com/fisheeesh/the-wild-oasis-dashboard",
@@ -231,7 +231,7 @@ export const galleryShowCases = [
         ),
     },
     {
-        cat: "🩵, Next",
+        cat: "All, Next",
         title: "My Portfolio",
         img: "/gallery/portfolio-v2.webp",
         code: "https://github.com/fisheeesh/syp-portfolio",
@@ -240,7 +240,7 @@ export const galleryShowCases = [
         modal: <>🌐 This is my personal developer portfolio built with Next.js, styled using Tailwind CSS. It highlights my skills, projects, and certifications with a focus on smooth user interaction using libraries like Framer Motion, React Scroll, and React Type Animation. <br /><br />It represents my current learning, clean code habits, and visual preferences as a developer.</>,
     },
     {
-        cat: "🩵, Vue",
+        cat: "All, Vue",
         title: "Chatty",
         img: "/gallery/chatty.webp",
         code: "https://github.com/fisheeesh/chatty",
@@ -249,7 +249,7 @@ export const galleryShowCases = [
         modal: <>💬 A real-time chat application built with Vue.js and Firebase. It allows users to send and receive messages in real-time, providing a seamless and interactive messaging experience.</>,
     },
     {
-        cat: "🩵, Vue",
+        cat: "All, Vue",
         title: "Audionix",
         img: "/gallery/audionix.webp",
         code: "https://github.com/fisheeesh/audionix",
@@ -258,7 +258,7 @@ export const galleryShowCases = [
         modal: <>🎵 A modern music application where users can enjoy and manage music in a seamless experience.Audionix offers intuitive tools to explore, upload, and manage your music. Built with Vue 3, Firebase, Pinia, Howler.js and Tailwind CSS, this single-page application (SPA) ensures smooth interactions, an elegant design, and secure features for everyone. It also support mutli-language like English and Burmese</>,
     },
     {
-        cat: "🩵, React",
+        cat: "All, React",
         title: "Fast React Pizza",
         img: "/gallery/fast-react-pizza.webp",
         code: "https://github.com/fisheeesh/fast-react-pizza.git",
@@ -267,7 +267,7 @@ export const galleryShowCases = [
         modal: <>🍕 A blazing-fast pizza ordering app built with React, Redux, React Router, and Tailwind CSS. Users can browse pizzas, customize orders, select quantity, and place orders with live delivery tracking and pricing</>
     },
     {
-        cat: "🩵, React",
+        cat: "All, React",
         title: "React Quiz",
         img: "/gallery/react-quiz.webp",
         code: "https://github.com/fisheeesh/quiz.git",
@@ -276,7 +276,7 @@ export const galleryShowCases = [
         modal: <>🧠 A mini quiz app to test your React Mastery.</>
     },
     {
-        cat: "🩵, React",
+        cat: "All, React",
         title: "WorldWise",
         img: "/gallery/theworldwise.webp",
         code: "https://github.com/fisheeesh/worldwise.git",
@@ -285,7 +285,7 @@ export const galleryShowCases = [
         modal: <>🌍 A mini app that helps users track places they’ve visited around the world. Built with React-Leaflet, it allows users to mark locations on a map, add personal notes or memories, and view them later.</>
     },
     {
-        cat: "🩵, Design, React, App",
+        cat: "All, Design, React, App",
         title: "RentMate",
         img: "/gallery/rentmate.webp",
         code: "https://github.com/fisheeesh/rentmate.git",
@@ -294,7 +294,7 @@ export const galleryShowCases = [
         modal: <>📦 A responsive web application that enables users to rent and lend everyday items in a seamless and secure way. The platform supports two user roles — Renter and Lender, and each user can switch roles anytime.</>
     },
     {
-        cat: "🩵, Design",
+        cat: "All, Design",
         title: "Clipboard",
         img: "/gallery/clipboard.webp",
         code: "https://github.com/fisheeesh/bootstrap-training.git",
@@ -303,7 +303,7 @@ export const galleryShowCases = [
         modal: <>🖇️ Landing page design for tracking copy history website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Tailwind and JavaScript.</>
     },
     {
-        cat: "🩵, Design",
+        cat: "All, Design",
         title: "LoopStudios",
         img: "/gallery/loop-studio.webp",
         code: "https://github.com/fisheeesh/bootstrap-training.git",
@@ -312,7 +312,7 @@ export const galleryShowCases = [
         modal: <>📀 Landing page design for virtual reality production studio website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Tailwind and JavaScript.</>
     },
     {
-        cat: "🩵, Design",
+        cat: "All, Design",
         title: "Shortly",
         img: "/gallery/shortly.webp",
         code: "https://github.com/fisheeesh/tailwind_training.git",
@@ -321,7 +321,7 @@ export const galleryShowCases = [
         modal: <>⛓️ Landing page design for URL shortening website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Tailwind.</>
     },
     {
-        cat: "🩵, Design",
+        cat: "All, Design",
         title: "Fylo",
         img: "/gallery/fylo.webp",
         code: "https://github.com/fisheeesh/bootstrap-training.git",
@@ -330,7 +330,7 @@ export const galleryShowCases = [
         modal: <>Landing page design for tracking copy history website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Tailwind and JavaScript. It features a clean UI with support for light and dark theme toggling.</>
     },
     {
-        cat: "🩵, Design",
+        cat: "All, Design",
         title: "Bookmark",
         img: "/gallery/bookmark.webp",
         code: "https://github.com/fisheeesh/tailwind_training.git",
@@ -339,7 +339,7 @@ export const galleryShowCases = [
         modal: <>🔖 Landing page design for bookmarking website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Tailwind and JavaScript.</>
     },
     {
-        cat: "🩵, Design",
+        cat: "All, Design",
         title: "Portfolio v1",
         img: "/gallery/portfolio-v1.webp",
         code: "https://github.com/fisheeesh/bootstrap-training.git",
@@ -348,7 +348,7 @@ export const galleryShowCases = [
         modal: <>🌐 My first personal portfolio design, showcasing a sleek, professional look. Built with HTML, CSS, JavaScript, Bootstrap, and SCSS to ensure clean structure and responsive performance.</>
     },
     {
-        cat: "🩵, Design",
+        cat: "All, Design",
         title: "Blog Mastery",
         img: "/gallery/blog-mastery.webp",
         code: "https://github.com/fisheeesh/bootstrap-training.git",
@@ -357,7 +357,7 @@ export const galleryShowCases = [
         modal: <>📝 Landing page design for blogging website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Boostrap and Scss.</>
     },
     {
-        cat: "🩵, Design",
+        cat: "All, Design",
         title: "Carso Training",
         img: "/gallery/carso.webp",
         code: "https://github.com/fisheeesh/bootstrap-training.git",
@@ -366,7 +366,7 @@ export const galleryShowCases = [
         modal: <>📝 Landing page design for personal training website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, Boostrap and Scss.</>
     },
     {
-        cat: "🩵, Design",
+        cat: "All, Design",
         title: "Vera",
         img: "/gallery/vera.webp",
         code: "https://github.com/fisheeesh/bootstrap-training.git",
@@ -375,7 +375,7 @@ export const galleryShowCases = [
         modal: <>🏢 Landing page design for IT Software Solution company website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, JS, Bootstrap and Scss.</>
     },
     {
-        cat: "🩵, Design",
+        cat: "All, Design",
         title: "Skywings",
         img: "/gallery/skywings.webp",
         code: "https://github.com/fisheeesh/skywings.git",

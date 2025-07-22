@@ -5,7 +5,7 @@ import { ShowCaseItem } from './show-case-item';
 
 export default function ShowCase() {
     return (
-        <section className="py-24" id="projects">
+        <section className="pb-36" id="projects">
             <div className="Container">
                 <SectionHeader title="Projects" dir="r" />
                 <LinkToGalleryBtn />
