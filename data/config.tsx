@@ -101,23 +101,28 @@ export const certification = [
 
 export const projects = [
     {
+        title: "DevFlow",
+        img: "/gallery/devflow.webp",
+        code: "https://github.com/fisheeesh/devflow",
+        link: "https://www.devflow.forum",
+        tech: ["Next.js", "TypeScript", "shadcn/ui", "GroqAI", "MongoDB", "Mongoose"],
+        desc: "A modern Q&A platform built with Next.js and integrated Groq AI assistance. Developers can ask questions, share knowledge, and receive intelligent help to improve their queries.",
+        modal:
+            <>
+                A modern Q&A platform built with Next.js 15, React 19, and integrated Groq AI assistance. Developers can ask questions, share knowledge, and receive intelligent help to improve their queries. The platform emphasizes performance, usability, and clean UI, with a strong focus on scalable architecture and advanced database queries.
+                <br /><br />One of the core challenges in building DevFlow was designing a scalable and flexible MongoDB schema and choosing between an array of references and creating multiple collections to manage complex relationships between users, questions, answers, tags, and activity logs. Integrating AI assistance via Groq while maintaining performance and response speed required careful architectural decisions. Implementing an advanced global search system with efficient filtering, sorting, and tag-based recommendation system also lead to late night grinds. Balancing feature-rich functionality with optimal performance, SEO, and clean user experience was a constant challenge.
+                <br /><br />I could spend all day describing the lessons that I learned while working on this project, but the most important ones involved in my newfound understanding of NoSQL database design and advanced aggregation pipelines. Working with Groq AI helped me learn how to integrate AI in a way that adds real value to users. I also learned the importance of code organization, consistent refactoring, and optimizing for readability and scalability. This project taught me how to design a production-grade application that is not only functional but also performant, secure, and SEO-friendly ultimately helping me grow into a more confident and capable full-stack developer.
+            </>
+    },
+    {
         title: "Prostore",
         img: "/gallery/prostore.webp",
-        code: "https://github.com/fisheeesh/prostore_next",
+        code: "https://github.com/fisheeesh/prostore",
         link: "https://www.theprostore.shop",
         tech: ["Next.js", "TypeScript", "shadcn/ui", "PayPal", "Stripe", "PostgreSQL"],
         desc: "A full featured Ecommerce platform from scratch using Next.js, TypeScript, shadcn/ui, PostgreSQL, and Prisma. Integrated secure and flexible payment options with Stripe and PayPal.",
         modal: <>🛒  A full featured Ecommerce platform from scratch using Next.js, TypeScript, shadcn/ui, PostgreSQL, and Prisma. Integrated secure and flexible payment options with Stripe and PayPal, supporting both one-time and multi-product purchases. Features include user authentication, admin panel product management, shopping cart, order history, checkout process, and responsive UI. I designed both customer-facing and admin interfaces, implemented role-based access control, and handled edge cases like failed transactions and stock availability.
             <br /><br />This project gave me deep hands-on experience with e-commerce logic, scalable backend design, and full-stack payment flows. I tested over 100 transactions in sandbox mode for both PayPal and Stripe to ensure reliability, proper webhook handling, and graceful error management. Prostore helped me solidify my knowledge of building production-grade applications with real-world complexity and a strong focus on performance and user experience.</>,
-    },
-    {
-        title: "LitLibrary",
-        img: "/gallery/lit-library.webp",
-        code: "https://github.com/fisheeesh/lit-library",
-        link: "https://www.litlibrary.blog",
-        tech: ["React", "Firebase", "Tailwind", "Context API", "Zod", "Swiper.js"],
-        desc: "A vibrant blogging platform using React.js and Tailwind CSS. It highlights the effective use of Firebase real-time database to enable instant content updates.",
-        modal: <>📚 A vibrant blogging platform designed to foster a positive and supportive community. Users can share personal growth experiences, life knowledge, advice, and insights while engaging with others&apos; blogs. It’s a place to inspire, learn, and connect. I love writing blogs there too, it’s my way of sharing what I’ve learned and connecting with others. <br /><br />This was actually my very first React project, and it taught me a lot about building component-based UIs and managing real-time state. It also includes a real-time notification feature using Firebase, alerting users instantly when new content or interactions happen. Working on LitLibrary helped me explore schema validation with Zod, and gave me confidence in creating a fully functional interactive web app.</>,
     },
     {
         title: "TWO Web",
@@ -145,19 +150,13 @@ export const projects = [
         ),
     },
     {
-        title: "Filmpire",
-        img: "/gallery/filmpire.webp",
-        code: "https://github.com/fisheeesh/filmpire",
-        link: "https://www.filmpire.net",
-        tech: ["React", "RTK Query", "TMDB API", "Alan AI", "MUI"],
-        desc: "A dynamic and fully responsive movie showcase web application built with React and Material UI, powered by The Movie Database (TMDB) API.",
-        modal: (
-            <>
-                🎬 Filmpire is a dynamic and fully responsive movie showcase platform built with React and Material UI, powered by The Movie Database (TMDB) API. Users can explore trending and top-rated films, search by genre, view trailers, see ratings, and build a personalized watchlist and engaging cinematic experience. I created custom API endpoints using RTK Query to fetch and cache movie data efficiently, allowing for smoother performance and seamless interaction with the TMDB API.
-                <br /><br />
-                I also integrated Alan AI to enable voice command interactions, which gave me hands-on experience in building voice-powered user interfaces.
-            </>
-        ),
+        title: "LitLibrary",
+        img: "/gallery/lit-library.webp",
+        code: "https://github.com/fisheeesh/lit-library",
+        link: "https://www.litlibrary.blog",
+        tech: ["React", "Firebase", "Tailwind", "Context API", "Zod", "Swiper.js"],
+        desc: "A vibrant blogging platform using React.js and Tailwind CSS. It highlights the effective use of Firebase real-time database to enable instant content updates.",
+        modal: <>📚 A vibrant blogging platform designed to foster a positive and supportive community. Users can share personal growth experiences, life knowledge, advice, and insights while engaging with others&apos; blogs. It’s a place to inspire, learn, and connect. I love writing blogs there too, it’s my way of sharing what I’ve learned and connecting with others. <br /><br />This was actually my very first React project, and it taught me a lot about building component-based UIs and managing real-time state. It also includes a real-time notification feature using Firebase, alerting users instantly when new content or interactions happen. Working on LitLibrary helped me explore schema validation with Zod, and gave me confidence in creating a fully functional interactive web app.</>,
     },
     {
         title: "My Portfolio",
@@ -173,9 +172,23 @@ export const projects = [
 export const galleryShowCases = [
     {
         cat: "All, Next",
+        title: "DevFlow",
+        img: "/gallery/devflow.webp",
+        code: "https://github.com/fisheeesh/devflow",
+        link: "https://www.devflow.forum",
+        tech: ["Next.js", "TypeScript", "shadcn/ui", "GroqAI", "MongoDB", "Mongoose"],
+        modal:
+            <>
+                A modern Q&A platform built with Next.js 15, React 19, and integrated Groq AI assistance. Developers can ask questions, share knowledge, and receive intelligent help to improve their queries. The platform emphasizes performance, usability, and clean UI, with a strong focus on scalable architecture and advanced database queries.
+                <br /><br />One of the core challenges in building DevFlow was designing a scalable and flexible MongoDB schema and choosing between an array of references and creating multiple collections to manage complex relationships between users, questions, answers, tags, and activity logs. Integrating AI assistance via Groq while maintaining performance and response speed required careful architectural decisions. Implementing an advanced global search system with efficient filtering, sorting, and tag-based recommendation system also lead to late night grinds. Balancing feature-rich functionality with optimal performance, SEO, and clean user experience was a constant challenge.
+                <br /><br />I could spend all day describing the lessons that I learned while working on this project, but the most important ones involved in my newfound understanding of NoSQL database design and advanced aggregation pipelines. Working with Groq AI helped me learn how to integrate AI in a way that adds real value to users. I also learned the importance of code organization, consistent refactoring, and optimizing for readability and scalability. This project taught me how to design a production-grade application that is not only functional but also performant, secure, and SEO-friendly ultimately helping me grow into a more confident and capable full-stack developer.
+            </>
+    },
+    {
+        cat: "All, Next",
         title: "Prostore",
         img: "/gallery/prostore.webp",
-        code: "https://github.com/fisheeesh/prostore_next",
+        code: "https://github.com/fisheeesh/prostore",
         link: "https://www.theprostore.shop",
         tech: ["Next.js", "TypeScript", "shadcn/ui", "PayPal", "Stripe", "PostgreSQL"],
         modal: <>🛒  A full featured Ecommerce platform from scratch using Next.js, TypeScript, shadcn/ui, PostgreSQL, and Prisma. Integrated secure and flexible payment options with Stripe and PayPal, supporting both one-time and multi-product purchases. Features include user authentication, admin panel product management, shopping cart, order history, checkout process, and responsive UI. I designed both customer-facing and admin interfaces, implemented role-based access control, and handled edge cases like failed transactions and stock availability.

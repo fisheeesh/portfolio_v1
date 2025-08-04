@@ -20,7 +20,7 @@ function ErrorElement() {
                 animationData={cat}
                 loop={true}
                 autoplay={true}
-                style={{ width: '480px', height: '280px' }}
+                style={{ width: '500px', height: '280px' }}
             />
             <h1 className='mb-3 max-w-sm mx-auto'>Something went wrong on our end. Please try refreshing the page or come back later.</h1>
         </div>
