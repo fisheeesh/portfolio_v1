@@ -13,6 +13,28 @@ export const extraTech = [
 
 export const certification = [
     {
+        title: "The Ultimate Next.js 15 Course",
+        school: "JS Mastery",
+        date: "August 2025",
+        link: "https://drive.google.com/file/d/1eab2lYUFbBXa9NwQRK0QvsG2Wfxitqtn/view?usp=sharing",
+        description:
+            "Gained deep expertise in modern React patterns and advanced Next.js 15 features, including server-side rendering, SEO optimization, and performance tuning. Built a production-grade Q&A platform integrating Groq AI for intelligent assistance. Designed flexible, scalable MongoDB schemas and implemented complex queries with advanced Mongoose aggregation pipelines. Developed a custom recommendation engine from scratch, leveraging user activities. Strengthened skills in authentication, secure route handling, and building elegant, responsive UIs using shadcn/ui and Tailwind CSS.",
+        tech: [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "NextAuth",
+            "MongoDB",
+            "Mongoose",
+            "shadcn/ui",
+            "Tailwind CSS",
+            "Groq AI",
+            "SSR",
+            "SSG",
+            "ISR",
+        ],
+    },
+    {
         title: "JavaScript Algorithms and Data Structures",
         school: "freeCodeCamp",
         date: "July 2025 - 300 hours",
@@ -29,7 +51,7 @@ export const certification = [
         ],
     },
     {
-        title: "Next.js E-commerce 2025",
+        title: "Next.js E-commerce from Scratch 2025",
         school: "Udemy",
         date: "June 2025 - 22.5 hours",
         link: "https://drive.google.com/file/d/1BtjnZ5bMwNl7QZClbBAVgXoxR75XZ9PZ/view?usp=drive_link",
@@ -46,25 +68,9 @@ export const certification = [
             "Uploadthing",
             "Jest",
             "Resend",
-            "Next Auth",
+            "NextAuth",
             "PostgreSQL",
             "Prisma"
-        ],
-    },
-    {
-        title: "React Mastery Course",
-        school: "JS Mastery",
-        date: "May 2025",
-        link: "https://drive.google.com/file/d/1oGhEhGqJJ9MnUEJX9bbjgcaIv0DxOeC4/view?usp=drive_link",
-        description:
-            "Focused on mastering advanced JavaScript tools like React.js, Material UI, and Alan AI. Built real-time, interactive apps using component-driven architecture and modern UI techniques. Gained hands-on experience with Redux Toolkit, RTK Query, and integrating voice-based features via Alan AI. Emphasized responsive design, performance, scalability, and accessibility, while integrating third-party APIs and building reusable custom components.",
-        tech: [
-            "React",
-            "JavaScript",
-            "Material UI",
-            "RTK Query",
-            "Alan AI",
-            "TMDB API",
         ],
     },
     {
@@ -78,6 +84,7 @@ export const certification = [
             "React",
             "JavaScript",
             "Next.js",
+            "NextAuth",
             "Supabase",
             "Redux",
             "Tailwind CSS",
