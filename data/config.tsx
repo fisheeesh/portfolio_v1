@@ -1,8 +1,8 @@
 export const statClassName = "rounded-[10px] text-[#000000D0] cursor-default shadow-[0px_2px_5px_rgba(160,170,180,0.6)] bg-[#f5f5f5] py-[5px] px-2.5 m-[5px] flex items-center justify-center text-[15px] font-normal"
 
 export const stackTech = [
-    "Vue", "React", "Next.js", "JavaScript", "TypeScript", "Flutter",
-    "Tailwind CSS", "Bootstrap", "shadcn/ui", "Node.js", "Express", "MongoDB",
+    "Vue", "React", "Next.js", "JavaScript", "TypeScript",
+    "Tailwind CSS", "Bootstrap", "shadcn/ui", "Node.js", "Express", "Redis" ,"MongoDB",
     "PostgreSQL", "MySQL", "Jest", "Firebase", "Supabase"
 ];
 
@@ -12,6 +12,22 @@ export const extraTech = [
 ];
 
 export const certification = [
+    {
+        title: "Google AI Essentials",
+        school: "Coursera",
+        date: "August 2025 - 7 hours",
+        link: "https://coursera.org/share/e74998025c12efcf84fdb6e31338c979",
+        description:
+            "Developed practical skills using generative AI tools to boost productivity by generating ideas, creating content, and accelerating daily tasks. Mastered writing clear, effective prompts to obtain precise AI outputs for summarizing, tagline creation, and problem-solving. Applied responsible AI practices by identifying biases and minimizing potential harm. Learned strategies to stay informed in the rapidly evolving AI landscape.",
+        tech: [
+            "Generative AI",
+            "Innovation",
+            "Prompt Engineering",
+            "Data Ethics",
+            "Productivity Software",
+            "Machine Learning"
+        ],
+    },
     {
         title: "The Ultimate Next.js 15 Course",
         school: "JS Mastery",
@@ -51,51 +67,6 @@ export const certification = [
         ],
     },
     {
-        title: "Next.js E-commerce from Scratch 2025",
-        school: "Udemy",
-        date: "June 2025 - 22.5 hours",
-        link: "https://drive.google.com/file/d/1BtjnZ5bMwNl7QZClbBAVgXoxR75XZ9PZ/view?usp=drive_link",
-        description:
-            "Focused on mastering advanced Next.js by building a full-featured ecommerce platform from scratch. Gained practical experience with real payment integrations using PayPal and Stripe, including production-level Stripe webhooks. Built full authentication with NextAuth and managed products, orders, and users through a powerful admin dashboard. Developed and validated forms using Zod and React Hook Form, implemented image uploads with Uploadthing, and added email functionality via Resend. Also gained experience in unit testing critical features with Jest to ensure application reliability and maintainability.",
-        tech: [
-            "React",
-            "Next.js",
-            "TypeScript",
-            "shadcn/ui",
-            "Tailwind CSS",
-            "Stripe",
-            "Paypal",
-            "Uploadthing",
-            "Jest",
-            "Resend",
-            "NextAuth",
-            "PostgreSQL",
-            "Prisma"
-        ],
-    },
-    {
-        title: "The Ultimate Next.js Course",
-        school: "Udemy",
-        date: "Apirl 2025 - 84 hours",
-        link: "https://drive.google.com/file/d/1ylevOCDzma2KW4jV3stSWZ-PooKqrmb4/view?usp=drive_link",
-        description:
-            "Focused on mastering modern React and Next.js by building real-world projects from the ground up. Gained experience in reusable and compound components, advanced state management with Redux Toolkit and React Query, and implemented features like authentication, dynamic routing, server-side rendering, and performance optimization. Also explored incremental static regeneration and API handling. Emphasized code scalability, SEO, accessibility, and production-grade performance through best practices.",
-        tech: [
-            "React",
-            "JavaScript",
-            "Next.js",
-            "NextAuth",
-            "Supabase",
-            "Redux",
-            "Tailwind CSS",
-            "Styled Components",
-            "React Query",
-            "SSR",
-            "SSG",
-            "ISR",
-        ],
-    },
-    {
         title: "TaiwindCSS Training",
         school: "Udemy",
         date: "December 2024 – 12.5 hours",
@@ -117,8 +88,8 @@ export const projects = [
         modal:
             <>
                 A modern Q&A platform built with Next.js 15, React 19, and integrated Groq AI assistance. Developers can ask questions, share knowledge, and receive intelligent help to improve their queries. The platform emphasizes performance, usability, and clean UI, with a strong focus on scalable architecture and advanced database queries.
-                <br /><br />One of the core challenges in building DevFlow was designing a scalable and flexible MongoDB schema and choosing between an array of references and creating multiple collections to manage complex relationships between users, questions, answers, tags, and activity logs. Integrating AI assistance via Groq while maintaining performance and response speed required careful architectural decisions. Implementing an advanced global search system with efficient filtering, sorting, and tag-based recommendation system also lead to late night grinds. Balancing feature-rich functionality with optimal performance, SEO, and clean user experience was a constant challenge.
-                <br /><br />I could spend all day describing the lessons that I learned while working on this project, but the most important ones involved in my newfound understanding of NoSQL database design and advanced aggregation pipelines. Working with Groq AI helped me learn how to integrate AI in a way that adds real value to users. I also learned the importance of code organization, consistent refactoring, and optimizing for readability and scalability. This project taught me how to design a production-grade application that is not only functional but also performant, secure, and SEO-friendly ultimately helping me grow into a more confident and capable full-stack developer.
+                <br /><br />One of the core challenges in building DevFlow was designing a scalable and flexible MongoDB schema and choosing between an array of references and creating multiple collections to manage complex relationships between users, questions, answers, tags, and activity logs. Building the recommendation system entirely from scratch was one of the most challenging yet rewarding aspects of the project. Integrating AI assistance via Groq while maintaining performance and response speed required careful architectural decisions. Implementing an advanced global search system with efficient filtering, sorting, and tag-based recommendation system also lead to late night grinds. Balancing feature-rich functionality with optimal performance, SEO, and clean user experience was a constant challenge.
+                <br /><br />I could spend all day describing the lessons that I learned while working on this project, but the most important ones involved in my newfound understanding of NoSQL database design and advanced aggregation pipelines. Working with Groq AI helped me learn how to integrate AI in a way that adds real value to users. Creating a custom recommendation system from the ground up was a standout highlight of the project, offering both a challenging and highly rewarding learning experience. I also learned the importance of code organization, consistent refactoring, and optimizing for readability and scalability. This project taught me how to design a production-grade application that is not only functional but also performant, secure, and SEO-friendly ultimately helping me grow into a more confident and capable full-stack developer.
             </>
     },
     {
