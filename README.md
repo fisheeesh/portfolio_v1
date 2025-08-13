@@ -7,6 +7,7 @@
 - [👋 Introduction](#-introduction)
 - [✨ Features](#-features)
 - [🚀 Get Started](#-get-started)
+- [⚖️ License](#️-license)
 
 ## 👋 Introduction
 This is my personal developer portfolio built with Next.js, styled using TailwindCSS. It highlights my skills, projects, and certifications with a focus on smooth user interaction using libraries like Framer Motion, and React Type Animation.
@@ -36,3 +37,7 @@ This is my personal developer portfolio built with Next.js, styled using Tailwin
     ```bash
     npm run dev
 5. 	**Open http://localhost:3000 in your browser to see it live.**
+
+## ⚖️ License
+
+This project is licensed under the [MIT License](LICENSE).
