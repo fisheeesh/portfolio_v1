@@ -9,12 +9,12 @@ export const stackTech = [
 
 export const certification = [
     {
-        title: "Full Stack Developer Class",
+        title: "Full-Stack Developer Class",
         school: "CodeCafe Lab",
         date: "August 2025 - 300 hours",
         link: "https://drive.google.com/file/d/1WllGNrEyonlFczW9diDHecyJGpNnGS5F/view?usp=sharing",
         description:
-            "Completed an intensive, project-based program covering modern full-stack engineering from React + TypeScript to Node.js/Express APIs. Built a production-ready REST backend with PostgreSQL and Prisma, including strict request validation, layered JWT/refresh authentication, RBAC, and secure file uploads with Multer. Implemented queue workers with Redis for background jobs like image processing and cache invalidation. On the frontend, delivered data-driven UX using React Router loaders/actions, TanStack Query patterns, and persistent global state with Zustand while supporting optimistic updates, infinite scrolling, and protected routes. ",
+            "Completed an intensive, project-based program covering modern full-stack engineering from React + TypeScript to Node.js/Express RESTful APIs. Built a production-ready REST backend with PostgreSQL and Prisma, including strict request validation, layered JWT/refresh authentication, RBAC, and secure file uploads with Multer. Implemented queue workers with Redis for background jobs like image processing and cache invalidation. On the frontend, delivered data-driven UX using React Router loaders/actions, TanStack Query patterns, and persistent global state with Zustand while supporting optimistic updates, infinite scrolling, and protected routes. ",
         tech: [
             "React",
             "TypeScript",
