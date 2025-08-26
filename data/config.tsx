@@ -1,17 +1,33 @@
 export const statClassName = "rounded-[10px] text-[#000000D0] cursor-default shadow-[0px_2px_5px_rgba(160,170,180,0.6)] bg-[#f5f5f5] py-[5px] px-2.5 m-[5px] flex items-center justify-center text-[15px] font-normal"
 
 export const stackTech = [
-    "Vue", "React", "Next.js", "JavaScript", "TypeScript",
-    "Tailwind CSS", "Bootstrap", "shadcn/ui", "Node.js", "Express", "Redis", "MongoDB",
-    "PostgreSQL", "MySQL", "Jest", "Firebase", "Supabase"
-];
-
-export const extraTech = [
-    "Arc", "Git", "GitHub", "Structured", "Prisma", "Postman", "Vercel", "Figma",
-    "ChatGPT", "Claude", "Git Copilot"
-];
+    "JavaScript", "TypeScript", "Vue.js", "React", "Next.js", "Redux", "Zustand", "Tanstack Query", "Framer Motion",
+    "Tailwind CSS", "Bootstrap", "shadcn/ui", "Node.js", "Express.js", "Redis", "MongoDB",
+    "PostgreSQL", "MySQL", "Jest", "Firebase", "Supabase", "Git", "GitHub",
+    "Prisma", "Mongoose", "Postman", "Vercel", "Figma", "Cursor", "VS Code", "Arc", "Notion"
+]
 
 export const certification = [
+    {
+        title: "Full Stack Developer Class",
+        school: "CodeCafe Lab",
+        date: "August 2025 - 300 hours",
+        link: "https://drive.google.com/file/d/1WllGNrEyonlFczW9diDHecyJGpNnGS5F/view?usp=sharing",
+        description:
+            "Completed an intensive, project-based program covering modern full-stack engineering from React + TypeScript to Node.js/Express APIs. Built a production-ready REST backend with PostgreSQL and Prisma, including strict request validation, layered JWT/refresh authentication, RBAC, and secure file uploads with Multer. Implemented queue workers with Redis for background jobs like image processing and cache invalidation. On the frontend, delivered data-driven UX using React Router loaders/actions, TanStack Query patterns, and persistent global state with Zustand while supporting optimistic updates, infinite scrolling, and protected routes. ",
+        tech: [
+            "React",
+            "TypeScript",
+            "Express.js",
+            "Tanstack Query",
+            "Zustand",
+            "shadcn/ui",
+            "PostgreSQL",
+            "Prisma",
+            "Queue Workers",
+            "Redis",
+        ]
+    },
     {
         title: "Google AI Essentials",
         school: "Coursera",
@@ -87,7 +103,7 @@ export const projects = [
         desc: "A modern Q&A platform built with Next.js and integrated Groq AI assistance. Developers can ask questions, share knowledge, and receive intelligent help to improve their queries.",
         modal:
             <>
-                A modern Q&A platform built with Next.js 15, React 19, and integrated Groq AI assistance. Developers can ask questions, share knowledge, and receive intelligent help to improve their queries. The platform emphasizes performance, usability, and clean UI, with a strong focus on scalable architecture and advanced database queries.
+                🤖 A modern Q&A platform built with Next.js 15, React 19, and integrated Groq AI assistance. Developers can ask questions, share knowledge, and receive intelligent help to improve their queries. The platform emphasizes performance, usability, and clean UI, with a strong focus on scalable architecture and advanced database queries.
                 <br /><br />One of the core challenges in building DevFlow was designing a scalable and flexible MongoDB schema and choosing between an array of references and creating multiple collections to manage complex relationships between users, questions, answers, tags, and activity logs. Building the recommendation system entirely from scratch was one of the most challenging yet rewarding aspects of the project. Integrating AI assistance via Groq while maintaining performance and response speed required careful architectural decisions. Implementing an advanced global search system with efficient filtering and sorting also lead to late night grinds. Balancing feature-rich functionality with optimal performance, SEO, and clean user experience was a constant challenge.
                 <br /><br />I could spend all day describing the lessons that I learned while working on this project, but the most important ones involved in my newfound understanding of NoSQL database design and advanced aggregation pipelines. Working with Groq AI helped me learn how to integrate AI in a way that adds real value to users. Creating a custom recommendation system from the ground up was a standout highlight of the project, offering both a challenging and highly rewarding learning experience. I also learned the importance of code organization, consistent refactoring, and optimizing for readability and scalability. This project taught me how to design a production-grade application that is not only functional but also performant, secure, and SEO-friendly ultimately helping me grow into a more confident and capable full-stack developer.
             </>
@@ -137,13 +153,17 @@ export const projects = [
         modal: <>📚 A vibrant blogging platform designed to foster a positive and supportive community. Users can share personal growth experiences, life knowledge, advice, and insights while engaging with others&apos; blogs. It’s a place to inspire, learn, and connect. I love writing blogs there too, it’s my way of sharing what I’ve learned and connecting with others. <br /><br />This was actually my very first React project, and it taught me a lot about building component-based UIs and managing real-time state. It also includes a real-time notification feature using Firebase, alerting users instantly when new content or interactions happen. Working on LitLibrary helped me explore schema validation with Zod, and gave me confidence in creating a fully functional interactive web app.</>,
     },
     {
-        title: "My Portfolio",
-        img: "/gallery/portfolio-v2.webp",
-        code: "https://github.com/fisheeesh/syp-portfolio",
-        link: "https://www.syp.dev",
-        tech: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
-        desc: "This is my personal developer portfolio built with Next.js, highlights my skills, projects, and certifications with a focus on smooth user interaction.",
-        modal: <>🌐 This is my personal developer portfolio built with Next.js, styled using Tailwind CSS. It highlights my skills, projects, and certifications with a focus on smooth user interaction using libraries like Framer Motion, React Scroll, and React Type Animation. <br /><br />It represents my current learning, clean code habits, and visual preferences as a developer.</>,
+        title: "Furnivo",
+        img: "/gallery/furnivo.webp",
+        code: "https://github.com/fisheeesh/furnivo",
+        link: "https://github.com/fisheeesh/furnivo",
+        tech: ["React.js", "Express.js", "Zustand", "Tanstack Query", "PostgreSQL"],
+        desc: "A full-stack modern furniture marketplace built with React.js + React Router, TypeScript, Zustand and shadcn/ui on the frontend, and Node.js, Express.js, Prisma, and PostgreSQL on the backend.",
+        modal: <>
+            🛋️  A full-stack modern furniture marketplace built with React.js + React Router, TypeScript, Zustand and shadcn/ui on the frontend, and Node.js, Express.js, Prisma, and PostgreSQL on the backend. It features JWT authentication, file uploads with Multer, and background job processing using BullMQ with Redis.
+            <br /><br /> My first full-stack application with a custom REST API backend, marking a shift from my previous experience with serverless or Next.js servers. I gained hands-on experience building and structuring an Express.js backend, handling middleware, integrating Prisma ORM with MySQL, PostgreSQL, and SQLite, and implementing secure JWT-based authentication flows, including registration, OTP verification, password reset, and token rotation. I also learned to optimize performance and scalability by offloading heavy tasks to background workers using BullMQ and Redis for tasks like image processing and cache invalidation. On the frontend, I strengthened my skills with React Router’s loaders, actions, and forms, API integration with TanStack Query, and global state management using Zustand. I mastered keeping data alive across routes, handling loading states, infinite scrolling, query caching, protected routes, and request interceptors with Axios. Beyond technical skills, I learned the importance of balancing code organization, performance, and security while maintaining a smooth user experience, which helped me grow into a more confident full-stack developer.
+            <br /><br /> I could spend all day describing the lessons I learned while working on this project, but the most important involved gaining a solid understanding of backend fundamentals and production-ready REST API design. I gained hands-on experience building and structuring an Express.js backend, handling middleware, integrating Prisma ORM with multiple databases, and implementing secure authentication with token rotation. Learning to offload heavy tasks to background workers using BullMQ and Redis was a game-changer for performance and scalability. On the frontend, I strengthened my skills with React Router’s loaders and actions, API integration with TanStack Query, and global state management using Zustand. I mastered using React Router’s Form, useFetcher for actions, and useNavigation for handling loading states, while keeping data alive across routes. I developed solid concepts like infinite scrolling, query caching, protected routes, and request interceptors with Axios. Beyond technical skills, I learned how crucial it is to balance code organization, performance, and security while maintaining a smooth user experience. This project helped me grow into a more confident full-stack developer with a clearer understanding of both frontend and backend problem-solving.
+        </>,
     },
 ];
 
@@ -157,7 +177,7 @@ export const galleryShowCases = [
         tech: ["Next.js", "TypeScript", "shadcn/ui", "GroqAI", "MongoDB", "Mongoose"],
         modal:
             <>
-                A modern Q&A platform built with Next.js 15, React 19, and integrated Groq AI assistance. Developers can ask questions, share knowledge, and receive intelligent help to improve their queries. The platform emphasizes performance, usability, and clean UI, with a strong focus on scalable architecture and advanced database queries.
+                🤖 A modern Q&A platform built with Next.js 15, React 19, and integrated Groq AI assistance. Developers can ask questions, share knowledge, and receive intelligent help to improve their queries. The platform emphasizes performance, usability, and clean UI, with a strong focus on scalable architecture and advanced database queries.
                 <br /><br />One of the core challenges in building DevFlow was designing a scalable and flexible MongoDB schema and choosing between an array of references and creating multiple collections to manage complex relationships between users, questions, answers, tags, and activity logs. Building the recommendation system entirely from scratch was one of the most challenging yet rewarding aspects of the project. Integrating AI assistance via Groq while maintaining performance and response speed required careful architectural decisions. Implementing an advanced global search system with efficient filtering and sorting also lead to late night grinds. Balancing feature-rich functionality with optimal performance, SEO, and clean user experience was a constant challenge.
                 <br /><br />I could spend all day describing the lessons that I learned while working on this project, but the most important ones involved in my newfound understanding of NoSQL database design and advanced aggregation pipelines. Working with Groq AI helped me learn how to integrate AI in a way that adds real value to users. Creating a custom recommendation system from the ground up was a standout highlight of the project, offering both a challenging and highly rewarding learning experience. I also learned the importance of code organization, consistent refactoring, and optimizing for readability and scalability. This project taught me how to design a production-grade application that is not only functional but also performant, secure, and SEO-friendly ultimately helping me grow into a more confident and capable full-stack developer.
             </>
@@ -171,6 +191,19 @@ export const galleryShowCases = [
         tech: ["Next.js", "TypeScript", "shadcn/ui", "PayPal", "Stripe", "PostgreSQL"],
         modal: <>🛒  A full featured Ecommerce platform from scratch using Next.js, TypeScript, shadcn/ui, PostgreSQL, and Prisma. Integrated secure and flexible payment options with Stripe and PayPal, supporting both one-time and multi-product purchases. Features include user authentication, admin panel product management, shopping cart, order history, checkout process, and responsive UI. I designed both customer-facing and admin interfaces, implemented role-based access control, and handled edge cases like failed transactions and stock availability.
             <br /><br />This project gave me deep hands-on experience with e-commerce logic, scalable backend design, and full-stack payment flows. I tested over 100 transactions in sandbox mode for both PayPal and Stripe to ensure reliability, proper webhook handling, and graceful error management. Prostore helped me solidify my knowledge of building production-grade applications with real-world complexity and a strong focus on performance and user experience.</>,
+    },
+    {
+        cat: "All, React, Backend",
+        title: "Furnivo",
+        img: "/gallery/furnivo.webp",
+        code: "https://github.com/fisheeesh/furnivo",
+        link: "https://github.com/fisheeesh/furnivo",
+        tech: ["React.js", "Express.js", "Zustand", "Tanstack Query", "PostgreSQL"],
+        modal: <>
+            🛋️  A full-stack modern furniture marketplace built with React.js + React Router, TypeScript, Zustand and shadcn/ui on the frontend, and Node.js, Express.js, Prisma, and PostgreSQL on the backend. It features JWT authentication, file uploads with Multer, and background job processing using BullMQ with Redis.
+            <br /><br /> My first full-stack application with a custom REST API backend, marking a shift from my previous experience with serverless or Next.js servers. I gained hands-on experience building and structuring an Express.js backend, handling middleware, integrating Prisma ORM with MySQL, PostgreSQL, and SQLite, and implementing secure JWT-based authentication flows, including registration, OTP verification, password reset, and token rotation. I also learned to optimize performance and scalability by offloading heavy tasks to background workers using BullMQ and Redis for tasks like image processing and cache invalidation. On the frontend, I strengthened my skills with React Router’s loaders, actions, and forms, API integration with TanStack Query, and global state management using Zustand. I mastered keeping data alive across routes, handling loading states, infinite scrolling, query caching, protected routes, and request interceptors with Axios. Beyond technical skills, I learned the importance of balancing code organization, performance, and security while maintaining a smooth user experience, which helped me grow into a more confident full-stack developer.
+            <br /><br /> I could spend all day describing the lessons I learned while working on this project, but the most important involved gaining a solid understanding of backend fundamentals and production-ready REST API design. I gained hands-on experience building and structuring an Express.js backend, handling middleware, integrating Prisma ORM with multiple databases, and implementing secure authentication with token rotation. Learning to offload heavy tasks to background workers using BullMQ and Redis was a game-changer for performance and scalability. On the frontend, I strengthened my skills with React Router’s loaders and actions, API integration with TanStack Query, and global state management using Zustand. I mastered using React Router’s Form, useFetcher for actions, and useNavigation for handling loading states, while keeping data alive across routes. I developed solid concepts like infinite scrolling, query caching, protected routes, and request interceptors with Axios. Beyond technical skills, I learned how crucial it is to balance code organization, performance, and security while maintaining a smooth user experience. This project helped me grow into a more confident full-stack developer with a clearer understanding of both frontend and backend problem-solving.
+        </>,
     },
     {
         cat: "All, React",

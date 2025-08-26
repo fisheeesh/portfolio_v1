@@ -8,7 +8,7 @@ interface Props {
 const Filter = ({ activeFilter, handleFilter }: Props) => {
     return (
         <div className="flex flex-wrap justify-center py-4 px-8 gap-2" >
-            {["All", "Design", "Next", "React", "Vue"].map((filter) => (
+            {["All", "Design", "Next", "React", "Vue", "Backend"].map((filter) => (
                 <button
                     key={filter}
                     className={`

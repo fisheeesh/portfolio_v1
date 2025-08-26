@@ -4,10 +4,10 @@ import { Socials } from "../shared/socials";
 
 export const Contact = () => {
     return (
-        <section className="pb-36 px-4" id="contact">
+        <section className="pb-48 pt-32 px-4" id="contact">
             <div className="max-w-[750px] mx-auto space-y-4">
                 <Reveal width="100%">
-                    <h2 className="text-center font-black leading-none text-5xl md:text-[5.7rem]">
+                    <h2 className="text-center font-black leading-none text-5xl md:text-[6rem]">
                         Contact<span className="text-brand">.</span>
                     </h2>
                 </Reveal>
