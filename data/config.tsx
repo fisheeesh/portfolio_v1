@@ -1,10 +1,12 @@
 export const statClassName = "rounded-[10px] text-[#000000D0] cursor-default shadow-[0px_2px_5px_rgba(160,170,180,0.6)] bg-[#f5f5f5] py-[5px] px-2.5 m-[5px] flex items-center justify-center text-[15px] font-normal"
 
 export const stackTech = [
-    "JavaScript", "TypeScript", "Vue.js", "React", "Next.js", "Redux", "Zustand", "Tanstack Query", "Framer Motion",
-    "Tailwind CSS", "Bootstrap", "shadcn/ui", "Node.js", "Express.js", "Redis", "MongoDB",
+    "JavaScript", "TypeScript", "Vue.js", "React", "Next.js",
+    "Node.js", "Express.js", "Python", "FastAPI",
+    "Redux", "Zustand", "Tanstack Query", "Framer Motion",
+    "Tailwind CSS", "Bootstrap", "shadcn/ui", "Redis", "MongoDB",
     "PostgreSQL", "MySQL", "Jest", "Firebase", "Supabase", "Git", "GitHub",
-    "Prisma", "Mongoose", "Postman", "Vercel", "Figma", "Cursor", "VS Code", "Arc", "Notion"
+    "Prisma", "Mongoose", "Postman", "Docker", "Cursor", "Notion"
 ]
 
 export const certification = [
@@ -14,18 +16,21 @@ export const certification = [
         date: "August 2025 - 300 hours",
         link: "https://drive.google.com/file/d/1WllGNrEyonlFczW9diDHecyJGpNnGS5F/view?usp=sharing",
         description:
-            "Completed an intensive, project-based program covering modern full-stack engineering from React + TypeScript to Node.js/Express RESTful APIs. Built a production-ready REST backend with PostgreSQL and Prisma, including strict request validation, layered JWT/refresh authentication, RBAC, and secure file uploads with Multer. Implemented queue workers with Redis for background jobs like image processing and cache invalidation. On the frontend, delivered data-driven UX using React Router loaders/actions, TanStack Query patterns, and persistent global state with Zustand while supporting optimistic updates, infinite scrolling, and protected routes. ",
+            "Completed an intensive, project-based program covering modern full-stack engineering from React + TypeScript to Node.js/Express APIs. Built a production-ready RESTful backend with PostgreSQL and Prisma, including strict request validation, layered JWT/refresh authentication, RBAC, and secure file uploads with Multer. Implemented queue workers with Redis for background jobs like image processing and cache invalidation. On the frontend, delivered data-driven UX using React Router loaders/actions, TanStack Query patterns, and persistent global state with Zustand while supporting optimistic updates, infinite scrolling, and protected routes. ",
         tech: [
             "React",
             "TypeScript",
             "Express.js",
+            "React Router",
             "Tanstack Query",
             "Zustand",
             "shadcn/ui",
             "PostgreSQL",
             "Prisma",
-            "Queue Workers",
             "Redis",
+            "Queue Workers",
+            "RESTful",
+            "GraphQL"
         ]
     },
     {
@@ -94,6 +99,32 @@ export const certification = [
 ];
 
 export const projects = [
+    {
+        title: "EMC Web",
+        img: "/gallery/ata-web.webp",
+        code: "https://github.com/fisheeesh/emc-web",
+        link: "https://emotioncheckinsystem.com",
+        tech: ["React", "Express.js", "Tanstack Query", "PostgreSQL", "GroqAI"],
+        desc: "My university senior project's a comprehensive AI-Powered full-stack employee well-being platform that bridges attendance management with emotional health monitoring.",
+        modal: <>
+            🎓 My university senior project&apos;s a comprehensive AI-Powered full-stack employee well-being platform that bridges attendance management with emotional health monitoring. Features AI-powered text analysis, real-time dashboards, CSV imports, real-time email notify, and rich MDX content editing to help organizations create healthier work environments. Employees check in daily via a mobile app, sharing their feelings through emoji selections and short notes, while HR and Super Admins access a powerful web dashboard displaying emotion trends, attendance patterns, and actionable insights through intuitive charts and reports.
+            <br /><br /> This project marks a significant milestone in my development journey, pushing me far beyond my previous capabilities. Building on the foundation I established with Furnivo, I integrated advanced features like AI-powered sentiment analysis using GroqAI to automatically detect emotional patterns in employee notes, Cloudinary for scalable image management, bulk CSV uploads for efficient data import, and MDX editor integration for creating rich, dynamic content. The combination of real-time emotion tracking with traditional attendance data required careful database design, complex query optimization, and thoughtful UX considerations to ensure both privacy and actionable insights. I implemented role-based access control (RBAC) to separate employee, HR, and Super Admin permissions, designed responsive data visualization components, and built sophisticated filtering and reporting systems that transform raw emotional data into meaningful organizational insights.
+            <br /><br /> Working on this project truly matured me as a full-stack developer. Beyond strengthening my core skills with React, Express.js, and PostgreSQL, I gained invaluable experience integrating AI capabilities into real-world applications—from handling API rate limits and error fallbacks to designing user-friendly interfaces that make AI feel natural and helpful rather than intrusive. I learned to architect systems that handle sensitive employee data responsibly, implementing proper encryption, secure authentication, and privacy-first design patterns. The challenge of combining emotional intelligence with technical infrastructure taught me how to balance multiple stakeholder needs: employees wanting privacy and ease of use, HR teams needing actionable insights, and administrators requiring comprehensive control. I mastered designing scalable database schemas with complex relationships between users, check-ins, emotions, and organizational hierarchies, processing bulk CSV uploads with proper validation and error handling, and implementing real-time email notifications as background tasks to enhance API response times and maintain system performance. Creating intuitive content editing experiences with MDX further expanded my technical toolkit. This project showed me that being a mature full-stack developer isn&apos;t just about writing code, it&apos;s about understanding the human problems you&apos;re solving, designing thoughtful solutions, and building systems that genuinely improve people&apos;s lives. The Emotion Check-in System transformed me from someone who could build features into someone who could architect complete, production-ready solutions that create real impact.
+        </>,
+    },
+    {
+        title: "EMC Mob",
+        img: "/gallery/ata-mob.webp",
+        code: "https://github.com/fisheeesh/emc-mob",
+        link: "https://github.com/fisheeesh/emc-mob",
+        tech: ["Dart", "Flutter", "Flutter Secure Storage", "SQLite"],
+        desc: "My university senior project's employee-facing mobile app with AI-powered emotion scoring to help HR teams understand and support employee well-being through data-driven insights.",
+        modal: <>
+            📱 The mobile counterpart to my Emotion Check-in System, designed specifically for employees to seamlessly log their daily attendance and emotional state. This Flutter application serves as the primary touchpoint where employees share their feelings through intuitive emoji selections and optional notes, which are then analyzed by AI to generate emotion scores that help HR teams identify patterns and provide timely support.
+            <br /><br /> This marked my first experience building a mobile application that integrates with a custom REST API, and it taught me invaluable lessons about mobile development best practices. I focused heavily on writing clean, maintainable code with proper project structure, separating concerns across models, services, controllers, and UI layers. To optimize performance and reduce unnecessary database queries, I implemented intelligent memory caching strategies using SQLite for local data persistence, combined with Flutter Secure Storage for handling sensitive authentication tokens and user credentials securely. I learned to balance between local data availability for offline-first experiences and server synchronization for real-time updates. Working with Flutter&apos;s reactive UI framework challenged me to think differently about state management and widget lifecycle, while integrating with the backend API taught me about handling network requests, error states, loading indicators, and graceful fallbacks in mobile environments.
+            <br /><br /> Building this mobile app deepened my understanding of full-stack development from an entirely new perspective, creating seamless experiences across web dashboards and mobile interfaces while maintaining data consistency and security. I&apos;m actively continuing development on this project, gaining more insights with each feature I implement. My goal is to deploy this application on the Google Play Store, making it accessible to real organizations looking to improve their workplace culture and employee well-being. This journey from concept to production-ready mobile app is shaping me into a more versatile developer capable of building complete ecosystem solutions ^_^
+        </>,
+    },
     {
         title: "DevFlow",
         img: "/gallery/devflow.webp",
@@ -168,6 +199,32 @@ export const projects = [
 ];
 
 export const galleryShowCases = [
+    {
+        cat: "All",
+        title: "EMC Web",
+        img: "/gallery/ata-web.webp",
+        code: "https://github.com/fisheeesh/emc-web",
+        link: "https://emotioncheckinsystem.com",
+        tech: ["React", "Express.js", "Tanstack Query", "PostgreSQL", "GroqAI"],
+        modal: <>
+            🎓 My university senior project&apos;s a comprehensive AI-Powered full-stack employee well-being platform that bridges attendance management with emotional health monitoring. Features AI-powered text analysis, real-time dashboards, CSV imports, real-time email notify, and rich MDX content editing to help organizations create healthier work environments. Employees check in daily via a mobile app, sharing their feelings through emoji selections and short notes, while HR and Super Admins access a powerful web dashboard displaying emotion trends, attendance patterns, and actionable insights through intuitive charts and reports.
+            <br /><br /> This project marks a significant milestone in my development journey, pushing me far beyond my previous capabilities. Building on the foundation I established with Furnivo, I integrated advanced features like AI-powered sentiment analysis using GroqAI to automatically detect emotional patterns in employee notes, Cloudinary for scalable image management, bulk CSV uploads for efficient data import, and MDX editor integration for creating rich, dynamic content. The combination of real-time emotion tracking with traditional attendance data required careful database design, complex query optimization, and thoughtful UX considerations to ensure both privacy and actionable insights. I implemented role-based access control (RBAC) to separate employee, HR, and Super Admin permissions, designed responsive data visualization components, and built sophisticated filtering and reporting systems that transform raw emotional data into meaningful organizational insights.
+            <br /><br /> Working on this project truly matured me as a full-stack developer. Beyond strengthening my core skills with React, Express.js, and PostgreSQL, I gained invaluable experience integrating AI capabilities into real-world applications—from handling API rate limits and error fallbacks to designing user-friendly interfaces that make AI feel natural and helpful rather than intrusive. I learned to architect systems that handle sensitive employee data responsibly, implementing proper encryption, secure authentication, and privacy-first design patterns. The challenge of combining emotional intelligence with technical infrastructure taught me how to balance multiple stakeholder needs: employees wanting privacy and ease of use, HR teams needing actionable insights, and administrators requiring comprehensive control. I mastered designing scalable database schemas with complex relationships between users, check-ins, emotions, and organizational hierarchies, processing bulk CSV uploads with proper validation and error handling, and implementing real-time email notifications as background tasks to enhance API response times and maintain system performance. Creating intuitive content editing experiences with MDX further expanded my technical toolkit. This project showed me that being a mature full-stack developer isn&apos;t just about writing code, it&apos;s about understanding the human problems you&apos;re solving, designing thoughtful solutions, and building systems that genuinely improve people&apos;s lives. The Emotion Check-in System transformed me from someone who could build features into someone who could architect complete, production-ready solutions that create real impact.
+        </>,
+    },
+    {
+        cat: "All, Backend",
+        title: "EMC Mob",
+        img: "/gallery/ata-mob.webp",
+        code: "https://github.com/fisheeesh/emc-mob",
+        link: "https://github.com/fisheeesh/emc-mob",
+        tech: ["Dart", "Flutter", "Flutter Secure Storage", "SQLite"],
+        modal: <>
+            📱 The mobile counterpart to my Emotion Check-in System, designed specifically for employees to seamlessly log their daily attendance and emotional state. This Flutter application serves as the primary touchpoint where employees share their feelings through intuitive emoji selections and optional notes, which are then analyzed by AI to generate emotion scores that help HR teams identify patterns and provide timely support.
+            <br /><br /> This marked my first experience building a mobile application that integrates with a custom REST API, and it taught me invaluable lessons about mobile development best practices. I focused heavily on writing clean, maintainable code with proper project structure, separating concerns across models, services, controllers, and UI layers. To optimize performance and reduce unnecessary database queries, I implemented intelligent memory caching strategies using SQLite for local data persistence, combined with Flutter Secure Storage for handling sensitive authentication tokens and user credentials securely. I learned to balance between local data availability for offline-first experiences and server synchronization for real-time updates. Working with Flutter&apos;s reactive UI framework challenged me to think differently about state management and widget lifecycle, while integrating with the backend API taught me about handling network requests, error states, loading indicators, and graceful fallbacks in mobile environments.
+            <br /><br /> Building this mobile app deepened my understanding of full-stack development from an entirely new perspective, creating seamless experiences across web dashboards and mobile interfaces while maintaining data consistency and security. I&apos;m actively continuing development on this project, gaining more insights with each feature I implement. My goal is to deploy this application on the Google Play Store, making it accessible to real organizations looking to improve their workplace culture and employee well-being. This journey from concept to production-ready mobile app is shaping me into a more versatile developer capable of building complete ecosystem solutions ^_^
+        </>,
+    },
     {
         cat: "All, Next",
         title: "DevFlow",
