@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import DropDown from '../dropDown/drop-down';
+import DropDown from '../drop-down/drop-down';
 import Header from '../header/header';
 import { fadeIn, flipInX } from '@/data/motion';
 import Image from 'next/image';

@@ -20,7 +20,7 @@ const About = () => {
                         </Reveal>
                         <Reveal>
                             <p className="mb-6 text-[15px] sm:text-base">
-                                On the frontend, I love working with <strong>React.js</strong> and <strong>Next.js</strong>, and I&apos;m also experienced with backend technologies like FastAPI, Node.js, and serverless platforms like Supabase and Firebase. I excel at planning and finding optimal solutions, with AI tools like ChatGPT, Claude, and GitHub Copilot alongside structured time management apps helping me stay productive. I&apos;m currently working on my university senior project and internship, focusing on building practical, impactful solutions to meaningful problems.
+                                On the frontend, I love working with <strong>React.js</strong> and <strong>Next.js</strong>, and I&apos;m also experienced with backend technologies like FastAPI, Node.js, and serverless platforms like Supabase and Firebase. I excel at planning and finding optimal solutions, with AI tools like ChatGPT, Claude, and GitHub Copilot alongside structured time management apps helping me stay productive. I&apos;m currently working on my internship work, focusing on building practical, impactful solutions to meaningful problems.
                             </p>
                         </Reveal>
                         <Reveal>

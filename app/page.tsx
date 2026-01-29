@@ -3,6 +3,7 @@
 import About from "@/components/about/about"
 import Certification from "@/components/certification/certification"
 import { Contact } from "@/components/contact/contact"
+import Experience from "@/components/experience/experience"
 import Footer from "@/components/footer/footer"
 import Hero from "@/components/hero/hero"
 import ScrollTopBtn from "@/components/shared/scroll-top-btn"
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Hero />
       <About />
       <ShowCase />
+      <Experience />
       <Certification />
       <Contact />
       <Footer />

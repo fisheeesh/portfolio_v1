@@ -1,12 +1,35 @@
 export const statClassName = "rounded-[10px] text-[#000000D0] cursor-default shadow-[0px_2px_5px_rgba(160,170,180,0.6)] bg-[#f5f5f5] py-[5px] px-2.5 m-[5px] flex items-center justify-center text-[15px] font-normal"
 
 export const stackTech = [
-    "JavaScript", "TypeScript", "Vue.js", "React", "Next.js",
-    "Node.js", "Express.js", "Python", "FastAPI",
-    "Redux", "Zustand", "Tanstack Query", "Framer Motion",
-    "Tailwind CSS", "Bootstrap", "shadcn/ui", "Redis", "MongoDB",
-    "PostgreSQL", "MySQL", "Jest", "Firebase", "Supabase", "Git", "GitHub",
-    "Prisma", "Mongoose", "Postman", "Docker", "Cursor", "Notion"
+    "Next.js", "React.js", "JavaScript", "TypeScript", ,
+    "Node.js", "Express.js", "Python", "FastAPI", "Tanstack Query",
+    "Redux", "Zustand", , "Framer Motion",
+    "Tailwind", "shadcn/ui", "MongoDB",
+    "PostgreSQL", "Redis", "Firebase", "Supabase", "Git", "GitHub",
+    "Prisma", "Mongoose", "Docker", "Antigravity", "Notion", "Nginx", "Cloudflare"
+]
+
+export const experiences = [
+    {
+        title: "Full-Stack Developer",
+        role: "Freelance - Internship",
+        date: 'October 2024 - Present',
+        location: "Bangkok, Thailand",
+        description: "Leading the migration of zcrLog to version 3, a centralized security log management platform serving enterprise clients. Redesigned the entire frontend architecture to improve performance, scalability, and user experience while implementing multi-tenant access control, licensing integration, and AI-powered analysis features. Collaborated with the team to deploy production infrastructure, optimize database queries for high-volume log data, and establish containerized deployment workflows. Gained practical experience in DevOps practices, networking concepts, and cybersecurity fundamentals including on-premise vs SaaS architectures.",
+        tech: [
+            "React",
+            "TanStack Query",
+            "Zustand",
+            "FastAPI",
+            "ClickHouse",
+            "Redis",
+            "Keygen",
+            "Vector",
+            "Cloudflare",
+            "Nginx",
+            "VMware"
+        ],
+    },
 ]
 
 export const certification = [

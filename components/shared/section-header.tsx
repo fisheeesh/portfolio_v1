@@ -8,7 +8,7 @@ interface Props {
 export const SectionHeader = ({ title, dir = "r" }: Props) => {
     return (
         <div
-            className="flex items-center gap-3 mb-[2.4rem]"
+            className="flex items-center gap-4 mb-[2.4rem]"
             style={{ flexDirection: dir === "r" ? "row" : "row-reverse" }}
         >
             <div className="w-full h-0.5 opacity-30 bg-gray-400" />

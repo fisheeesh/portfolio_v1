@@ -3,18 +3,18 @@ import { Reveal } from "../shared/reveal";
 
 interface Props {
     title: string,
-    school: string,
+    role: string,
     date: string,
-    link: string,
+    location: string,
     description: string,
     tech: string[]
 }
 
-export const CertificationItem = ({
+export const ExperienceItem = ({
     title,
-    school,
+    role,
     date,
-    link,
+    location,
     description,
     tech,
 }: Props) => {
@@ -32,19 +32,10 @@ export const CertificationItem = ({
 
             <div className="flex items-center justify-between max-[700px]:flex-col max-[700px]:items-start">
                 <Reveal>
-                    <span className="text-brand font-bold">{school}</span>
+                    <span className="text-brand font-bold">{role}</span>
                 </Reveal>
                 <Reveal>
-                    <a
-                        href={link}
-                        className="transition font-medium duration-200 hover:text-brand"
-                        target="_blank"
-                        rel="nofollow"
-                        title="View Certificate"
-                        aria-label="View Certificate"
-                    >
-                        Certificate
-                    </a>
+                    <span className="font-medium">{location}</span>
                 </Reveal>
             </div>
             <Reveal>
