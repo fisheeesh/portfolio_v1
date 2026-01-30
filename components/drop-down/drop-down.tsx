@@ -33,6 +33,14 @@ function Dropdown({ isOpen, toggle }: { isOpen: boolean, toggle: () => void }) {
                     Projects
                 </Link>
                 <Link
+                    href="/#experience"
+                    aria-label="Experience section"
+                    className="text-white text-[1.7rem] cursor-pointer hover:text-gray-400"
+                    onClick={toggle}
+                >
+                    Exp.
+                </Link>
+                <Link
                     href="/#certification"
                     aria-label="Certifications section"
                     className="text-white text-[1.7rem] cursor-pointer hover:text-gray-400"

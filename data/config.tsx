@@ -1,9 +1,9 @@
 export const statClassName = "rounded-[10px] text-[#000000D0] cursor-default shadow-[0px_2px_5px_rgba(160,170,180,0.6)] bg-[#f5f5f5] py-[5px] px-2.5 m-[5px] flex items-center justify-center text-[15px] font-normal"
 
 export const stackTech = [
-    "Next.js", "React.js", "JavaScript", "TypeScript", ,
+    "Next.js", "React.js", "TypeScript", "JavaScript",
     "Node.js", "Express.js", "Python", "FastAPI", "Tanstack Query",
-    "Redux", "Zustand", , "Framer Motion",
+    "Redux", "Zustand", "Framer Motion",
     "Tailwind", "shadcn/ui", "MongoDB",
     "PostgreSQL", "Redis", "Firebase", "Supabase", "Git", "GitHub",
     "Prisma", "Mongoose", "Docker", "Antigravity", "Notion", "Nginx", "Cloudflare"

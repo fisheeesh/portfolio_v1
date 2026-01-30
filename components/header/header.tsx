@@ -38,20 +38,20 @@ export default function Header({ toggle }: { toggle: () => void }) {
                     </li>
                     <li>
                         <Link
-                            aria-label="Certifications section"
-                            href="/#certification"
-                            className="text-[#777779] flex text-[1.2rem] items-center h-full cursor-pointer hover:text-light"
-                        >
-                            Certif.
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
                             aria-label="Experience section"
                             href="/#experience"
                             className="text-[#777779] flex text-[1.2rem] items-center h-full cursor-pointer hover:text-light"
                         >
                             Exp.
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            aria-label="Certifications section"
+                            href="/#certification"
+                            className="text-[#777779] flex text-[1.2rem] items-center h-full cursor-pointer hover:text-light"
+                        >
+                            Certif.
                         </Link>
                     </li>
                     <li>
