@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={poppins.className} id="root">{children}</body>
+      <body className={`${poppins.className} custom-scrollbar`} id="root">{children}</body>
     </html>
   );
 }

@@ -213,3 +213,20 @@
     filter: blur(0px);
     transition: filter 0.3s ease-in;
 }
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #cccccc;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #bdbfc0
+}

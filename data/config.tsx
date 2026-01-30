@@ -6,7 +6,7 @@ export const stackTech = [
     "Redux", "Zustand", "Framer Motion",
     "Tailwind", "shadcn/ui", "MongoDB",
     "PostgreSQL", "Redis", "Firebase", "Supabase", "Git", "GitHub",
-    "Prisma", "Mongoose", "Docker", "Antigravity", "Notion", "Nginx", "Cloudflare"
+    "Prisma", "Mongoose", "Docker", "Antigravity", "Notion", "Nginx", "Cloudflare", "SEO"
 ]
 
 export const experiences = [
