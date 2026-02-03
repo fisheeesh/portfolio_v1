@@ -13,7 +13,7 @@ export const experiences = [
     {
         title: "Full-Stack Developer",
         role: "Freelance - Internship",
-        date: 'October 2024 - Present',
+        date: 'October 2025 - Present',
         location: "Bangkok, Thailand",
         description: "Leading the migration of zcrLog to version 3, a centralized security log management platform serving enterprise clients. Redesigned the entire frontend architecture to improve performance, scalability, and user experience while implementing multi-tenant access control, licensing integration, and AI-powered analysis features. Collaborated with the team to deploy production infrastructure, optimize database queries for high-volume log data, and establish containerized deployment workflows. Gained practical experience in DevOps practices, networking concepts, and cybersecurity fundamentals including on-premise vs SaaS architectures.",
         tech: [
