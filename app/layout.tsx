@@ -17,7 +17,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.syp.dev"),
-  title: "Swam Yi Phyo",
+  title: "Swam Yi Phyo ~ Software Engineer",
   description:
     "A passionate full-stack web developer focused on building SEO-friendly, responsive, and scalable web applications using React, Next.js, and Spring Boot. With a self-driven mindset and strong communication skills, he delivers clean, user-centered digital experiences.",
   icons: {

@@ -6,7 +6,7 @@ export const stackTech = [
     "Redux", "Zustand", "Framer Motion",
     "Tailwind", "shadcn/ui", "MongoDB",
     "PostgreSQL", "Redis", "Firebase", "Supabase", "Git", "GitHub",
-    "Prisma", "Mongoose", "Docker", "Antigravity", "Notion", "Nginx", "Cloudflare", "SEO"
+    "Prisma", "Mongoose", "Docker", "Cloudflare", "Nginx", "RESTful", "GraphQL", "SEO"
 ]
 
 export const experiences = [
@@ -223,7 +223,7 @@ export const projects = [
 
 export const galleryShowCases = [
     {
-        cat: "All",
+        cat: "All, Backend",
         title: "EMC Web",
         img: "/gallery/ata-web.webp",
         code: "https://github.com/fisheeesh/emc-web",
@@ -236,7 +236,7 @@ export const galleryShowCases = [
         </>,
     },
     {
-        cat: "All, Backend",
+        cat: "All",
         title: "EMC Mob",
         img: "/gallery/ata-mob.webp",
         code: "https://github.com/fisheeesh/emc-mob",

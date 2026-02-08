@@ -95,12 +95,22 @@ export default function Hero() {
                             whileInView="visible"
                             viewport={{ once: true }}
                         >
-                            <Image
-                                src="/assets/man-svgrepo-com.svg"
-                                alt="man-svgrepo"
-                                width={300}
-                                height={300}
-                            />
+                            <div className='relative w-[285px] h-[300px] group'>
+                                <Image
+                                    src="/assets/syp.svg"
+                                    alt="syp"
+                                    width={285}
+                                    height={300}
+                                    className='absolute inset-0 group-hover:opacity-0'
+                                />
+                                <Image
+                                    src="/assets/yvl-syp.png"
+                                    alt="syp-yvl-hover"
+                                    width={285}
+                                    height={300}
+                                    className='absolute inset-0 opacity-0 group-hover:opacity-100'
+                                />
+                            </div>
                         </motion.div>
                     </div>
                 </div>
