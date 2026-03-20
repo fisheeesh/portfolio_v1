@@ -42,9 +42,9 @@ export default function Hero() {
                                     cursor={true}
                                     sequence={[
                                         500,
-                                        'A Full-Stack Web Developer.',
+                                        'A Full-Stack Developer.',
                                         1000,
-                                        'A Full-Stack Web Developer.',
+                                        'A Full-Stack Developer.',
                                         1000,
                                         'I design and code beautifully simple things, and I love what I do.',
                                         1000,

@@ -15,7 +15,7 @@ const About = () => {
                     <div>
                         <Reveal>
                             <p className="mb-6 text-[15px] sm:text-base first-letter:bg-brand first-letter:text-white first-letter:rounded first-letter:mr-2 first-letter:p-[6px] sm:first-letter:text-[1.4rem] first-letter:text-[1.3rem] first-letter:font-bold first-letter:float-left">
-                                Hello there! Name&apos;s Swam Yi Phyo, I&apos;m a passionate full-stack web developer dedicated to building high-performance, SEO-friendly, and responsive websites. I specialize in crafting intuitive digital user experiences that are accessible, scalable, and tailored to individuals and growing businesses. Passionate about self-study, I enjoy exploring new concepts and applying them to real-world challenges, delivering web solutions that look great and perform seamlessly across all devices.
+                                Hello there! Name&apos;s Swam Yi Phyo, I&apos;m a passionate full-stack developer dedicated to building high-performance, SEO-friendly, and responsive websites. I specialize in crafting intuitive digital user experiences that are accessible, scalable, and tailored to individuals and growing businesses. Passionate about self-study, I enjoy exploring new concepts and applying them to real-world challenges, delivering web solutions that look great and perform seamlessly across all devices.
                             </p>
                         </Reveal>
                         <Reveal>
