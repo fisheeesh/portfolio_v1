@@ -110,15 +110,6 @@ export const certification = [
             "DOM",
         ],
     },
-    {
-        title: "TaiwindCSS Training",
-        school: "Udemy",
-        date: "December 2024 – 12.5 hours",
-        link: "https://drive.google.com/file/d/13KTDLzkORPgfoRU2R0NzEGfZ9ZIlp0Jw/view?usp=drive_link",
-        description:
-            "Focused on enhancing front-end skills with popular libraries and frameworks. Gained proficiency in rapidly building responsive UIs using Tailwind CSS utility-first classes. Emphasized integrating advanced styling techniques, dark mode support, and component-based design for dynamic and efficient web applications. Developed a deeper understanding of design systems, layout strategies, and maintaining clean, scalable styles across projects.",
-        tech: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "Responsive"],
-    },
 ];
 
 export const projects = [
