@@ -14,13 +14,13 @@ export const Contact = () => {
 
                 <Reveal width="100%">
                     <p className="text-center md:text-xl max-[769px]:max-w-md max-[1300px]:max-w-lg mx-auto">
-                        Want to collaborate or have a quick chat? Shoot me an email or connect with me on{" "}
+                        Interested in working together or bringing me onto your team? Shoot me an email or connect with me on{" "}
                         <a
                             href="https://www.linkedin.com/in/swamyiphyo/"
                             target="_blank"
                             rel="nofollow"
                             aria-label="Connect with me on LinkedIn"
-                            className="text-brand border-b-2 hover:border-b-2 font-medium transition duration-200"
+                            className="text-brand inline-block border-b-2 border-transparent hover:border-current font-medium leading-none pb-0.5 transition-colors duration-200"
                         >
                             LinkedIn
                         </a>

@@ -58,6 +58,8 @@ export default function Hero() {
                                         1000,
                                         'Consistensyp... ahaha',
                                         1000,
+                                        'Grinding every day, ဘဝအတွက် နားရက်မရှိ',
+                                        1000,
                                         "Ok...",
                                         1000,
                                         "Ok...  I'm running out of ideas...",

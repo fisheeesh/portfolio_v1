@@ -12,9 +12,9 @@ export const stackTech = [
 export const experiences = [
     {
         title: "Full-Stack Developer",
-        role: "Freelance - Internship",
-        date: 'October 2025 - Present',
-        location: "Bangkok, Thailand",
+        role: "Freelance / Internship",
+        date: 'October 2025 - April 2026',
+        location: "On-Site",
         description: "Led the V3 migration of zcrLog, an enterprise SIEM and log management platform, overhauling the frontend architecture to improve performance, scalability, and user experience across multiple client environments. Architected multi-tenant SaaS infrastructure with tenant-level data isolation, a license subscription system with plan-based feature gating, EPS rate throttling, payment management from activation to expiry, and optimized ClickHouse and PostgreSQL queries to handle high-volume log ingestion. Gained hands-on experience deploying production infrastructure across on-premise data centers with Cloudflare, Nginx, and VMware.",
         tech: [
             "React",
