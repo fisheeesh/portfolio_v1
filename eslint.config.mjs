@@ -1,30 +1,9 @@
-// eslint.config.mjs
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
-import parser from "@typescript-eslint/parser";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
+import nextCoreWebVitals from "eslint-config-next/core-web-vitals";
 
 const eslintConfig = [
-  //* Use Next.js recommended rules with TypeScript support
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
-
-  //* TypeScript-specific config
+  ...nextCoreWebVitals,
   {
     files: ["**/*.ts", "**/*.tsx"],
-    languageOptions: {
-      parser,
-      parserOptions: {
-        project: "./tsconfig.json",
-        tsconfigRootDir: __dirname,
-      },
-    },
     rules: {
       "@typescript-eslint/no-explicit-any": "off",
       "@typescript-eslint/no-empty-object-type": "off",

@@ -19,13 +19,6 @@ const cspHeader = `
 /** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  experimental: {},
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   async headers() {
     return [
       {
