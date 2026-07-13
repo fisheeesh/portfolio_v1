@@ -117,7 +117,7 @@ export const projects = [
         title: "EMC Web",
         img: "/gallery/ata-web.webp",
         code: "https://github.com/fisheeesh/emc-web",
-        link: "https://emotioncheckinsystem.com",
+        link: "https://emc.syp.dev",
         tech: ["React", "Express.js", "Tanstack Query", "PostgreSQL", "GroqAI"],
         desc: "My university senior project's a comprehensive AI-powered full-stack employee well-being platform that bridges attendance management with emotional health monitoring.",
         modal: <>
@@ -143,7 +143,7 @@ export const projects = [
         title: "DevFlow",
         img: "/gallery/devflow.webp",
         code: "https://github.com/fisheeesh/devflow",
-        link: "https://www.devflow.forum",
+        link: "https://devflow.syp.dev",
         tech: ["Next.js", "TypeScript", "shadcn/ui", "GroqAI", "MongoDB", "Mongoose"],
         desc: "A modern Q&A platform built with Next.js and integrated Groq AI assistance. Developers can ask questions, share knowledge, and receive intelligent help to improve their queries.",
         modal:
@@ -157,7 +157,7 @@ export const projects = [
         title: "Prostore",
         img: "/gallery/prostore.webp",
         code: "https://github.com/fisheeesh/prostore",
-        link: "https://www.theprostore.shop",
+        link: "https://prostore.syp.dev",
         tech: ["Next.js", "TypeScript", "shadcn/ui", "PayPal", "Stripe", "PostgreSQL"],
         desc: "A full featured Ecommerce platform from scratch using Next.js, TypeScript, shadcn/ui, PostgreSQL, and Prisma. Integrated secure and flexible payment options with Stripe and PayPal.",
         modal: <>🛒  A full featured Ecommerce platform from scratch using Next.js, TypeScript, shadcn/ui, PostgreSQL, and Prisma. Integrated secure and flexible payment options with Stripe and PayPal, supporting both one-time and multi-product purchases. Features include user authentication, admin panel product management, shopping cart, order history, checkout process, and responsive UI. I designed both customer-facing and admin interfaces, implemented role-based access control, automated email confirmations for orders upon placement and shipment, and handled edge cases like failed transactions and stock availability. One cool feature is that I implemented session cart for guest users and they can add and remove items from cart without login to the platform.
@@ -167,7 +167,7 @@ export const projects = [
         title: "TWO Web",
         img: "/gallery/thewildoasis-web.webp",
         code: "https://github.com/fisheeesh/the-wild-oasis-website",
-        link: "https://www.thewildoasis.co",
+        link: "https://thewildoasis.syp.dev",
         tech: ["React", "Next.js", "Tailwind", "Supabase", "NextAuth", "Framer Motion"],
         desc: 'A customer facing website of "The Wild Oasis" designed to let users explore and book serene stays with ease, built with Next.js and Supabase. Ensure fast load times and excellent SEO.',
         modal: <>🌐 A customer facing website of &quot;The Wild Oasis&quot; designed to let users explore and book serene stays with ease, built with Next.js and Supabase. It uses a combination of SSR (Server-Side Rendering), SSG (Static Site Generation), and ISR (Incremental Static Regeneration) to balance performance and freshness, resulting in up to 40% faster load times across key booking and browsing pages. Authentication is secured using Google Sign-In via NextAuth.js, providing users with a simple and secure login experience.
@@ -177,7 +177,7 @@ export const projects = [
         title: "TWO Dash",
         img: "/gallery/thewildoasis-d.webp",
         code: "https://github.com/fisheeesh/the-wild-oasis-dashboard",
-        link: "https://www.thewildoasis.xyz",
+        link: "https://thewildoasis-dashboard.syp.dev",
         tech: ["React", "Supabase", "React Query", "Styled Components", "Recharts"],
         desc: "An internal Hotel Management Dashboard for staff to handle bookings, guests, cabins, and settings, with insights via interactive charts and a clean UI.",
         modal: (
@@ -192,7 +192,7 @@ export const projects = [
         title: "LitLibrary",
         img: "/gallery/lit-library.webp",
         code: "https://github.com/fisheeesh/lit-library",
-        link: "https://www.litlibrary.blog",
+        link: "https://litlibrary.syp.dev",
         tech: ["React", "Firebase", "Tailwind", "Context API", "Zod", "Swiper.js"],
         desc: "A vibrant blogging platform using React.js and Tailwind CSS. It highlights the effective use of Firebase real-time database to enable instant content updates.",
         modal: <>📚 A vibrant blogging platform designed to foster a positive and supportive community. Users can share personal growth experiences, life knowledge, advice, and insights while engaging with others&apos; blogs. It’s a place to inspire, learn, and connect. I love writing blogs there too, it’s my way of sharing what I’ve learned and connecting with others. <br /><br />This was actually my very first React project, and it taught me a lot about building component-based UIs and managing real-time state. It also includes a real-time notification feature using Firebase, alerting users instantly when new content or interactions happen. Working on LitLibrary helped me explore schema validation with Zod, and gave me confidence in creating a fully functional interactive web app.</>,
@@ -218,7 +218,7 @@ export const galleryShowCases = [
         title: "EMC Web",
         img: "/gallery/ata-web.webp",
         code: "https://github.com/fisheeesh/emc-web",
-        link: "https://emotioncheckinsystem.com",
+        link: "https://emc.syp.dev",
         tech: ["React", "Express.js", "Tanstack Query", "PostgreSQL", "GroqAI"],
         modal: <>
             🎓 My university senior project&apos;s a comprehensive AI-powered full-stack employee well-being platform that bridges attendance management with emotional health monitoring. Features AI-powered text analysis, real-time dashboards, CSV imports, real-time email notify, and rich MDX content editing to help organizations create healthier work environments. Employees check in daily via a mobile app, sharing their feelings through emoji selections and short notes, while HR and Super Admins access a powerful web dashboard displaying emotion trends, attendance patterns, and actionable insights through intuitive charts and reports.
@@ -244,7 +244,7 @@ export const galleryShowCases = [
         title: "DevFlow",
         img: "/gallery/devflow.webp",
         code: "https://github.com/fisheeesh/devflow",
-        link: "https://www.devflow.forum",
+        link: "https://devflow.syp.dev",
         tech: ["Next.js", "TypeScript", "shadcn/ui", "GroqAI", "MongoDB", "Mongoose"],
         modal:
             <>
@@ -258,7 +258,7 @@ export const galleryShowCases = [
         title: "Prostore",
         img: "/gallery/prostore.webp",
         code: "https://github.com/fisheeesh/prostore",
-        link: "https://www.theprostore.shop",
+        link: "https://prostore.syp.dev",
         tech: ["Next.js", "TypeScript", "shadcn/ui", "PayPal", "Stripe", "PostgreSQL"],
         modal: <>🛒  A full featured Ecommerce platform from scratch using Next.js, TypeScript, shadcn/ui, PostgreSQL, and Prisma. Integrated secure and flexible payment options with Stripe and PayPal, supporting both one-time and multi-product purchases. Features include user authentication, admin panel product management, shopping cart, order history, checkout process, and responsive UI. I designed both customer-facing and admin interfaces, implemented role-based access control, automated email confirmations for orders upon placement and shipment, and handled edge cases like failed transactions and stock availability. One cool feature is that I implemented session cart for guest users and they can add and remove items from cart without login to the platform.
             <br /><br />This project gave me deep hands-on experience with e-commerce logic, some real-world atomic funcationality, scalable backend design, and full-stack payment flows. I tested over 100 transactions in sandbox mode for both PayPal and Stripe to ensure reliability, proper webhook handling, and graceful error management. Prostore helped me solidify my knowledge of building production-grade applications with real-world complexity and a strong focus on performance and user experience.</>,
@@ -281,7 +281,7 @@ export const galleryShowCases = [
         title: "LitLibrary",
         img: "/gallery/lit-library.webp",
         code: "https://github.com/fisheeesh/lit-library",
-        link: "https://www.litlibrary.blog",
+        link: "https://litlibrary.syp.dev",
         tech: ["React", "Firebase", "Tailwind", "Context API", "Zod", "Swpier.js"],
         modal: <>📚 A vibrant blogging platform designed to foster a positive and supportive community. Users can share personal growth experiences, life knowledge, advice, and insights while engaging with others&apos; blogs. It’s a place to inspire, learn, and connect. I love writing blogs there too — it’s my way of sharing what I’ve learned and connecting with others. <br /><br />This was actually my very first React project, and it taught me a lot about building component-based UIs and managing real-time state. It also includes a real-time notification feature using Firebase, alerting users instantly when new content or interactions happen. Working on LitLibrary helped me explore schema validation with Zod, and gave me confidence in creating a fully functional interactive web app.</>,
     },
@@ -290,7 +290,7 @@ export const galleryShowCases = [
         title: "Filmpire",
         img: "/gallery/filmpire.webp",
         code: "https://github.com/fisheeesh/filmpire",
-        link: "https://www.filmpire.net",
+        link: "https://filmpire.syp.dev",
         tech: ["React", "TMDB API", "Alan AI", "MUI"],
         modal: (
             <>
@@ -305,7 +305,7 @@ export const galleryShowCases = [
         title: "TWO Web",
         img: "/gallery/thewildoasis-web.webp",
         code: "https://github.com/fisheeesh/the-wild-oasis-website",
-        link: "https://www.thewildoasis.co",
+        link: "https://thewildoasis.syp.dev",
         tech: ["React", "Next.js", "Tailwind", "Supabase", "NextAuth", "Framer Motion"],
         modal: <>🌐 A customer facing website of &quot;The Wild Oasis&quot; designed to let users explore and book serene stays with ease, built with Next.js and Supabase. It uses a combination of SSR (Server-Side Rendering), SSG (Static Site Generation), and ISR (Incremental Static Regeneration) to balance performance and freshness, resulting in up to 40% faster load times across key booking and browsing pages. Authentication is secured using Google Sign-In via NextAuth.js, providing users with a simple and secure login experience.
             <br /><br />This project focuses on performance-first rendering strategies, smooth UX, and clean UI design powered by Tailwind CSS and Framer Motion. Users can explore cabin options with dynamic content, filter by availability, and view details without delay. I carefully structured data fetching logic and page generation methods to boost SEO. Building this platform helped me master hybrid rendering in Next.js and deliver a seamless, production-ready experience.</>,
@@ -315,7 +315,7 @@ export const galleryShowCases = [
         title: "TWO Dash",
         img: "/gallery/thewildoasis-d.webp",
         code: "https://github.com/fisheeesh/the-wild-oasis-dashboard",
-        link: "https://www.thewildoasis.xyz",
+        link: "https://thewildoasis-dashboard.syp.dev",
         tech: ["React", "Supabase", "React Query", "Styled Components", "Recharts"],
         modal: (
             <>
@@ -357,7 +357,7 @@ export const galleryShowCases = [
         title: "Fast React Pizza",
         img: "/gallery/fast-react-pizza.webp",
         code: "https://github.com/fisheeesh/fast-react-pizza.git",
-        link: "https://fast-react-pizza-six-gamma.vercel.app/",
+        link: "https://fast-pizza.syp.dev",
         tech: ["React", "React Router", "Redux", "Tailwind", "JS"],
         modal: <>🍕 A blazing-fast pizza ordering app built with React, Redux, React Router, and Tailwind CSS. Users can browse pizzas, customize orders, select quantity, and place orders with live delivery tracking and pricing</>
     },
@@ -366,7 +366,7 @@ export const galleryShowCases = [
         title: "React Quiz",
         img: "/gallery/react-quiz.webp",
         code: "https://github.com/fisheeesh/quiz.git",
-        link: "https://mini-quizz.vercel.app/",
+        link: "https://mini-quiz.syp.dev",
         tech: ["React", "Redux", "JS"],
         modal: <>🧠 A mini quiz app to test your React Mastery.</>
     },
@@ -375,7 +375,7 @@ export const galleryShowCases = [
         title: "WorldWise",
         img: "/gallery/theworldwise.webp",
         code: "https://github.com/fisheeesh/worldwise.git",
-        link: "https://worldwise-pearl-ten.vercel.app/",
+        link: "https://worldwise.syp.dev",
         tech: ["React", "React Leaflet", "React Router", "JS"],
         modal: <>🌍 A mini app that helps users track places they’ve visited around the world. Built with React-Leaflet, it allows users to mark locations on a map, add personal notes or memories, and view them later.</>
     },
@@ -384,7 +384,7 @@ export const galleryShowCases = [
         title: "RentMate",
         img: "/gallery/rentmate.webp",
         code: "https://github.com/fisheeesh/rentmate.git",
-        link: "https://rentmate-xi.vercel.app/",
+        link: "https://rentmate.syp.dev",
         tech: ["React", "Tailwind", "Lottie", "JS", "Recharts", "Zod"],
         modal: <>📦 A responsive web application that enables users to rent and lend everyday items in a seamless and secure way. The platform supports two user roles — Renter and Lender, and each user can switch roles anytime.</>
     },
@@ -474,7 +474,7 @@ export const galleryShowCases = [
         title: "Skywings",
         img: "/gallery/skywings.webp",
         code: "https://github.com/fisheeesh/skywings.git",
-        link: "https://skywings-nu.vercel.app/",
+        link: "https://skywings.syp.dev",
         tech: ["HTML", "CSS", "JS", "Swiper.js"],
         modal: <>✈️ Landing page design for Air tickets booking website featuring a modern and minimalist aesthetic, crafted using HTML, CSS, JS and with the help of Swiper.js.</>
     },
