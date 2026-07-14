@@ -11,12 +11,14 @@ export default function Header({ toggle }: { toggle: () => void }) {
                 aria-label="Main navigation"
             >
                 <div className="mt-0.5">
-                    <Image
-                        src="/assets/logo.png"
-                        alt="Swam Yi Phyo logo"
-                        width={54}
-                        height={54}
-                    />
+                    <Link href="/">
+                        <Image
+                            src="/assets/logo.png"
+                            alt="Swam Yi Phyo logo"
+                            width={54}
+                            height={54}
+                        />
+                    </Link>
                 </div>
 
                 <ul className="flex items-center -mr-6 space-x-[1rem] max-md:hidden">
