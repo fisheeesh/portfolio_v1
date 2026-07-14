@@ -15,17 +15,17 @@ const About = () => {
                     <div>
                         <Reveal>
                             <p className="mb-6 text-[15px] sm:text-base first-letter:bg-brand first-letter:text-white first-letter:rounded first-letter:mr-2 first-letter:p-[6px] sm:first-letter:text-[1.4rem] first-letter:text-[1.3rem] first-letter:font-bold first-letter:float-left">
-                                Hello there! Name&apos;s Swam Yi Phyo, I&apos;m a passionate full-stack developer dedicated to building high-performance, SEO-friendly, and responsive websites. I specialize in crafting intuitive digital user experiences that are accessible, scalable, and tailored to individuals and growing businesses. Passionate about self-study, I enjoy exploring new concepts and applying them to real-world challenges, delivering web solutions that look great and perform seamlessly across all devices.
+                                Hello there! Name&apos;s Swam Yi Phyo, a full-stack developer who genuinely likes building things I can be proud of. I care about clean code, minimalist UI, and shipping stuff that actually works in production, not just demos. Most of my time goes into figuring out the right way to solve a problem before writing a single line, then building it out so it&apos;s fast, scalable, and clean across every device.
                             </p>
                         </Reveal>
                         <Reveal>
                             <p className="mb-6 text-[15px] sm:text-base">
-                                On the frontend, I love working with <strong>React.js</strong> and <strong>Next.js</strong>, and I&apos;m also experienced with backend technologies like FastAPI, Node.js, and serverless platforms like Supabase and Firebase. I excel at planning and finding optimal solutions, with AI tools like ChatGPT, Claude, and GitHub Copilot alongside structured time management apps helping me stay productive. I&apos;m currently working on my internship work, focusing on building practical, impactful solutions to meaningful problems.
+                                On the frontend I lean on <strong>React</strong> and <strong>Next.js</strong> with TypeScript, and on the backend I work mostly with <strong>FastAPI </strong> and Node.js. I also work a lot with agentic coding these days, wiring up AI tools and harnesses to move faster and offload the grunt work while I focus on architecture and the hard decisions. Having built real enterprise systems and built a lot alongside AI, big and complex is right where I want to be..
                             </p>
                         </Reveal>
                         <Reveal>
                             <p className="mb-6 text-[15px] sm:text-base max-[480px]:text-left">
-                                Outside of tech, I spend time sharpening soft skills like communication, adaptability, and problem-solving. I&apos;m also into football and enjoy playing golf to keep my mind fresh and strategic. I&apos;m always open to new projects, so let&apos;s connect and create something great!
+                                Outside of code, I&apos;m into golf to keep my head clear, and I&apos;m a big Naruto guy. Always down for a good project, so let&apos;s connect and build something worth building.
                             </p>
                         </Reveal>
                         <Reveal>

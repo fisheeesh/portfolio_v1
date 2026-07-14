@@ -2,11 +2,12 @@ export const statClassName = "rounded-[10px] text-[#000000D0] cursor-default sha
 
 export const stackTech = [
     "Next.js", "React.js", "TypeScript", "JavaScript",
-    "Node.js", "Express.js", "Python", "FastAPI", "Tanstack Query",
-    "Redux", "Zustand", "Framer Motion",
-    "Tailwind", "shadcn/ui", "MongoDB",
-    "PostgreSQL", "Redis", "Firebase", "Supabase", "Git", "GitHub",
-    "Prisma", "Mongoose", "Docker", "Cloudflare", "Nginx", "RESTful", "GraphQL", "SEO"
+    "Node.js", "Express.js", "Python", "FastAPI", "Supabase",
+    "Framer Motion",
+    "Tailwind", "shadcn/ui", "Tanstack Query",
+    "Redux", "Zustand", "MongoDB",
+    "PostgreSQL", "Redis", "RabbitMQ",
+    "Prisma", "Mongoose", "Docker", "ClaudeCode", "Codex"
 ]
 
 export const experiences = [
@@ -136,7 +137,7 @@ export const projects = [
         modal: <>
             📱 The mobile counterpart to my Emotion Check-in System, designed specifically for employees to seamlessly log their daily attendance and emotional state. This Flutter application serves as the primary touchpoint where employees share their feelings through intuitive emoji selections and optional notes, which are then analyzed by AI to generate emotion scores that help HR teams identify patterns and provide timely support.
             <br /><br /> This marked my first experience building a mobile application that integrates with a custom REST API, and it taught me invaluable lessons about mobile development best practices. I focused heavily on writing clean, maintainable code with proper project structure, separating concerns across models, services, controllers, and UI layers. To optimize performance and reduce unnecessary database queries, I implemented intelligent memory caching strategies using SQLite for local data persistence, combined with Flutter Secure Storage for handling sensitive authentication tokens and user credentials securely. I learned to balance between local data availability for offline-first experiences and server synchronization for real-time updates. Working with Flutter&apos;s reactive UI framework challenged me to think differently about state management and widget lifecycle, while integrating with the backend API taught me about handling network requests, error states, loading indicators, and graceful fallbacks in mobile environments.
-            <br /><br /> Building this mobile app deepened my understanding of full-stack development from an entirely new perspective, creating seamless experiences across web dashboards and mobile interfaces while maintaining data consistency and security. I&apos;m actively continuing development on this project, gaining more insights with each feature I implement. My goal is to deploy this application on the Google Play Store, making it accessible to real organizations looking to improve their workplace culture and employee well-being. This journey from concept to production-ready mobile app is shaping me into a more versatile developer capable of building complete ecosystem solutions ^_^
+            <br /><br /> Building this mobile app deepened my understanding of full-stack development from an entirely new perspective, creating seamless experiences across web dashboards and mobile interfaces while maintaining data consistency and security. I did take a real shot at shipping it to the Google Play Store, but ran into conflicts with the Google developer account along the way, so the public release didn&apos;t make it through this time. Even so, taking this from concept all the way to a production-ready mobile app pushed me into new territory and shaped me into a more versatile developer capable of building complete ecosystem solutions ^_^
         </>,
     },
     {
@@ -188,28 +189,28 @@ export const projects = [
             </>
         ),
     },
-    {
-        title: "LitLibrary",
-        img: "/gallery/lit-library.webp",
-        code: "https://github.com/fisheeesh/lit-library",
-        link: "https://litlibrary.syp.dev",
-        tech: ["React", "Firebase", "Tailwind", "Context API", "Zod", "Swiper.js"],
-        desc: "A vibrant blogging platform using React.js and Tailwind CSS. It highlights the effective use of Firebase real-time database to enable instant content updates.",
-        modal: <>📚 A vibrant blogging platform designed to foster a positive and supportive community. Users can share personal growth experiences, life knowledge, advice, and insights while engaging with others&apos; blogs. It’s a place to inspire, learn, and connect. I love writing blogs there too, it’s my way of sharing what I’ve learned and connecting with others. <br /><br />This was actually my very first React project, and it taught me a lot about building component-based UIs and managing real-time state. It also includes a real-time notification feature using Firebase, alerting users instantly when new content or interactions happen. Working on LitLibrary helped me explore schema validation with Zod, and gave me confidence in creating a fully functional interactive web app.</>,
-    },
-    {
-        title: "Furnivo",
-        img: "/gallery/furnivo.webp",
-        code: "https://github.com/fisheeesh/furnivo",
-        link: "https://github.com/fisheeesh/furnivo",
-        tech: ["React", "Express.js", "Zustand", "Tanstack Query", "PostgreSQL"],
-        desc: "A full-stack modern furniture marketplace built with React.js + React Router, TypeScript, Zustand and shadcn/ui on the frontend, and Node.js, Express.js, Prisma, and PostgreSQL on the backend.",
-        modal: <>
-            🛋️  A full-stack modern furniture marketplace built with React.js + React Router, TypeScript, Zustand and shadcn/ui on the frontend, and Node.js, Express.js, Prisma, and PostgreSQL on the backend. It features JWT authentication, file uploads with Multer, and background job processing using BullMQ with Redis.
-            <br /><br /> My first full-stack application with a custom REST API backend, marking a shift from my previous experience with serverless or Next.js servers. I gained hands-on experience building and structuring an Express.js backend, handling middleware, integrating Prisma ORM with MySQL, PostgreSQL, and SQLite, and implementing secure JWT-based authentication flows, including registration, OTP verification, password reset, and token rotation. I also learned to optimize performance and scalability by offloading heavy tasks to background workers using BullMQ and Redis for tasks like image processing and cache invalidation. On the frontend, I strengthened my skills with React Router’s loaders, actions, and forms, API integration with TanStack Query, and global state management using Zustand. I mastered keeping data alive across routes, handling loading states, infinite scrolling, query caching, protected routes, and request interceptors with Axios. Beyond technical skills, I learned the importance of balancing code organization, performance, and security while maintaining a smooth user experience, which helped me grow into a more confident full-stack developer.
-            <br /><br /> I could spend all day describing the lessons I learned while working on this project, but the most important involved gaining a solid understanding of backend fundamentals and production-ready REST API design. I gained hands-on experience building and structuring an Express.js backend, handling middleware, integrating Prisma ORM with multiple databases, and implementing secure authentication with token rotation. Learning to offload heavy tasks to background workers using BullMQ and Redis was a game-changer for performance and scalability. On the frontend, I strengthened my skills with React Router’s loaders and actions, API integration with TanStack Query, and global state management using Zustand. I mastered using React Router’s Form, useFetcher for actions, and useNavigation for handling loading states, while keeping data alive across routes. I developed solid concepts like infinite scrolling, query caching, protected routes, and request interceptors with Axios. Beyond technical skills, I learned how crucial it is to balance code organization, performance, and security while maintaining a smooth user experience. This project helped me grow into a more confident full-stack developer with a clearer understanding of both frontend and backend problem-solving.
-        </>,
-    },
+    // {
+    //     title: "LitLibrary",
+    //     img: "/gallery/lit-library.webp",
+    //     code: "https://github.com/fisheeesh/lit-library",
+    //     link: "https://litlibrary.syp.dev",
+    //     tech: ["React", "Firebase", "Tailwind", "Context API", "Zod", "Swiper.js"],
+    //     desc: "A vibrant blogging platform using React.js and Tailwind CSS. It highlights the effective use of Firebase real-time database to enable instant content updates.",
+    //     modal: <>📚 A vibrant blogging platform designed to foster a positive and supportive community. Users can share personal growth experiences, life knowledge, advice, and insights while engaging with others&apos; blogs. It’s a place to inspire, learn, and connect. I love writing blogs there too, it’s my way of sharing what I’ve learned and connecting with others. <br /><br />This was actually my very first React project, and it taught me a lot about building component-based UIs and managing real-time state. It also includes a real-time notification feature using Firebase, alerting users instantly when new content or interactions happen. Working on LitLibrary helped me explore schema validation with Zod, and gave me confidence in creating a fully functional interactive web app.</>,
+    // },
+    // {
+    //     title: "Furnivo",
+    //     img: "/gallery/furnivo.webp",
+    //     code: "https://github.com/fisheeesh/furnivo",
+    //     link: "https://github.com/fisheeesh/furnivo",
+    //     tech: ["React", "Express.js", "Zustand", "Tanstack Query", "PostgreSQL"],
+    //     desc: "A full-stack modern furniture marketplace built with React.js + React Router, TypeScript, Zustand and shadcn/ui on the frontend, and Node.js, Express.js, Prisma, and PostgreSQL on the backend.",
+    //     modal: <>
+    //         🛋️  A full-stack modern furniture marketplace built with React.js + React Router, TypeScript, Zustand and shadcn/ui on the frontend, and Node.js, Express.js, Prisma, and PostgreSQL on the backend. It features JWT authentication, file uploads with Multer, and background job processing using BullMQ with Redis.
+    //         <br /><br /> My first full-stack application with a custom REST API backend, marking a shift from my previous experience with serverless or Next.js servers. I gained hands-on experience building and structuring an Express.js backend, handling middleware, integrating Prisma ORM with MySQL, PostgreSQL, and SQLite, and implementing secure JWT-based authentication flows, including registration, OTP verification, password reset, and token rotation. I also learned to optimize performance and scalability by offloading heavy tasks to background workers using BullMQ and Redis for tasks like image processing and cache invalidation. On the frontend, I strengthened my skills with React Router’s loaders, actions, and forms, API integration with TanStack Query, and global state management using Zustand. I mastered keeping data alive across routes, handling loading states, infinite scrolling, query caching, protected routes, and request interceptors with Axios. Beyond technical skills, I learned the importance of balancing code organization, performance, and security while maintaining a smooth user experience, which helped me grow into a more confident full-stack developer.
+    //         <br /><br /> I could spend all day describing the lessons I learned while working on this project, but the most important involved gaining a solid understanding of backend fundamentals and production-ready REST API design. I gained hands-on experience building and structuring an Express.js backend, handling middleware, integrating Prisma ORM with multiple databases, and implementing secure authentication with token rotation. Learning to offload heavy tasks to background workers using BullMQ and Redis was a game-changer for performance and scalability. On the frontend, I strengthened my skills with React Router’s loaders and actions, API integration with TanStack Query, and global state management using Zustand. I mastered using React Router’s Form, useFetcher for actions, and useNavigation for handling loading states, while keeping data alive across routes. I developed solid concepts like infinite scrolling, query caching, protected routes, and request interceptors with Axios. Beyond technical skills, I learned how crucial it is to balance code organization, performance, and security while maintaining a smooth user experience. This project helped me grow into a more confident full-stack developer with a clearer understanding of both frontend and backend problem-solving.
+    //     </>,
+    // },
 ];
 
 export const galleryShowCases = [
