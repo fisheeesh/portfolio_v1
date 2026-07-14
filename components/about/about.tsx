@@ -20,12 +20,12 @@ const About = () => {
                         </Reveal>
                         <Reveal>
                             <p className="mb-6 text-[15px] sm:text-base">
-                                On the frontend I lean on <strong>React</strong> and <strong>Next.js</strong> with TypeScript, and on the backend I work mostly with <strong>FastAPI </strong> and Node.js. I also work a lot with agentic coding these days, wiring up AI tools and harnesses to move faster and offload the grunt work while I focus on architecture and the hard decisions. Having built real enterprise systems and built a lot alongside AI, big and complex is right where I want to be..
+                                On the frontend I lean on <strong>React</strong> and <strong>Next.js</strong> with TypeScript, and on the backend I work mostly with <strong>FastAPI </strong> and Node.js. I also work a lot with agentic coding these days, wiring up AI tools and harnesses to move faster and offload the grunt work while I focus on architecture and the hard decisions. Having built real enterprise systems and built a lot alongside AI, big and complex is right where I want to be.
                             </p>
                         </Reveal>
                         <Reveal>
                             <p className="mb-6 text-[15px] sm:text-base max-[480px]:text-left">
-                                Outside of code, I&apos;m into golf to keep my head clear, and I&apos;m a big Naruto guy. Always down for a good project, so let&apos;s connect and build something worth building.
+                                Outside of code, I&apos;m into golf to keep my head clear, and I&apos;m a big Naruto guy. Chasing progress like it&apos;s the only option, so let&apos;s connect and build something worth building.
                             </p>
                         </Reveal>
                         <Reveal>
