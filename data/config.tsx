@@ -13,6 +13,26 @@ export const stackTech = [
 export const experiences = [
     {
         title: "Full-Stack Developer",
+        role: "Full-Time",
+        date: 'May 2026 - Present',
+        location: "On-Site",
+        description: "Actively developing zcrSIEM, a next-gen enterprise SIEM platform. My focus spans laying down core system architecture, establishing code quality standards, and building multi-tenant MSSP capabilities. I engineer seamless organization onboarding with automated license validation and secure authentication, while utilizing agentic coding workflows to accelerate feature delivery and ensuring complex security dashboards render effortlessly with minimal load times.",
+        tech: [
+            "React",
+            "React Router",
+            "FastAPI",
+            "ClickHouse",
+            "PostgreSQL",
+            "Redis",
+            "Vector",
+            "RabbitMQ",
+            "Celery",
+            "Codex",
+            "ClaudeCode"
+        ],
+    },
+    {
+        title: "Software Engineer",
         role: "Freelance / Internship",
         date: 'October 2025 - April 2026',
         location: "On-Site",
