@@ -2,7 +2,7 @@ export default function ResumeBtn() {
     return (
         <a
             className="btn primaryBtn relative group overflow-hidden"
-            href="https://drive.google.com/file/d/1t1J4T_fIox08hbHxQSBZG-arQ17sdUmg/view?usp=sharing"
+            href="https://drive.google.com/file/d/1nCyhYsFjNcWiyvdjfn07F9K2Xga5d5qc/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Check out my Resume"
